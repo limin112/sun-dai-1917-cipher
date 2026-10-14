@@ -91,7 +91,8 @@ TAG_LABEL = {"struct": ("struct", "结构发现"), "archive": ("archive", "新�
              "neg": ("neg", "排除/负结果"), "block": ("block", "卡点")}
 
 NAV = [("index.html", "首页"), ("blockers.html", "卡点与求助"), ("telegrams.html", "密电原文"),
-       ("rounds.html", "研究轮次"), ("sources.html", "资料来源")]
+       ("rounds.html", "研究轮次"), ("sources.html", "资料来源"),
+       ("credits.html", "前人工作与致谢")]
 
 
 def page(title, body, depth=0, active=""):
@@ -114,7 +115,7 @@ def page(title, body, depth=0, active=""):
 <main>
 {body}
 </main>
-<footer>孙中山—戴季陶 1917 年六月密电 · 开放研究档案 · 文字与代码 CC BY 4.0 · JACAR 影像版权归原馆，本站不转载</footer>
+<footer>孙中山—戴季陶 1917 年六月密电 · 开放研究档案 · 文字、数据与代码 CC BY 4.0 · 电报扫描图出自 JACAR（日本外务省外交史料馆藏），不在 CC BY 范围内</footer>
 </body>
 </html>
 """
@@ -233,10 +234,16 @@ def build_telegrams():
 <div class="kicker">The ciphertexts</div>
 <h1>密电原文与读本</h1>
 <p class="lede">目标：日本亚洲历史资料中心（JACAR）<b>B03050090200</b> 帧 <b>0509</b>（1917-06-24，孙中山 上海 → 戴季陶 东京，署名 <code>Sunwen</code>）与帧 <b>0511</b>（1917-06-29，戴季陶 东京 → 孙中山 上海，两张电报纸，署名 <code>Tai</code>）。</p>
-<blockquote>扫描影像受 JACAR 权利约束，本仓库不转载。可在 Brice Dudout 公开页面查看复制图：
-<a href="https://bdudout.github.io/wenmi/assets/img/fiches/scan-0509-full.webp">0509</a> ·
-<a href="https://bdudout.github.io/wenmi/assets/img/fiches/scan-0511-full.webp">0511</a>。
-黄底 = 已知存在争议的读法。</blockquote>
+<h2>电报扫描图</h2>
+<div class="scans">
+<figure><a href="assets/img/jacar/scan-0509-full.webp"><img src="assets/img/jacar/scan-0509-full.webp" alt="JACAR B03050090200 帧0509，1917-06-24 上海发东京电报" loading="lazy"></a>
+<figcaption>帧 0509 · 1917-06-24 上海发，6-25 东京收 · 署名 Sunwen · Words 14</figcaption></figure>
+<figure><a href="assets/img/jacar/scan-0511-full.webp"><img src="assets/img/jacar/scan-0511-full.webp" alt="JACAR B03050090200 帧0511，1917-06-29 东京发上海电报，两页" loading="lazy"></a>
+<figcaption>帧 0511 · 1917-06-29 东京发上海 · 两张电报纸 · 署名 Tai · Words 32</figcaption></figure>
+</div>
+<blockquote>出处：日本外务省外交史料馆藏，亚洲历史资料中心（JACAR）提供，Ref. <a href="https://www.jacar.archives.go.jp/das/meta/B03050090200">B03050090200</a>。
+本仓库中的副本取自 Brice Dudout 公开的 <a href="https://github.com/bdudout/wenmi">wenmi</a> 项目（Git blob SHA 与研究记录一致），<b>不在本仓库 CC BY 4.0 授权范围内</b>，使用请遵循 JACAR 利用规定。点击可看大图。
+下文黄底 = 已知存在争议的读法。</blockquote>
 
 <h2>读本 1：Bourdeau 原始转录（raw，冻结不改）</h2>
 <p>来源：<a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sunyatsen/y1917/NOTES.md">dbourdeau/cyphersolver</a>，冻结于 <a href="../data/ciphertexts.json">data/ciphertexts.json</a>。</p>
@@ -383,7 +390,7 @@ def build_index():
 <div class="card"><h3>帧 0509 · 1917-06-24</h3><p>孙中山（上海）→ 戴季陶（东京）。8 个 10 字母密文词，署名 Sunwen。张勋复辟前夕，孙派戴赴日了解日本军政界态度。</p></div>
 <div class="card"><h3>帧 0511 · 1917-06-29</h3><p>戴季陶（东京）→ 孙中山（上海）。两张电报纸，29 个密文词（282 字母），署名 Tai。</p></div>
 <div class="card"><h3>不是“文密”</h3><p>两封电报并无“文密”或“Cg”前缀，1916 年已破的 G0/Y0 密钥与 1917 年 3 月密钥均无法译出。</p></div>
-<div class="card"><h3>前人工作</h3><p>Daniel Bourdeau（1917 年 3 月电报已解）、Brice Dudout / Claude（1916 文密 G0/Y0 已解、扫描复制图与盲读）。</p></div>
+<div class="card"><h3>前人工作</h3><p>Daniel Bourdeau（1917 年 3 月电报已解）、Brice Dudout / Claude（1916 文密 G0/Y0 已解、扫描复制图与盲读）。<a href="credits.html">详见致谢 →</a></p></div>
 </div>
 <p><a href="telegrams.html">查看全部密文读本与 Round 18 电码流 →</a></p>
 
@@ -401,6 +408,84 @@ def build_index():
     (DOCS / "index.html").write_text(page("首页", body, active="index.html"), encoding="utf-8")
 
 
+# ---------------------------------------------------------------- credits
+CREDITS = [
+    dict(name="Daniel Bourdeau · cyphersolver",
+         url="https://github.com/dbourdeau/cyphersolver",
+         site="https://dbourdeau.github.io/cyphersolver/sunintercepts.html",
+         license="文字与笔记 CC BY 4.0；代码 MIT",
+         since="早于 Round 11（Round 1–10 不在本仓库，确切起点待补）",
+         used=[
+             "六月两封密电的原始转录（<code>targets/sunyatsen/y1917/NOTES.md</code>、<code>fam6.py</code>），是 <a href=\"../data/ciphertexts.json\">data/ciphertexts.json</a> 的底本；",
+             "1916 年已解电报转录 <code>targets/sunyatsen/y1916/transcripts_A–D.md</code>，Round 11 用来训练语言评分器；",
+             "1917 年 3 月 23/25/26 日已破译电报与密钥（<code>show17.py</code>、<code>fam17.py</code>），作为算法正对照（Round 11、17），从不参与六月拟合；",
+             "20×5 表旋转 / 反转 / 元音列变换的系统化枚举思路。",
+         ]),
+    dict(name="Brice Dudout（与 Claude 合作）· wenmi「破解文密」",
+         url="https://github.com/bdudout/wenmi",
+         site="https://bdudout.github.io/wenmi/",
+         license="CC BY 4.0（JACAR 扫描图除外）",
+         since="Round 16",
+         used=[
+             "帧 0509 / 0511 扫描复制图——本研究第一次看到六月原件，本仓库 <code>docs/assets/img/jacar/</code> 的两张图即取自该项目；",
+             "独立盲读转录 <a href=\"../data/independent_witness.json\">data/independent_witness.json</a>，Round 16–18 所有结构结论都在两份读本上分别验证；",
+             "关键纠偏：六月电报无“文密”/“Cg”前缀，1916 G0/Y0 密钥译不出；",
+             "<code>solver/lm3</code> 语言模型与 1916 Y0/G0 真实数据，Round 18 求解器与正对照依赖它；",
+             "元音开头字母对的“颠倒”观察——Round 18 的“虚码”解析即由此出发。",
+         ]),
+    dict(name="Cryptiana（经 NoAutopilot/cipher-lab 镜像）",
+         url="https://github.com/NoAutopilot/cipher-lab/blob/main/sources/cryptiana/web/chinesecrypto_e.htm",
+         site="", license="见原站",
+         since="Round 12",
+         used=["对爱知大学展品“広東政府首脳間で用いられた暗号電報”及其样例、底部假名转换表的早期讨论；Round 12 据此说明该展品并非本项目首次发现。"]),
+]
+
+INSTITUTIONS = [
+    ("亚洲历史资料中心（JACAR）/ 日本外务省外交史料馆", "目标电报原件 B03050090200；1916 年对照件 B03050090000。", "https://www.jacar.archives.go.jp/"),
+    ("爱知大学东亚同文书院大学纪念中心", "山田纯三郎旧藏密码电报展品、孙文—山田资料馆藏目录（Round 11–12）。", "https://edu.aichi-u.ac.jp/toa/collection/gallery02/Com1000075.html"),
+    ("Kuzuoglu, Ulug (2018). Chinese cryptography. Cryptologia", "第64号 20×5 表全文、1913《仁密電碼本》等具名码本线索（Round 13–14）。", "https://doi.org/10.1080/01611194.2018.1449146"),
+    ("中国国家图书馆 / Wikimedia Commons", "戴季陶《日本論》1928 民智书局本扫描（Round 15）。", "https://commons.wikimedia.org/wiki/File:NLC416-03jh003405-24940_日本論.pdf"),
+    ("台湾国家图书馆·臺灣華文電子書庫", "《日本論》1954 台北版馆藏著录 NCL-000001976（Round 15）。", "https://taiwanebook.ncl.edu.tw/*/book/NCL-000001976"),
+    ("国立政治大学·国民党党史档案探索系统", "仁密、第64号、1918 日文密码等档号定位（待取得）。", "https://archiveds.lib.nccu.edu.tw/"),
+]
+
+
+def build_credits():
+    cards = ""
+    for c in CREDITS:
+        lis = "".join(f"<li>{u}</li>" for u in c["used"])
+        site = f' · <a href="{c["site"]}">网站</a>' if c["site"] else ""
+        cards += f"""<div class="blocker" style="grid-template-columns:1fr"><div>
+<h3><a href="{c['url']}">{html.escape(c['name'])}</a>{site}</h3>
+<p><span class="tag archive">授权：{html.escape(c['license'])}</span><span class="tag struct">引入：{html.escape(c['since'])}</span></p>
+<ul>{lis}</ul></div></div>"""
+    inst = "".join(f'<tr><td><a href="{u}">{html.escape(n)}</a></td><td>{html.escape(d)}</td></tr>'
+                   for n, d, u in INSTITUTIONS)
+    body = f"""<div class="narrow">
+<div class="kicker">Prior work &amp; acknowledgements</div>
+<h1>前人工作与致谢</h1>
+<p class="lede">这个项目站在别人的肩膀上。六月电报的转录、1916 年与 1917 年 3 月的已解案例、扫描图和语言模型，都来自下面这些公开研究。
+我们自己的贡献是在其上做的结构检验、排除搜索与资料追查——全部记录在 <a href="rounds.html">研究轮次</a> 中。</p>
+
+<h2>开源研究仓库</h2>
+{cards}
+
+<h2>档案馆、文献与机构</h2>
+<table><tr><th>来源</th><th>用途</th></tr>{inst}</table>
+
+<h2>本仓库的授权</h2>
+<ul>
+<li>本仓库的文字、数据与代码采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh-hans">CC BY 4.0</a>，与 wenmi 及 cyphersolver 的文字部分一致。引用请注明“sun-dai-1917-cipher contributors”并链接 <a href="https://github.com/limin112/sun-dai-1917-cipher">github.com/limin112/sun-dai-1917-cipher</a>。</li>
+<li>源自上述仓库的转录与数据，在各文件中保留原作者署名，并按 CC BY 4.0 再分发。</li>
+<li><b>不在 CC BY 范围内</b>：<code>docs/assets/img/jacar/</code> 的两张电报扫描图（日本外务省外交史料馆藏，JACAR 提供，注明出处转载，请遵循 JACAR 利用规定）；爱知大学展品照片未收录。</li>
+</ul>
+
+<h2>研究方式说明</h2>
+<p>各轮研究大量借助 AI Agent（Claude 等）完成。所有结论附脚本、输入 SHA、正负对照与运行日志，可独立复现；任何“通顺的中文”在通过验收标准前都不算译文。</p>
+</div>"""
+    (DOCS / "credits.html").write_text(page("前人工作与致谢", body, active="credits.html"), encoding="utf-8")
+
+
 if __name__ == "__main__":
     build_rounds()
     build_rounds_index()
@@ -408,4 +493,5 @@ if __name__ == "__main__":
     build_sources()
     build_blockers()
     build_index()
+    build_credits()
     print("built", sorted(p.relative_to(ROOT).as_posix() for p in DOCS.rglob("*.html")))

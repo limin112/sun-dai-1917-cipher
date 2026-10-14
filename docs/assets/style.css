@@ -113,3 +113,9 @@ blockquote { margin: 1em 0; padding: 8px 16px; border-left: 4px solid var(--seal
 .blocker .unlock { font-size: 14px; color: var(--ok); }
 
 footer { border-top: 1px solid var(--rule); color: var(--ink-2); font-size: 13px; padding: 24px; text-align: center; }
+
+.scans { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+@media (max-width: 700px) { .scans { grid-template-columns: 1fr; } }
+.scans figure { margin: 0; background: #fff; border: 1px solid var(--rule); padding: 8px; }
+.scans img { width: 100%; display: block; }
+.scans figcaption { font-size: 13px; color: var(--ink-2); margin-top: 6px; }

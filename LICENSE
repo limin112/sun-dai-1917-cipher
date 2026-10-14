@@ -1,18 +1,27 @@
 Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 Copyright (c) 2026 sun-dai-1917-cipher contributors
+https://github.com/limin112/sun-dai-1917-cipher
 
 Except where otherwise noted, the text, data and code in this repository are
 licensed under the Creative Commons Attribution 4.0 International License.
-You are free to share and adapt the material for any purpose, provided you give
-appropriate credit, link to the license, and indicate if changes were made.
+You are free to share and adapt the material for any purpose, including
+commercially, provided you give appropriate credit, link to the license, and
+indicate if changes were made.
 
 Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
 
-Third-party material:
+Third-party material
+--------------------
 - Transcriptions and data derived from Daniel Bourdeau's cyphersolver
-  (https://github.com/dbourdeau/cyphersolver) and Brice Dudout / Claude's wenmi
-  (https://github.com/bdudout/wenmi) are used under CC BY 4.0 with attribution
-  in the respective files.
-- JACAR archival images and Aichi University museum photographs are NOT
-  included and are NOT covered by this license.
+  (https://github.com/dbourdeau/cyphersolver; text CC BY 4.0, code MIT) and
+  Brice Dudout / Claude's wenmi (https://github.com/bdudout/wenmi; CC BY 4.0)
+  are redistributed with attribution in the respective files.
+
+Not covered by this license
+---------------------------
+- docs/assets/img/jacar/scan-0509-full.webp and scan-0511-full.webp:
+  telegram scans from the Diplomatic Archives of the Ministry of Foreign
+  Affairs of Japan, provided by the Japan Center for Asian Historical Records
+  (JACAR), Ref. B03050090200. Copies obtained from the wenmi project.
+  Reproduced with source attribution; see JACAR's terms of use.

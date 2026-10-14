@@ -37,7 +37,7 @@ All reports, code, frozen inputs, positive/negative controls and failure logs fr
 ## 仓库结构
 
 ```
-docs/          静态 HTML 站点（每轮进展页、卡点、密文、来源）——由 scripts/build_site.py 生成
+docs/          静态 HTML 站点（每轮进展页、卡点、密文与扫描图、来源、致谢）——由 scripts/build_site.py 生成
 rounds/        Round 11–18 原始报告、脚本、输入、结果、MANIFEST.sha256（原样归档）
 data/          最新冻结输入：原始转录 / 独立盲读 / 摩斯与页面观察 / 三月正对照 / R18 结构结果
 handoff/       给下一位研究者或 Agent 的交接文档与任务卡
@@ -60,9 +60,16 @@ Round 18 的密钥搜索需要 clang++ 和 Dudout 公开的 `lm3` 语言模型�
 
 只有同时具备：确切码本或书籍版次 / 表格规则、所有异常字符的原图依据、逐字重加密回冻结密文、未参与拟合的独立同钥材料交叉验证、完整中间文件——才称“破译”。语言模型通顺、显著的统计信号都不够。
 
-## 致谢与授权
+## 前人工作、致谢与授权
 
-- 本仓库文字、数据与代码：**CC BY 4.0**（见 [`LICENSE`](LICENSE)）。
-- 转录与数据来自 **Daniel Bourdeau**（[cyphersolver](https://github.com/dbourdeau/cyphersolver)，CC BY 4.0）与 **Brice Dudout / Claude**（[wenmi](https://github.com/bdudout/wenmi)，CC BY 4.0），已在各文件中注明。
-- **JACAR 扫描影像、爱知大学展品照片不在本仓库中**，版权归原馆；请通过 [`handoff/SOURCES_AND_ACCESS.md`](handoff/SOURCES_AND_ACCESS.md) 中的链接查看。
+本项目建立在以下公开研究之上（详见站点 [前人工作与致谢](docs/credits.html)）：
+
+- **Daniel Bourdeau** · [cyphersolver](https://github.com/dbourdeau/cyphersolver)（文字 CC BY 4.0，代码 MIT）——六月密电原始转录、1916 年已解转录、1917 年 3 月已破译电报与密钥（正对照）。
+- **Brice Dudout / Claude** · [wenmi](https://github.com/bdudout/wenmi)（CC BY 4.0）——0509/0511 扫描复制图、独立盲读、“无文密前缀”的纠偏、`lm3` 语言模型与 1916 G0/Y0 数据。
+- **Cryptiana**（经 [NoAutopilot/cipher-lab](https://github.com/NoAutopilot/cipher-lab) 镜像）——爱知大学展品的早期讨论。
+
+授权：
+
+- 本仓库的文字、数据与代码采用 **CC BY 4.0**（见 [`LICENSE`](LICENSE)），与上述项目一致。引用请注明 “sun-dai-1917-cipher contributors” 并链接本仓库。
+- **例外**：[`docs/assets/img/jacar/`](docs/assets/img/jacar/) 的两张电报扫描图为日本外务省外交史料馆藏、亚洲历史资料中心（JACAR，Ref. B03050090200）提供，副本取自 wenmi 项目，注明出处转载，**不在 CC BY 范围内**，请遵循 JACAR 利用规定。爱知大学展品照片未收录。
 - 研究过程大量借助 AI Agent（Claude 等）完成，所有结论均附可复现脚本与对照。
