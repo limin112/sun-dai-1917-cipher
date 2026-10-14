@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-07",
+  "experiment": "arbitrary injective bigram-symbol to 00..99 mapping, concatenated in pairs to standard four-digit Chinese telegraph codes",
+  "purpose": "test a much broader private-table hypothesis that admits y and non-CV bigrams, before applying it to June targets",
+  "target_application_performed": false,
+  "positive_control": {
+    "ciphertexts": {
+      "1917-03-25": "nasegapiru qoqasuxebi facohekicu nokaverabo zuboqabiqa suxebiqaza juvanete",
+      "1917-03-26": "getazazuji yineyomoni cemixetibi javesokaxo jikofanopu mizoyamaku xakizazuru qajipanejo tayelaxama kozabojifu xayokatuxo zimucuzaku"
+    },
+    "published_key": {
+      "consonant_order": "klmnpqrstvxyzbcdfghj",
+      "vowel_order": "aeuoi",
+      "fill": "vowel-major",
+      "offset": 1,
+      "additive": 0
+    },
+    "observed_unique_symbols": 51,
+    "oracle_raw_decode_score": -381.81419021047935,
+    "oracle_raw_decode": [
+      "函悉約取消後當蓞伯哼茆否取消卽",
+      "琅定仇旜赴熱海□江來云彼等須先妙定籤三日回倅公寂事如何電示宅"
+    ],
+    "oracle_note": "Raw public transcription contains known copying/read errors; this is intentionally not silently emended. It is close to the published plaintext at clean positions.",
+    "annealing": {
+      "restarts": 12,
+      "steps_each": 60000,
+      "seed_base": 20261007,
+      "mapping": "injective observed symbol -> 0..99",
+      "moves": "swap two assigned values or replace with unused value",
+      "language_model": "character unigram+bigram trained only on the frozen 1916 corpus",
+      "best_score": -307.4638688006954,
+      "best_plaintext": [
+        "鮿青日人送本暗哀歌確遰丰人送亠",
+        "詷電盼由接部迫撥覆此百枝洋行勾又電效相當械絀加陳真友款餘孀隨"
+      ],
+      "exact_mapping_matches": 1,
+      "mapping_total": 51
+    }
+  },
+  "codebook": {
+    "source": "dbourdeau/cyphersolver targets/sunyatsen/tw.csv",
+    "sha": "6ed7336293fa5dbfcd48bbed00e1e54b6149d333",
+    "parsed_four_digit_entries": 9026
+  },
+  "conclusion": "FAIL POSITIVE CONTROL. The unconstrained table plus short in-domain language score overfits: a false mapping scores better than the known key and recovers only 1/51 exact symbol assignments. Do not use fluent/high-scoring June outputs from this model as evidence. This failure does not rule out a private table; it rules out this blind recovery procedure/scorer at present data volume."
+}

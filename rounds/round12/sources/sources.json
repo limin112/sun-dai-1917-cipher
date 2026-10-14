@@ -1,0 +1,37 @@
+{
+  "retrieved_at_local": "2026-10-08 15:xx Asia/Shanghai",
+  "sources": [
+    {
+      "name": "爱知大学纪念中心展品页面",
+      "url": "https://edu.aichi-u.ac.jp/toa/collection/gallery02/Com1000075.html",
+      "observed": "官方展品网页文案直接可读，明确山田纯三郎与孙文之间收发电报所用；并有版权声明",
+      "provenance": "原始馆方页面"
+    },
+    {
+      "name": "爱知大学纪念中心实际展品照片",
+      "url": "https://edu.aichi-u.ac.jp/toa/collection/gallery02/19EU5116_RT8.jpg",
+      "observed": "通过web页面链接直接打开官方800x560图像；左上示例含五数字与四字母转换；下方有a/o/i/e/u/y行的日语假名表；容器DNS不能下载，未保存副本；照片不能独立证明六月使用",
+      "provenance": "原始实物照片（官网公开图），大学明确限制未经许可复制传播"
+    },
+    {
+      "name": "Cryptiana Chinese Cryptography 历史研究文稿",
+      "url": "https://github.com/NoAutopilot/cipher-lab/blob/main/sources/cryptiana/web/chinesecrypto_e.htm",
+      "observed": "通过GitHub connector获取该研究文章完整文本，其中已有该馆藏文密手迹五个数字、四字母转码例；且明确提出底部另表是日本假名编码，与数字表不同。该资料早于本轮存在，无新发现优先权。",
+      "provenance": "第三方公开研究转录与说明"
+    },
+    {
+      "name": "原始六月密文公开研究转录",
+      "url": "https://github.com/dbourdeau/cyphersolver/blob/main/targets/sunyatsen/y1917/NOTES.md",
+      "observed": "使用Round11已冻结的公开文本及fam6程序变体（独立保存）；本轮依然未验六月0509/0511原件；所有结论有此保留。",
+      "provenance": "现代研究转录，非原始扫描"
+    },
+    {
+      "name": "JACAR六月官方档案原件",
+      "url": "https://www.jacar.archives.go.jp/content/item/aj12/C200138753500/raw/B03050090200.b10083.1-0583.00000503.pdf",
+      "observed": "本轮未取得，原图不能检查；保存作为定位地址",
+      "provenance": "档案源，但原件尚未获取"
+    }
+  ],
+  "no_external_writes_or_requests": true,
+  "image_copy_saved": false
+}

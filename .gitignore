@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.pyc
+rounds/round18/solver/work/
+rounds/round18/solver/june_sa
+rounds/round18/solver/june_sa2

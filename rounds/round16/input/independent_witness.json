@@ -1,0 +1,28 @@
+{
+  "license": "Brice Dudout / Claude (Anthropic), © 2026, CC BY 4.0 for textual transcription (NOT JACAR scans); used with source attribution; script and data derivative credit.",
+  "source_url": "https://bdudout.github.io/wenmi/zh-hans/telegrams.html",
+  "github_source": "https://github.com/bdudout/wenmi/blob/main/content/zh-hans/telegrams.html",
+  "github_blob_sha": "4c1e2fdb452db658fc586c6a154a5b145b4c2994",
+  "source_assessment": "Brice Dudout blind human reading of facsimile scans; several letters remain uncertain or have emended alternatives; not a uniquely certified original transcription.",
+  "telegrams": {
+    "1917-06-24_0509": {
+      "segments": [8],
+      "words": ["lidajysamy","vemucicyri","mevecafemu","pokelubazi","riyecafafi","cymefymeca","madamymiri","pujihohehe"],
+      "cleartext_signature": "Sunwen",
+      "witness_note": "Word 2 includes a Morse ä on reproduced copy; Brice also discusses tentative vemucekyri, xemuciiyri; remain hypotheses. All eight textual read words recorded literally."
+    },
+    "1917-06-29_0511": {
+      "segments": [18,11],
+      "words": ["muposacyobe","myzoasdohe","catyidohe","yokigeleyi","liriopen","duricidule","kohokycuce","kuxomifumu","hutadynyfo","capakazuye","mycykafevu","damowmhosy","cydicapayo","bemyzoac","hinucuge","rifygabo","mahykagica","fegajiriby","fomoaxfojy","micycoteco","fuhodigige","cafenigymu","pokycekige","rudubyrijo","gorinimafy","fogylisicy","mikypowice","niyaminoma","fykagokipa"],
+      "cleartext_signature": "Tai",
+      "witness_note": "Two telegraph sheets (a,b). First word 11 letters and third 9, several 8; alteration/insertions visible. Brice reads word 7 kohokycuce, not previous transcription kohokycuee."
+    }
+  },
+  "photo_provenance": {
+    "0509_url": "https://bdudout.github.io/wenmi/assets/img/fiches/scan-0509-full.webp",
+    "0509_github_blob_sha": "afb5a943b4f1caee1e917017312c5ee04c7355ea",
+    "0511_url": "https://bdudout.github.io/wenmi/assets/img/fiches/scan-0511-full.webp",
+    "0511_github_blob_sha": "44ca9450a41b884dddfff994b70e61cc4cdb6a83",
+    "license_note": "JACAR photographed documents not included in CC BY text/code license; no image files redistributed in analysis package."
+  }
+}

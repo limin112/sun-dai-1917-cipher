@@ -1,0 +1,3 @@
+1917-06-24_0509 even 35 / 35 odd [{'word_index': 2, 'word': 'vemucayri', 'length': 9, 'tentative_prefix_pairs': ['ve', 'mu', 'ca', 'yr'], 'unpaired_final_letter': 'i'}] failed: [] null mean 21.9263 p 9.999000099990002e-05
+1917-06-29_0511 even 140 / 141 odd [] failed: [{'word_index': 7, 'pair_index': 5, 'symbol': 'ee'}] null mean 90.8782 p 9.999000099990002e-05
+1916-04-03_POSITIVE_CONTROL even 84 / 84 odd [] failed: [] null mean 49.3315 p 9.999000099990002e-05

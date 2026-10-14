@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Round 16 · 孙戴1917六月密电</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="inner">
+<a class="brand" href="../index.html"><span class="seal">密</span>sun-dai-1917-cipher</a>
+<nav><a href="../index.html">首页</a><a href="../blockers.html">卡点与求助</a><a href="../telegrams.html">密电原文</a><a href="../rounds.html" class=on>研究轮次</a><a href="../sources.html">资料来源</a></nav>
+</div></header>
+<main>
+<div class="narrow">
+<div class="kicker">Round 16 · 2026-10-12</div>
+<h1>首次目视核验六月电报扫描复制图，独立重读与4字母对齐</h1>
+<div><span class="tag archive">新档案/材料</span><span class="tag struct">结构发现</span></div>
+<section class="summary"><h2>本轮要点</h2><ul><li>取得 Brice Dudout 公开的 0509 / 0511 JACAR 扫描复制图并逐张目视（图像不在本仓库再分发）。</li><li>关键纠偏：六月两封电报并没有“文密”或“Cg”前缀；1916 的 G0/Y0 密钥均不能译出。</li><li>Dudout 独立盲读：0509 为 8×10=80 字母；kohokycuee 实为 kohokycuce，原 ee 异常不再稳固。</li><li>4 字母重合检查出现与词界不同步的重复结构（cafe、kige、mafy）。</li></ul>
+<div class="meta">六月电报已验证译文仍为 0 字。以下为原始报告全文，结论以更高轮次为准。</div></section>
+<h2>报告全文</h2>
+
+<p><strong>研究日期：2026-10-12（Asia/Shanghai）</strong>。目标严格为 JACAR <code>B03050090200</code> 的 <strong>1917-06-24 0509</strong>（孙中山上海→戴季陶东京）与 <strong>1917-06-29 0511</strong>（戴季陶东京→孙中山上海）。<strong>仍没有可接受的六月中文译文（0字）、没有密钥；两封未解。</strong> 本轮从新来源获得了真正有用的底层新输入，且执行了新旧转录差异与分组对齐程序，不把已解1916年密电冒充本题。</p>
+<h2>1. 与 Round 15 相比最大的增量：找到并亲自目视检查了两张六月密电的公开原档扫描复制图</h2>
+<p>新增独立研究：<strong>Brice Dudout（与 Claude 合作）</strong>2026年10月发表的「破解文密」技术报告、公开电报页与可复现 GitHub 仓库。本次通过已经连接的 GitHub <strong>实际取回图片的 Base64 数据，在视觉界面查看</strong>（不是只看缩略目录，更不是读网页猜原图）。在仓库中核对图片 blob SHA、取图并逐张目视：</p>
+<ul>
+<li>0509 完整扫描复制图：<a href="https://bdudout.github.io/wenmi/assets/img/fiches/scan-0509-full.webp"><code>scan-0509-full.webp</code></a>，GitHub blob SHA <code>afb5a943b4f1caee1e917017312c5ee04c7355ea</code>。图像清楚显示1917-06-24上海发电、东京收报、署名 Sunwen；第二组含不寻常的带变音符号的字母（作者指出是摩斯 <code>ä</code>）。</li>
+<li>0511 a+b 两页合并扫描复制图：<a href="https://bdudout.github.io/wenmi/assets/img/fiches/scan-0511-full.webp"><code>scan-0511-full.webp</code></a>，blob SHA <code>44ca9450a41b884dddfff994b70e61cc4cdb6a83</code>。图像可以看到 1917-06-29 东京发送、上海收报、尾签 Tai，且有涂改和笔迹混淆。</li>
+</ul>
+<p><strong>访问层级限制</strong>：这是研究者从 JACAR 制作并公开的档案扫描<strong>复制图</strong>，本轮已取得并目视查看；但没有直接从 JACAR 官方 raw PDF 成功下载原主文件，也没有证明不同拷贝不存在画质损失。故从 Round 14/15 继承的旧研究输入 <code>image_verified=false</code> <strong>按字节原样不改</strong>；新图片与人工重读另记为独立来源 <code>independent_witness</code>。没有在交付包中再分发 JACAR 图片；公开扫描图的版权与研究者文字 CC BY4 是两回事。</p>
+<ul>
+<li>公开项目主页：<a href="https://bdudout.github.io/wenmi/">https://bdudout.github.io/wenmi/</a></li>
+<li>第三方独立转录页（<strong>注意网页中部分内容在 HTML <code>&lt;template&gt;</code> 内，阅读时应查看原始 HTML</strong>）：<a href="https://bdudout.github.io/wenmi/zh-hans/telegrams.html">https://bdudout.github.io/wenmi/zh-hans/telegrams.html</a></li>
+<li>技术报告：<a href="https://bdudout.github.io/wenmi/zh-hans/method.html">https://bdudout.github.io/wenmi/zh-hans/method.html</a></li>
+<li>GitHub 文本源码（本轮冻结 blob SHA <code>4c1e2fdb452db658fc586c6a154a5b145b4c2994</code>）：<a href="https://github.com/bdudout/wenmi/blob/main/content/zh-hans/telegrams.html">https://github.com/bdudout/wenmi/blob/main/content/zh-hans/telegrams.html</a></li>
+<li>本文仅少量引用与本题相关的新转录，按 <strong>Brice Dudout / Claude (Anthropic), CC BY 4.0</strong> 注明来源；图片版权另归 JACAR/外务省资料系统。</li>
+</ul>
+<h2>2. <strong>关键纠偏：两封1917六月电报并没有写明「文密」前缀</strong></h2>
+<p>Dudout 真正恢复了<strong>1916年另两条线路</strong>的G0与Y0两把历史密钥；其中东京→肇庆一路有明文的 <code>文密</code>（数字 <code>2429 1378</code>）前缀，东京↔云南另一路是 <code>Cg</code>。独立研究者明确记录：<strong>1917年0509与0511两封电报上既无<code>文密</code>，也无<code>Cg</code>，且两把1916年的G0/Y0均不能译出它们</strong>。因此过去以「文密」称呼这两封六月电报只宜作为<strong>工作标签／研究者的分类假设</strong>，不得把1916同名密钥直接认定是六月密钥。1916年的突破确实可作方法正对照（公开规则、证实该年代存在这种机制），但绝不是本题成果。</p>
+<p>独立技术报告已尝试十多万乃至二十多万历史表、任意坐标搜索、42个可能词锚点，仍未破译六月。我们没有重复这类大规模重复负面搜索。</p>
+<h2>3. 0509 的进展：老数据“9字母短词”在独立重读中变成完整10字母；总长80字母</h2>
+<p>先前冻结分析输入：第2组 <code>vemucayri</code>（9字母），第3组 <code>mevecafema</code>（10字母，另有可选u），另有第4组和第8组笔迹分歧。独立读者 Brice 所公开的 0509 原始盲读为8组、每组10字母：</p>
+<pre><code class="language-text">lidajysamy vemucicyri mevecafemu
+pokelubazi riyecafafi cymefymeca
+madamymiri pujihohehe
+</code></pre>
+<p>相对于<strong>原先分析版本</strong>，8组里4组的读法改变；<strong>总计80字母=40个二字母槽=在两槽一字模式下20个潜在字符</strong>（最后一层仅是结构条件，不代表已成功还原20字）。双角色 y（<code>y</code> 可元音也可辅音）的语法检查：旧完整词35/35对有效，独立重读全8词 <strong>40/40对有效</strong>。这是从不同读者、同一历史扫描来源得到的可解释度提升；不等于恢复数字表。</p>
+<p><strong>不能立即将旧第2组“修成”唯一答案。</strong> 新重读 <code>vemucicyri</code> 与作者注明的 <code>vemucekyri</code>（把扫描中的摩斯 <code>ä</code> 解释为 <code>e+k</code>）都通过简单语法检查。视觉上确有非常规变音符/笔迹问题，但不保证任一具体拉丁字母串无误；这两个各自保存在说明而非悄然取代原记录。它不是上一轮所设想的随意“补一个字母”：须回到原电报的通信和转写规则。</p>
+<h2>4. 0511 的进展：原先唯一<code>ee</code>异常不再稳固；但新转录并非完全规则</h2>
+<p>独立重读的0511分为 a（18组）和 b（11组），合计<strong>29组，282个拉丁字母（141个双字母槽）</strong>。长度有<strong>11字母1组、9字母1组、10字母23组、8字母4组</strong>。一长一短恰好平衡至偶数，但<strong>绝不擅自调剂或删除</strong>。与旧冻结分析版本29组相比，有16组读法变化。</p>
+<p><strong>最有价值的纠偏：</strong> Round14认为唯一违反元辅配对的 <code>kohokycuee</code> 结尾 <code>ee</code>；新发表的盲读及所查看扫描复制图更支持 <strong><code>kohokycuce</code></strong>，末尾是 <code>ce</code>（可合法组成音节），并非可靠的<code>ee</code>。该词的语法异常随之消失。新重读但有另一组 <code>damowmhosy</code>，第3个双字符是 <code>wm</code>，它不符合原简单双角色语法；早期材料的 <code>damoumhosy</code> 读成 <code>um</code> 则符合。<strong>前者与后者只有读法分歧，不能按想要的统计结果决定选哪个。</strong></p>
+<p>程序对字母的真实统计（按原规则保留异长词）如下：</p>
+<table>
+<thead>
+<tr>
+<th>0511 处理方式</th>
+<th style="text-align: right;">双字母组数</th>
+<th style="text-align: right;">y双角色合法</th>
+<th>不合法</th>
+<th>保留的长度异常</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>旧冻结、各词独立</td>
+<td style="text-align: right;">141</td>
+<td style="text-align: right;">140</td>
+<td><code>ee</code>（旧第7词）</td>
+<td>无奇数词（旧程序将多处不确定长度正则化）</td>
+</tr>
+<tr>
+<td>独立重读、各词独立且每奇数词孤立尾字</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: right;">139</td>
+<td><code>wm</code>（第12词）</td>
+<td>第1词11字母、第3词9字母，各留单字尾</td>
+</tr>
+<tr>
+<td>独立重读、整封连续配对（仅作边界敏感性）</td>
+<td style="text-align: right;">141</td>
+<td style="text-align: right;">138</td>
+<td><code>oa</code>、<code>sd</code>、<code>wm</code></td>
+<td>无尾字，<strong>但跨词配对是附加假设</strong></td>
+</tr>
+</tbody>
+</table>
+<p>这说明 Round14 的“175/176对”是<strong>特定冻结旧转录</strong>下的结构事实，不是原件的唯一规则。独立重读变化后，“<code>ee</code>可能只是旧抄录问题”成为强烈值得核对的线索，同时更多异长与倒装片段限制了纯字母语法的解释力。不能把新资料说成全部更好，更不能自动把两份转录合成“最合规则”的密文。</p>
+<h2>5. 新执行的4字母重合核对：出现与电报词界不同步的重复结构</h2>
+<p>只使用<strong>独立重读</strong>，尝试传统“2个双字母槽合成一个4字母电码”的必要条件，不查中国字、不拟合密钥。按 0509 从字符0起，0511a 从字符0起，0511b 从字符2起的<strong>事后提示相位</strong>查对齐四元组：</p>
+<ul>
+<li><code>cafe</code>：0509 一次，0511a 一次（<strong>跨</strong>两个10字母电报词的接缝），0511b 一次；合计三处。</li>
+<li><code>kige</code>：0511a 一次，0511b 一次；合计两处。</li>
+<li><code>mafy</code>：0511b 两次，其中一次<strong>跨</strong>相邻10字母电报词的接缝。这能提醒以后不能把10字母词界当作中文单字边界。</li>
+<li><code>fojy</code>：0511b独立重读仅一次；若<strong>有条件地</strong>把第8词的 <code>fogylisicy</code> 读作作者注明的疑读 <code>fojylisicy</code>（<code>g/j</code>易混），则与另一处共两次，且相位对齐。<strong>这是明列的敏感性候选，不是原文校定，也不能因为重复而强行替换字母。</strong></li>
+</ul>
+<p>在两个已知不同日期的电报里出现同一个4字母片段，符合常见代码重复的直觉，但也可能来自语法/编码机制；<strong>没有密码表就不知道这些组是什么汉字，不能把“常见字”强行映射给它们</strong>。而三个片段的对齐是在看过数据后选出来的，不能把它当成独立显著性检验。<code>round16_analysis.py</code> 保存了每个出现位置、是否跨词界、所用相位及替代读法的条件变化。</p>
+<h2>6. 复现，检验是否真的执行（本轮已运行）</h2>
+<pre><code class="language-bash">cd wenmi_round16
+python3 round16_analysis.py
+</code></pre>
+<ul>
+<li><code>input/ciphertexts.json</code>：Round15→14冻结文件<strong>原字节复制，SHA256 <code>620e469ec26d6534df2dbad0553d79844f1d9df8e68e47a95194a1c0563a8136</code></strong>； <code>raw_june_notes</code> 与 <code>analysis_variants</code> 均未修改。</li>
+<li><code>input/independent_witness.json</code>：独立盲读<strong>单列</strong>的8组0509／29组0511；保留正文作者、GitHub blob SHA、源图Git blob SHA与作者声明的异读/图片版权。新盲读本身<strong>也不能视为已经全部确认的原始字迹</strong>。</li>
+<li><code>round16_analysis.py</code>：断言旧文件 SHA、旧转录与新证言29组对应、运行源码可见的 y 双角色规则、逐组长度、连续/逐词/各电报页配对、四字母重复相位与出处，并设置1916已解两表可复算的正对照 <strong><code>fa+zi=1032</code>（報）</strong>、<strong><code>bu+ky=0135</code>（伸）、<code>ha+ry=2960</code>（歌）</strong> 及 <code>ee</code>不合法/<code>ce</code>合法的负正控制。<strong>它没有产生任何六月中文猜文。</strong></li>
+<li><code>results/structural_reaudit.json</code>：上述各组数量、相位和异常槽位的结构化结果。</li>
+<li><code>results/run.log</code>：真实执行输出；<code>candidates/candidate_log.json</code>：经证实六月明文 <strong>0字</strong>，全部犹疑读法排除于已验收明文。</li>
+<li><code>sources/source_register.json</code>：新外部资料 URL、来源级别、图片 blob、日期与权利说明。</li>
+<li><code>MANIFEST.sha256</code>：文件校验（不含自身）；<code>sun_wenmi_round16.zip</code> 是完整打包，不混入旧轮次未改的代码与无权分发的原始扫描图。</li>
+</ul>
+<h2>7. 后续最有价值的动作</h2>
+<p>本轮首次获得可亲自目视的0509/0511扫描复制图片。接下来不再把“拿不到图”当作永久障碍，而是围绕<strong>真实图上不清楚的几处笔迹</strong>展开：0509第2组的 <code>ä</code> 摩斯解释，0511第7组的 <code>ce/ee</code>，0511第12组 <code>wm/um</code>，0511a开头11+9不等长和突兀的 <code>oas</code>、<code>liriopen</code> 等。从已读的其它档案寻找<strong>同密钥的更多密文、真正相同发收人的明密对照或具体私人密码本</strong>，不要在原数据未知条件下重复任意表拟合。已取得戴季陶1928回忆所述六月致孙中山的报告线索仍要追，但<strong>不是这两份电报已经破译的证据</strong>。</p>
+<p><strong>目前结论：六月原图访问问题取得实质性改善（非JACAR raw，本轮核查了公开副本），公开独立重读修正了关键输入和字符位数；新的4字母对齐位置可复算。可是密码体系与六月明文仍未破解，0字，必须继续。</strong></p>
+<h2>本轮材料（原样归档）</h2><ul class=files><li><a href="../../rounds/round16/MANIFEST.sha256">MANIFEST.sha256</a></li><li><a href="../../rounds/round16/README.md">README.md</a></li><li><a href="../../rounds/round16/WENMI_ROUND16.md">WENMI_ROUND16.md</a></li><li><a href="../../rounds/round16/candidates/candidate_log.json">candidates/candidate_log.json</a></li><li><a href="../../rounds/round16/input/ciphertexts.json">input/ciphertexts.json</a></li><li><a href="../../rounds/round16/input/independent_witness.json">input/independent_witness.json</a></li><li><a href="../../rounds/round16/results/run.log">results/run.log</a></li><li><a href="../../rounds/round16/results/structural_reaudit.json">results/structural_reaudit.json</a></li><li><a href="../../rounds/round16/round16_analysis.py">round16_analysis.py</a></li><li><a href="../../rounds/round16/sources/source_register.json">sources/source_register.json</a></li></ul>
+<div class="pager"><a href="round-15.html">← Round 15</a><a href="../rounds.html">全部轮次</a><a href="round-17.html">Round 17 →</a></div>
+</div>
+</main>
+<footer>孙中山—戴季陶 1917 年六月密电 · 开放研究档案 · 文字与代码 CC BY 4.0 · JACAR 影像版权归原馆，本站不转载</footer>
+</body>
+</html>

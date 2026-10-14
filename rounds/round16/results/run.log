@@ -1,0 +1,20 @@
+1917-06-24_0509
+old_lengths Counter({10: 7, 9: 1}) new_lengths {10: 8}
+changed words 4 [(2, 'vemucayri', 'vemucicyri'), (3, 'mevecafema', 'mevecafemu'), (4, 'pokelutazi', 'pokelubazi'), (8, 'pujihokehe', 'pujihohehe')]
+previous_eval_all_even_words 35 / 35 invalid [] odd []
+blind_eval_even_words 40 / 40 invalid [] odd []
+blind_eval_all_per_word_with_odd_tails 40 / 40 invalid [] odd []
+blind_eval_continuous_no_shift 40 / 40 invalid [] odd []
+sheet 1 words 8 chars 80 pair validity 40 / 40
+1917-06-29_0511
+old_lengths Counter({10: 25, 8: 4}) new_lengths {8: 4, 9: 1, 10: 23, 11: 1}
+changed words 16 [(1, 'mukoacyobe', 'muposacyobe'), (2, 'myzoasdoke', 'myzoasdohe'), (3, 'catejidoke', 'catyidohe'), (7, 'kohokycuee', 'kohokycuce'), (9, 'hutadynyyg', 'hutadynyfo'), (12, 'damoumhosy', 'damowmhosy'), (14, 'benyzoac', 'bemyzoac'), (16, 'rifyjabo', 'rifygabo'), (19, 'jomoaxfojy', 'fomoaxfojy'), (21, 'fuhodijige', 'fuhodigige'), (22, 'cafemigymu', 'cafenigymu'), (25, 'jorinimafy', 'gorinimafy'), (26, 'fojylisiby', 'fogylisicy'), (27, 'mikypomice', 'mikypowice'), (28, 'miyaminoma', 'niyaminoma'), (29, 'fykazokipa', 'fykagokipa')]
+previous_eval_all_even_words 140 / 141 invalid [{'word': 7, 'slot': 5, 'symbol': 'ee', 'ok': False}] odd []
+blind_eval_even_words 130 / 131 invalid [{'word': 10, 'slot': 3, 'symbol': 'wm', 'ok': False}] odd []
+blind_eval_all_per_word_with_odd_tails 139 / 140 invalid [{'word': 12, 'slot': 3, 'symbol': 'wm', 'ok': False}] odd [{'word': 1, 'word_length': 11, 'last_character': 'e'}, {'word': 3, 'word_length': 9, 'last_character': 'e'}]
+blind_eval_continuous_no_shift 138 / 141 invalid [{'cross_word_index': 8, 'symbol': 'oa', 'ok': False}, {'cross_word_index': 9, 'symbol': 'sd', 'ok': False}, {'cross_word_index': 57, 'symbol': 'wm', 'ok': False}] odd []
+sheet 1 words 18 chars 172 pair validity 83 / 86
+sheet 2 words 11 chars 110 pair validity 55 / 55
+four-repeat-patterns: {'cafe': {'0509_any_even_phase': 1, '0511a_any_even_phase': 1, '0511b_any_even_phase': 1, '0511b_any_odd_phase': 0, '0509_4char_boundaries': 1, '0511a_4char_boundaries': 1, '0511b_4char_boundaries_phase2': 1}, 'kige': {'0509_any_even_phase': 0, '0511a_any_even_phase': 1, '0511b_any_even_phase': 1, '0511b_any_odd_phase': 0, '0509_4char_boundaries': 0, '0511a_4char_boundaries': 1, '0511b_4char_boundaries_phase2': 1}, 'fojy': {'0509_any_even_phase': 0, '0511a_any_even_phase': 0, '0511b_any_even_phase': 1, '0511b_any_odd_phase': 0, '0509_4char_boundaries': 0, '0511a_4char_boundaries': 0, '0511b_4char_boundaries_phase2': 1}, 'mafy': {'0509_any_even_phase': 0, '0511a_any_even_phase': 0, '0511b_any_even_phase': 2, '0511b_any_odd_phase': 0, '0509_4char_boundaries': 0, '0511a_4char_boundaries': 0, '0511b_4char_boundaries_phase2': 2}}
+controls: {'G0_1916_fazi': 1032, 'Y0_1916_buky': 135, 'Y0_1916_hary': 2960, 'positive_examples_source': 'Brice Dudout, solver/wenmi.py and Chinese method (2026), NOT 1917 June decrypted', 'negative_dual_pair_ee': False, 'positive_dual_pair_ce': True}
+OUTPUT /mnt/data/wenmi_round16/results/structural_reaudit.json

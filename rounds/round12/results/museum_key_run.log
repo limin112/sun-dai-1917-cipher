@@ -1,0 +1,14 @@
+matched_keys: 1
+heldout 1 keys 4 guesses ['caze', 'coze', 'daze', 'doze'] correct False
+heldout 2 keys 1 guesses ['dite'] correct True
+heldout 3 keys 1 guesses ['zude'] correct True
+heldout 4 keys 1 guesses ['yuni'] correct True
+heldout 5 keys 1 guesses ['gufe'] correct True
+KEY {'reverse': False, 'shift': 17, 'consonants': 'xyzbcdfghjklmnpqrstv', 'vowels': 'uoiea', 'fill': 'rows', 'start': 1}
+1917-06-24_0509 reverse False total 35 matched 30 unmapped 5
+1917-06-24_0509 reverse True total 35 matched 30 unmapped 5
+1917-06-29_0511 reverse False total 125 matched 99 unmapped 26
+1917-06-29_0511 reverse True total 125 matched 103 unmapped 22
+1916-04-03_POSITIVE_CONTROL reverse False total 80 matched 80 unmapped 0
+1916-04-03_POSITIVE_CONTROL reverse True total 80 matched 80 unmapped 0
+saved /mnt/data/wenmi_round12/results/museum_numeric_key_test.json

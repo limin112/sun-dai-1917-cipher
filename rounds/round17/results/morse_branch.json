@@ -1,0 +1,69 @@
+{
+  "observed_morse_character": "ä",
+  "international_morse_for_ä": ".-.-",
+  "observed_literal_image_reading": "vemucäyri (graphic reading; not unique reconstruction)",
+  "known_independent_editorial_witness": "vemucicyri (different human reading, not assumed same Morse signal)",
+  "standard_english_alphabet_exactly_two_letter_splits": [
+    {
+      "morse_split": "aa",
+      "candidate_word2": "vemucaayri",
+      "pairs": [
+        "ve",
+        "mu",
+        "ca",
+        "ay",
+        "ri"
+      ],
+      "cv_y_dual_all_legal": true,
+      "paired_digraph_support_in_0511": [
+        0,
+        3,
+        5,
+        0,
+        6
+      ],
+      "laplace_product_exploratory": 168
+    },
+    {
+      "morse_split": "ek",
+      "candidate_word2": "vemucekyri",
+      "pairs": [
+        "ve",
+        "mu",
+        "ce",
+        "ky",
+        "ri"
+      ],
+      "cv_y_dual_all_legal": true,
+      "paired_digraph_support_in_0511": [
+        0,
+        3,
+        3,
+        3,
+        6
+      ],
+      "laplace_product_exploratory": 448
+    },
+    {
+      "morse_split": "rt",
+      "candidate_word2": "vemucrtyri",
+      "pairs": [
+        "ve",
+        "mu",
+        "cr",
+        "ty",
+        "ri"
+      ],
+      "cv_y_dual_all_legal": false,
+      "paired_digraph_support_in_0511": [
+        0,
+        3,
+        0,
+        1,
+        6
+      ],
+      "laplace_product_exploratory": 56
+    }
+  ],
+  "warning": "Only two ASCII-character segmentation of an actual transmitted Ä; an intentional Ä glyph or another transmission convention remains possible. Grammar does not identify unique reading or decrypt June."
+}

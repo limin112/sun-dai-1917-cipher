@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-07",
+  "sources": [
+    {
+      "id": "JACAR-target",
+      "url": "https://www.jacar.archives.go.jp/das/meta/B03050090200",
+      "finding": "Official metadata identifies B03050090200 as the 1917-03-29 to 1917-09-21 intercept item, creator 逓信省通信局長, 11 images. Direct June image access still failed in this run; no claim of visual verification of frames 0509/0511."
+    },
+    {
+      "id": "Aichi-catalog-2016",
+      "url": "https://edu.aichi-u.ac.jp/toa/info03/%E6%84%9B%E7%9F%A5%E5%A4%A7%E5%AD%A6%E6%9D%B1%E4%BA%9C%E5%90%8C%E6%96%87%E6%9B%B8%E9%99%A2%E5%A4%A7%E5%AD%A6%E8%A8%98%E5%BF%B5%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E6%89%80%E8%94%B5%E8%B3%87%E6%96%99%E7%9B%AE%E9%8C%B2%EF%BC%88%E5%90%8C%E6%96%87%E6%9B%B8%E9%99%A2%E9%96%A2%E4%BF%82201603%EF%BC%89.pdf",
+      "finding": "Catalog row 270: 胡漢民 -> 藤瀬政次郎, 1923-02-10, 書簡, collection 孫文・山田, 整理138 / 24-6; note says 孫中山との間の暗号電報，用法，時間，場所の説明. The PDF row was visually checked by screenshot in this research run. This is catalog metadata, not the letter itself and not a 1917 key."
+    },
+    {
+      "id": "Aichi-access-note",
+      "url": "https://edu.aichi-u.ac.jp/toa/info03/Com2000103.html",
+      "finding": "Aichi University states the 孫文、山田良政・純三郎関係資料 catalog collection has a microfilm version available for consultation at the university library; other listed materials are generally not available to outsiders for copying/loan."
+    },
+    {
+      "id": "Aichi-supplement-1996",
+      "url": "https://aichiu.repo.nii.ac.jp/record/8715/files/03%E8%A8%98%E5%BF%B5%E5%A0%B104_%E4%BB%8A%E6%B3%89%E6%BD%A4%E5%A4%AA%E9%83%8E%E4%BD%83%E9%9A%86%E4%B8%80%E9%83%8E%E8%97%A4%E6%A3%AE%E7%8C%9B_%E5%AD%AB%E6%96%87%E3%80%81%E5%B1%B1%E7%94%B0%E8%89%AF%E6%94%BF%E3%83%BB%E7%B4%94%E4%B8%89%E9%83%8E%E9%96%A2%E4%BF%82%E8%B3%87%E6%96%99%E8%A3%9C%E9%81%BA_03-55.pdf",
+      "finding": "Search-indexed text states the previously published letter materials were put on microfilm in August 1995 and made available at Aichi University Toyohashi library. Direct PDF open hit HTTP 429 in this run, so no page-image claim is made from this item."
+    },
+    {
+      "id": "GitHub-y1917-notes",
+      "url": "https://github.com/dbourdeau/cyphersolver/blob/main/targets/sunyatsen/y1917/NOTES.md",
+      "sha": "b08d1ceb123232ee516d32e2fe474d3d8cb444ae",
+      "finding": "Current public transcription/status: March key solved; June frames 0509 and 0511 explicitly described as different system/not read."
+    },
+    {
+      "id": "GitHub-family",
+      "url": "https://github.com/dbourdeau/cyphersolver/blob/main/targets/sunyatsen/family.py",
+      "sha": "5dc0d13ba1fefbc04bdfde3ab36b0aea04526edc",
+      "finding": "Reference systematic-condenser family and standard telegraph-code scoring implementation."
+    },
+    {
+      "id": "GitHub-tw-codebook",
+      "url": "https://github.com/dbourdeau/cyphersolver/blob/main/targets/sunyatsen/tw.csv",
+      "sha": "6ed7336293fa5dbfcd48bbed00e1e54b6149d333",
+      "finding": "Public code-to-character table used for the Round11 positive-control experiment; 9026 four-digit entries parsed by the executed test."
+    }
+  ]
+}

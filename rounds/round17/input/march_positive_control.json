@@ -1,0 +1,11 @@
+{
+  "source": "Daniel Bourdeau, Sun Yat-sen ↔ Dai Jitao, Shanghai–Tokyo, March 1917; JACAR B03050090200 frames 0504, 0507, 0506; already published readings, strictly positive control, NOT June target plaintext",
+  "source_url": "https://github.com/dbourdeau/cyphersolver/blob/main/targets/sunyatsen/y1917/NOTES.md",
+  "github_blob_sha": "c93f061da84d11ea3b2941dde78c970fe801df88",
+  "messages": {
+    "1917-03-23_0504": "Naroxoziji Kojipanejo facorabixa pixaqaqe macorarala veyurojiji eianakerele befacoyohi tebovocega Kalamanaro rugoqasuxe bixaziqaso yusoxozipa bujihoceno poqiqaforu qocaxoqasu xebiqabiqo mujuvamako qabokezaka cagexuxala banegerapo qixapfete",
+    "1917-03-25_0507": "Nasegapiru qoqasuxebi facohekicu nokaverabo zuboqabiqa suxebiqaza juvanete",
+    "1917-03-26_0506": "getazazuji yineyomoni cemixetibi javesokaxo jikofanopu mizoyamaku xakizazuru qajipanejo tayelaxama kozabojifu xayokatuxo zimucuzaku"
+  },
+  "note": "This corpus is a historical known-same-family positive control, not a training set for Chinese language scoring; contains witnessed damaged word lengths preserved verbatim. "
+}

@@ -1,0 +1,1030 @@
+{
+  "1917-06-24_0509": {
+    "raw_source_unchanged": "Lidajysamy vemucayri mevecafema(u) pokelutazi riyecafafi cymefymeca madamymiri pujihokehe  Sunwen",
+    "comparison_against_analysis_variant": [
+      {
+        "word": 2,
+        "old": "vemucayri",
+        "new": "vemucicyri",
+        "len_old": 9,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "replace",
+            5,
+            6,
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "word": 3,
+        "old": "mevecafema",
+        "new": "mevecafemu",
+        "len_old": 10,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "replace",
+            9,
+            10,
+            9,
+            10
+          ]
+        ]
+      },
+      {
+        "word": 4,
+        "old": "pokelutazi",
+        "new": "pokelubazi",
+        "len_old": 10,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "replace",
+            6,
+            7,
+            6,
+            7
+          ]
+        ]
+      },
+      {
+        "word": 8,
+        "old": "pujihokehe",
+        "new": "pujihohehe",
+        "len_old": 10,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "replace",
+            6,
+            7,
+            6,
+            7
+          ]
+        ]
+      }
+    ],
+    "previous_analysis_words": 8,
+    "independent_blind_words": 8,
+    "old_word_lengths": [
+      10,
+      9,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "independent_word_lengths": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "length_counts_blind": {
+      "10": 8
+    },
+    "chars_blind": 80,
+    "previous_eval_all_even_words": {
+      "total": 35,
+      "legal": 35,
+      "illegal": [],
+      "odd_or_skipped": []
+    },
+    "blind_eval_even_words": {
+      "total": 40,
+      "legal": 40,
+      "illegal": [],
+      "odd_or_skipped": []
+    },
+    "blind_eval_all_per_word_with_odd_tails": {
+      "total": 40,
+      "legal": 40,
+      "illegal": [],
+      "odd_or_skipped": []
+    },
+    "blind_eval_continuous_no_shift": {
+      "total": 40,
+      "legal": 40,
+      "illegal": [],
+      "odd_or_skipped": []
+    },
+    "sheet_segments": [
+      {
+        "segment": 1,
+        "word_count": 8,
+        "char_count": 80,
+        "pairs_continuous": {
+          "total": 40,
+          "legal": 40,
+          "illegal": [],
+          "odd_or_skipped": []
+        },
+        "tetra_phase0_top": [
+          [
+            "lida",
+            1
+          ],
+          [
+            "jysa",
+            1
+          ],
+          [
+            "myve",
+            1
+          ],
+          [
+            "muci",
+            1
+          ],
+          [
+            "cyri",
+            1
+          ],
+          [
+            "meve",
+            1
+          ],
+          [
+            "cafe",
+            1
+          ],
+          [
+            "mupo",
+            1
+          ]
+        ],
+        "tetra_phase2_top": [
+          [
+            "dajy",
+            1
+          ],
+          [
+            "samy",
+            1
+          ],
+          [
+            "vemu",
+            1
+          ],
+          [
+            "cicy",
+            1
+          ],
+          [
+            "rime",
+            1
+          ],
+          [
+            "veca",
+            1
+          ],
+          [
+            "femu",
+            1
+          ],
+          [
+            "poke",
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "1917-06-29_0511": {
+    "raw_source_unchanged": "Mukoacyobe myzoasdoke catejidoke yokigeleyi liriopen duricidule kohokycuee kuxomifumu hutadyny(y)go capakazuye mycykafevu damoumhosy cydicapayo benyzoac hinucuge rifyjabo(?) mahykagica fegajiriby jomoaxfojy micycoteco fuhodijige cafemigymu pokycekige rudubyrijo jorinimafy fojylisiby mikypomice miyaminoma fykazokipa  Tai",
+    "comparison_against_analysis_variant": [
+      {
+        "word": 1,
+        "old": "mukoacyobe",
+        "new": "muposacyobe",
+        "len_old": 10,
+        "len_new": 11,
+        "opcode_diffs": [
+          [
+            "replace",
+            2,
+            3,
+            2,
+            3
+          ],
+          [
+            "insert",
+            4,
+            4,
+            4,
+            5
+          ]
+        ]
+      },
+      {
+        "word": 2,
+        "old": "myzoasdoke",
+        "new": "myzoasdohe",
+        "len_old": 10,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "replace",
+            8,
+            9,
+            8,
+            9
+          ]
+        ]
+      },
+      {
+        "word": 3,
+        "old": "catejidoke",
+        "new": "catyidohe",
+        "len_old": 10,
+        "len_new": 9,
+        "opcode_diffs": [
+          [
+            "replace",
+            3,
+            5,
+            3,
+            4
+          ],
+          [
+            "replace",
+            8,
+            9,
+            7,
+            8
+          ]
+        ]
+      },
+      {
+        "word": 7,
+        "old": "kohokycuee",
+        "new": "kohokycuce",
+        "len_old": 10,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "insert",
+            8,
+            8,
+            8,
+            9
+          ],
+          [
+            "delete",
+            9,
+            10,
+            10,
+            10
+          ]
+        ]
+      },
+      {
+        "word": 9,
+        "old": "hutadynyyg",
+        "new": "hutadynyfo",
+        "len_old": 10,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "replace",
+            8,
+            10,
+            8,
+            10
+          ]
+        ]
+      },
+      {
+        "word": 12,
+        "old": "damoumhosy",
+        "new": "damowmhosy",
+        "len_old": 10,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "replace",
+            4,
+            5,
+            4,
+            5
+          ]
+        ]
+      },
+      {
+        "word": 14,
+        "old": "benyzoac",
+        "new": "bemyzoac",
+        "len_old": 8,
+        "len_new": 8,
+        "opcode_diffs": [
+          [
+            "replace",
+            2,
+            3,
+            2,
+            3
+          ]
+        ]
+      },
+      {
+        "word": 16,
+        "old": "rifyjabo",
+        "new": "rifygabo",
+        "len_old": 8,
+        "len_new": 8,
+        "opcode_diffs": [
+          [
+            "replace",
+            4,
+            5,
+            4,
+            5
+          ]
+        ]
+      },
+      {
+        "word": 19,
+        "old": "jomoaxfojy",
+        "new": "fomoaxfojy",
+        "len_old": 10,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "replace",
+            0,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "word": 21,
+        "old": "fuhodijige",
+        "new": "fuhodigige",
+        "len_old": 10,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "replace",
+            6,
+            7,
+            6,
+            7
+          ]
+        ]
+      },
+      {
+        "word": 22,
+        "old": "cafemigymu",
+        "new": "cafenigymu",
+        "len_old": 10,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "replace",
+            4,
+            5,
+            4,
+            5
+          ]
+        ]
+      },
+      {
+        "word": 25,
+        "old": "jorinimafy",
+        "new": "gorinimafy",
+        "len_old": 10,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "replace",
+            0,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "word": 26,
+        "old": "fojylisiby",
+        "new": "fogylisicy",
+        "len_old": 10,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "replace",
+            2,
+            3,
+            2,
+            3
+          ],
+          [
+            "replace",
+            8,
+            9,
+            8,
+            9
+          ]
+        ]
+      },
+      {
+        "word": 27,
+        "old": "mikypomice",
+        "new": "mikypowice",
+        "len_old": 10,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "replace",
+            6,
+            7,
+            6,
+            7
+          ]
+        ]
+      },
+      {
+        "word": 28,
+        "old": "miyaminoma",
+        "new": "niyaminoma",
+        "len_old": 10,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "replace",
+            0,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "word": 29,
+        "old": "fykazokipa",
+        "new": "fykagokipa",
+        "len_old": 10,
+        "len_new": 10,
+        "opcode_diffs": [
+          [
+            "replace",
+            4,
+            5,
+            4,
+            5
+          ]
+        ]
+      }
+    ],
+    "previous_analysis_words": 29,
+    "independent_blind_words": 29,
+    "old_word_lengths": [
+      10,
+      10,
+      10,
+      10,
+      8,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      8,
+      8,
+      8,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "independent_word_lengths": [
+      11,
+      10,
+      9,
+      10,
+      8,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      8,
+      8,
+      8,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "length_counts_blind": {
+      "8": 4,
+      "9": 1,
+      "10": 23,
+      "11": 1
+    },
+    "chars_blind": 282,
+    "previous_eval_all_even_words": {
+      "total": 141,
+      "legal": 140,
+      "illegal": [
+        {
+          "word": 7,
+          "slot": 5,
+          "symbol": "ee",
+          "ok": false
+        }
+      ],
+      "odd_or_skipped": []
+    },
+    "blind_eval_even_words": {
+      "total": 131,
+      "legal": 130,
+      "illegal": [
+        {
+          "word": 10,
+          "slot": 3,
+          "symbol": "wm",
+          "ok": false
+        }
+      ],
+      "odd_or_skipped": []
+    },
+    "blind_eval_all_per_word_with_odd_tails": {
+      "total": 140,
+      "legal": 139,
+      "illegal": [
+        {
+          "word": 12,
+          "slot": 3,
+          "symbol": "wm",
+          "ok": false
+        }
+      ],
+      "odd_or_skipped": [
+        {
+          "word": 1,
+          "word_length": 11,
+          "last_character": "e"
+        },
+        {
+          "word": 3,
+          "word_length": 9,
+          "last_character": "e"
+        }
+      ]
+    },
+    "blind_eval_continuous_no_shift": {
+      "total": 141,
+      "legal": 138,
+      "illegal": [
+        {
+          "cross_word_index": 8,
+          "symbol": "oa",
+          "ok": false
+        },
+        {
+          "cross_word_index": 9,
+          "symbol": "sd",
+          "ok": false
+        },
+        {
+          "cross_word_index": 57,
+          "symbol": "wm",
+          "ok": false
+        }
+      ],
+      "odd_or_skipped": []
+    },
+    "sheet_segments": [
+      {
+        "segment": 1,
+        "word_count": 18,
+        "char_count": 172,
+        "pairs_continuous": {
+          "total": 86,
+          "legal": 83,
+          "illegal": [
+            {
+              "cross_word_index": 8,
+              "symbol": "oa",
+              "ok": false
+            },
+            {
+              "cross_word_index": 9,
+              "symbol": "sd",
+              "ok": false
+            },
+            {
+              "cross_word_index": 57,
+              "symbol": "wm",
+              "ok": false
+            }
+          ],
+          "odd_or_skipped": []
+        },
+        "tetra_phase0_top": [
+          [
+            "mupo",
+            1
+          ],
+          [
+            "sacy",
+            1
+          ],
+          [
+            "obem",
+            1
+          ],
+          [
+            "yzoa",
+            1
+          ],
+          [
+            "sdoh",
+            1
+          ],
+          [
+            "ecat",
+            1
+          ],
+          [
+            "yido",
+            1
+          ],
+          [
+            "heyo",
+            1
+          ]
+        ],
+        "tetra_phase2_top": [
+          [
+            "posa",
+            1
+          ],
+          [
+            "cyob",
+            1
+          ],
+          [
+            "emyz",
+            1
+          ],
+          [
+            "oasd",
+            1
+          ],
+          [
+            "ohec",
+            1
+          ],
+          [
+            "atyi",
+            1
+          ],
+          [
+            "dohe",
+            1
+          ],
+          [
+            "yoki",
+            1
+          ]
+        ]
+      },
+      {
+        "segment": 2,
+        "word_count": 11,
+        "char_count": 110,
+        "pairs_continuous": {
+          "total": 55,
+          "legal": 55,
+          "illegal": [],
+          "odd_or_skipped": []
+        },
+        "tetra_phase0_top": [
+          [
+            "fomo",
+            1
+          ],
+          [
+            "axfo",
+            1
+          ],
+          [
+            "jymi",
+            1
+          ],
+          [
+            "cyco",
+            1
+          ],
+          [
+            "teco",
+            1
+          ],
+          [
+            "fuho",
+            1
+          ],
+          [
+            "digi",
+            1
+          ],
+          [
+            "geca",
+            1
+          ]
+        ],
+        "tetra_phase2_top": [
+          [
+            "mafy",
+            2
+          ],
+          [
+            "moax",
+            1
+          ],
+          [
+            "fojy",
+            1
+          ],
+          [
+            "micy",
+            1
+          ],
+          [
+            "cote",
+            1
+          ],
+          [
+            "cofu",
+            1
+          ],
+          [
+            "hodi",
+            1
+          ],
+          [
+            "gige",
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "repeated_four_character_patterns": {
+    "claimed_examples": {
+      "cafe": {
+        "0509_any_even_phase": 1,
+        "0511a_any_even_phase": 1,
+        "0511b_any_even_phase": 1,
+        "0511b_any_odd_phase": 0,
+        "0509_4char_boundaries": 1,
+        "0511a_4char_boundaries": 1,
+        "0511b_4char_boundaries_phase2": 1
+      },
+      "kige": {
+        "0509_any_even_phase": 0,
+        "0511a_any_even_phase": 1,
+        "0511b_any_even_phase": 1,
+        "0511b_any_odd_phase": 0,
+        "0509_4char_boundaries": 0,
+        "0511a_4char_boundaries": 1,
+        "0511b_4char_boundaries_phase2": 1
+      },
+      "fojy": {
+        "0509_any_even_phase": 0,
+        "0511a_any_even_phase": 0,
+        "0511b_any_even_phase": 1,
+        "0511b_any_odd_phase": 0,
+        "0509_4char_boundaries": 0,
+        "0511a_4char_boundaries": 0,
+        "0511b_4char_boundaries_phase2": 1
+      },
+      "mafy": {
+        "0509_any_even_phase": 0,
+        "0511a_any_even_phase": 0,
+        "0511b_any_even_phase": 2,
+        "0511b_any_odd_phase": 0,
+        "0509_4char_boundaries": 0,
+        "0511a_4char_boundaries": 0,
+        "0511b_4char_boundaries_phase2": 2
+      }
+    },
+    "measurement_note": "substring positions scanned every two characters; counts do not prove number of repeated Chinese characters or key identity."
+  },
+  "phase_aware_tetragram_locations": {
+    "cafe": {
+      "0509_phase0": [
+        {
+          "character_offset_zero_based": 24,
+          "word_numbers": [
+            3
+          ],
+          "crosses_telegram_group_boundary": false
+        }
+      ],
+      "0511a_phase0": [
+        {
+          "character_offset_zero_based": 160,
+          "word_numbers": [
+            17,
+            18
+          ],
+          "crosses_telegram_group_boundary": true
+        }
+      ],
+      "0511b_phase2": [
+        {
+          "character_offset_zero_based": 30,
+          "word_numbers": [
+            4
+          ],
+          "crosses_telegram_group_boundary": false
+        }
+      ]
+    },
+    "kige": {
+      "0509_phase0": [],
+      "0511a_phase0": [
+        {
+          "character_offset_zero_based": 32,
+          "word_numbers": [
+            4
+          ],
+          "crosses_telegram_group_boundary": false
+        }
+      ],
+      "0511b_phase2": [
+        {
+          "character_offset_zero_based": 46,
+          "word_numbers": [
+            5
+          ],
+          "crosses_telegram_group_boundary": false
+        }
+      ]
+    },
+    "fojy": {
+      "0509_phase0": [],
+      "0511a_phase0": [],
+      "0511b_phase2": [
+        {
+          "character_offset_zero_based": 6,
+          "word_numbers": [
+            1
+          ],
+          "crosses_telegram_group_boundary": false
+        }
+      ]
+    },
+    "mafy": {
+      "0509_phase0": [],
+      "0511a_phase0": [],
+      "0511b_phase2": [
+        {
+          "character_offset_zero_based": 66,
+          "word_numbers": [
+            7
+          ],
+          "crosses_telegram_group_boundary": false
+        },
+        {
+          "character_offset_zero_based": 98,
+          "word_numbers": [
+            10,
+            11
+          ],
+          "crosses_telegram_group_boundary": true
+        }
+      ]
+    }
+  },
+  "manual_reading_sensitivity_not_applied": {
+    "which": "0511b word 8, blind fogylisicy vs tentative fojylisicy (g vs j), Brice witness note",
+    "blind_fojy_boundaries": [
+      {
+        "character_offset_zero_based": 6,
+        "word_numbers": [
+          1
+        ],
+        "crosses_telegram_group_boundary": false
+      }
+    ],
+    "tentative_fojy_boundaries": [
+      {
+        "character_offset_zero_based": 6,
+        "word_numbers": [
+          1
+        ],
+        "crosses_telegram_group_boundary": false
+      },
+      {
+        "character_offset_zero_based": 70,
+        "word_numbers": [
+          8
+        ],
+        "crosses_telegram_group_boundary": false
+      }
+    ],
+    "status": "UNVERIFIED textual alternative, NOT a correction or Chinese plaintext"
+  },
+  "targeted_uncertainty_without_replacing_data": {
+    "0511_word7_old_kohokycuee_pairs": {
+      "total": 5,
+      "legal": 4,
+      "illegal": [
+        {
+          "word": 1,
+          "slot": 5,
+          "symbol": "ee",
+          "ok": false
+        }
+      ],
+      "odd_or_skipped": []
+    },
+    "0511_word7_blind_kohokycuce_pairs": {
+      "total": 5,
+      "legal": 5,
+      "illegal": [],
+      "odd_or_skipped": []
+    },
+    "0511_word12_blind_damowmhosy_pairs": {
+      "total": 5,
+      "legal": 4,
+      "illegal": [
+        {
+          "word": 1,
+          "slot": 3,
+          "symbol": "wm",
+          "ok": false
+        }
+      ],
+      "odd_or_skipped": []
+    },
+    "0511_word12_old_damoumhosy_pairs": {
+      "total": 5,
+      "legal": 5,
+      "illegal": [],
+      "odd_or_skipped": []
+    },
+    "0509_word2_blind_vemucicyri_pairs": {
+      "total": 5,
+      "legal": 5,
+      "illegal": [],
+      "odd_or_skipped": []
+    },
+    "0509_word2_morse_alternative_vemucekyri_pairs": {
+      "total": 5,
+      "legal": 5,
+      "illegal": [],
+      "odd_or_skipped": []
+    },
+    "status": "sensitivity examples only; no reading accepted or plaintext generated"
+  },
+  "positive_negative_controls": {
+    "G0_1916_fazi": 1032,
+    "Y0_1916_buky": 135,
+    "Y0_1916_hary": 2960,
+    "positive_examples_source": "Brice Dudout, solver/wenmi.py and Chinese method (2026), NOT 1917 June decrypted",
+    "negative_dual_pair_ee": false,
+    "positive_dual_pair_ce": true
+  },
+  "hypothesis_scope": "mechanical alphabet pair grammar; not a recovered codebook, key, or translation",
+  "scan_assessment": "published JACAR copies visually inspected in this run via GitHub/Brice Dudout image files; not independently fetched from official JACAR host; independent copy not automatically an archive-verified transcription"
+}

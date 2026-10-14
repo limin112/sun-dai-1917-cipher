@@ -1,0 +1,11 @@
+TARGET: 1917 June confirmed Chinese plaintext 0 characters; ciphertext not decrypted.
+Eight-phase adjusted triple motif test: [2, 7] best [0, 0, 2] p+ 8.332638946754438e-05
+March positive known-key control: 5 cross repeats; p+ 0.00016665277893508876 hits 1 / 12000
+June, 0509/a phase0, 0511b phase0: {'repeat_pairs_total': 2, 'cross_segment_repeat_pairs': 2, 'cross_segment_distinct_types': 2, 'within_last_sheet_pairs': 0}
+June, 0509/a phase0, 0511b phase2: {'repeat_pairs_total': 8, 'cross_segment_repeat_pairs': 7, 'cross_segment_distinct_types': 3, 'within_last_sheet_pairs': 1}
+within-word null p+ optimizing phase0/2: {'repeat_pairs_total': 1.999960000799984e-05, 'cross_segment_repeat_pairs': 1.999960000799984e-05, 'cross_segment_distinct_types': 0.019259614807703846} exceed counts {'cross_segment_distinct_types': 962}
+whole-sheet pair-shuffle null p+:  {'repeat_pairs_total': 0.00016665277893508876, 'cross_segment_repeat_pairs': 0.00016665277893508876, 'cross_segment_distinct_types': 0.012832263978001834}
+new matched motifs:  [('cafe', [1, 1, 1]), ('kige', [0, 1, 1]), ('mafy', [0, 0, 2]), ('mupo', [1, 1, 1])]
+International Morse Ä two-letter splits: [('aa', True), ('ek', True), ('rt', False)]
+Sheet lengths, total: 172 110 282
+Hypothetical deletion both odd-tail e vs unchanged cross-repeat: 4 7

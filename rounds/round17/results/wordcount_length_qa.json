@@ -1,0 +1,92 @@
+{
+  "0509": {
+    "groups": 8,
+    "chars": 80,
+    "bigrams_if_uninterrupted": 40,
+    "trailing_single_chars_if_any": 0,
+    "mod4": 0,
+    "distribution": {
+      "10": 8
+    },
+    "odd_length_words": []
+  },
+  "0511_sheet_a": {
+    "groups": 18,
+    "chars": 172,
+    "bigrams_if_uninterrupted": 86,
+    "trailing_single_chars_if_any": 0,
+    "mod4": 0,
+    "distribution": {
+      "8": 4,
+      "9": 1,
+      "10": 12,
+      "11": 1
+    },
+    "odd_length_words": [
+      {
+        "index1": 1,
+        "word": "muposacyobe"
+      },
+      {
+        "index1": 3,
+        "word": "catyidohe"
+      }
+    ]
+  },
+  "0511_sheet_b": {
+    "groups": 11,
+    "chars": 110,
+    "bigrams_if_uninterrupted": 55,
+    "trailing_single_chars_if_any": 0,
+    "mod4": 2,
+    "distribution": {
+      "10": 11
+    },
+    "odd_length_words": []
+  },
+  "0511_full": {
+    "groups": 29,
+    "chars": 282,
+    "bigrams_if_uninterrupted": 141,
+    "trailing_single_chars_if_any": 0,
+    "mod4": 2,
+    "distribution": {
+      "8": 4,
+      "9": 1,
+      "10": 23,
+      "11": 1
+    },
+    "odd_length_words": [
+      {
+        "index1": 1,
+        "word": "muposacyobe"
+      },
+      {
+        "index1": 3,
+        "word": "catyidohe"
+      }
+    ]
+  },
+  "0509_form_accounting": {
+    "declared_charge_words": 14,
+    "cipher_groups": 8,
+    "cleartext_signature": 1,
+    "address_words_provisionally": 5,
+    "sum": 14
+  },
+  "0511_form_accounting": {
+    "declared_charge_words": 32,
+    "cipher_groups": 29,
+    "cleartext_signature": 1,
+    "two_address_words": 2,
+    "sum": 32
+  },
+  "4_letter_code_necessary_residue": {
+    "0509_remainder": 0,
+    "0511a_remainder": 0,
+    "0511b_remainder": 2,
+    "0511_total_remainder": 2,
+    "logic": "Under a pure 4-Latin-letters-per-Hanzi body model, 0511 has 2 letters in excess/modulo 4, so it needs >=2 total char insert/delete to become divisible by 4, or an explicit 2-letter other-code/padding/header; ONE letter change alone cannot remove the parity defect. This is not evidence any specific two printed letters were erroneous.",
+    "sheet_phase_tension": "If a ends at 172 letters (0 mod 4) and forms one continuous four-letter code stream, b should start phase0, yet repeated-code search prefers b phase2. Possible damage/restart/other code classes or selection bias; not proof of omission."
+  }
+}

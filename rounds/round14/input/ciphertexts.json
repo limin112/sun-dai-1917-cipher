@@ -1,0 +1,25 @@
+{
+  "source": "dbourdeau/cyphersolver targets/sunyatsen/y1917/NOTES.md and fam6.py; y1916/transcripts_D.md",
+  "raw_june_notes": {
+    "1917-06-24_0509": "Lidajysamy vemucayri mevecafema(u) pokelutazi riyecafafi cymefymeca madamymiri pujihokehe  Sunwen",
+    "1917-06-29_0511": "Mukoacyobe myzoasdoke catejidoke yokigeleyi liriopen duricidule kohokycuee kuxomifumu hutadyny(y)go capakazuye mycykafevu damoumhosy cydicapayo benyzoac hinucuge rifyjabo(?) mahykagica fegajiriby jomoaxfojy micycoteco fuhodijige cafemigymu pokycekige rudubyrijo jorinimafy fojylisiby mikypomice miyaminoma fykazokipa  Tai"
+  },
+  "analysis_variants": {
+    "1917-06-24_0509": "lidajysamy vemucayri mevecafema pokelutazi riyecafafi cymefymeca madamymiri pujihokehe",
+    "1917-06-29_0511": "mukoacyobe myzoasdoke catejidoke yokigeleyi liriopen duricidule kohokycuee kuxomifumu hutadynyyg capakazuye mycykafevu damoumhosy cydicapayo benyzoac hinucuge rifyjabo mahykagica fegajiriby jomoaxfojy micycoteco fuhodijige cafemigymu pokycekige rudubyrijo jorinimafy fojylisiby mikypomice miyaminoma fykazokipa",
+    "1916-05-26_0091": "jikavamiba ruruzohela gexubegecu zetikehave vacojekado putoqopode lujitegiva kimacanixu",
+    "1916-05-28_0095": "hetiruzoce qugekobeku tiradenuha cutipebagu hagovazoha tetibucize baridukedo ramacakixu",
+    "1916-05-31_0117_TYPED": "difejekeva mititijuci nilanubohe laqexubege valujucisu qecicidona bosebeheva coputubexu",
+    "1916-05-30_0115_0116": "honefawepa buwadawape fuzetorowa dawapewada nelabujedi huzasohopi hinuwapogi dinadidula dawepabuge qoduqurohu belolocubo jisuqukadi difekisube lomacapuxi belofojecu locusibanu porogobacu zetanimowi buridureta teburiwuke cequtatepi nosiqubupu",
+    "1916-04-03_POSITIVE_CONTROL": "baxuxepeja qicijinati bemigasiqi jakebiqoye kufonemige tuxaboboba gedocijiga poyevayoxa leyoleveke biromapesa vorobenife xikebiqoye qekufiyaqa tijaqixiqo xitonatula xopavajejo ropezano"
+  },
+  "image_verified": false,
+  "provenance_notes": {
+    "june_program_variant": "June entries in analysis_variants reproduce fam6.py inputs, not an image-verified reading.",
+    "june_notes_variant": "validate.py uses hutadynygo as the alternative obtained by excluding the optional y in NOTES.md hutadyny(y)go. It is an explicit variant, not a verified correction.",
+    "june24_holdout": "260 single-letter insertion attempts in vemucayri plus 1 reading retaining optional u in mevecafema(u). Duplicated outcomes are possible. This is not 261 independently attested readings.",
+    "may_normalizations": "May26 zetikehave chooses v; putoqopode omits the transcribed doubled t. May28 cutipebagu chooses p from [p/k]. These are the public researcher's or explicitly selected variants, not verified image readings.",
+    "positive_control": "The 42-character control uses the published emended transcription. validate.py independently searches the first 16 complete groups from the uncorrected public transcription. Neither is a new solution.",
+    "codebook": "ctc_tw.js prefix 0000..7927 transcribed from retrieved text. The supplement 7928..9999 is not included. A modern Unihan proxy is not an authenticated 1917 codebook."
+  }
+}

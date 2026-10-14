@@ -1,0 +1,328 @@
+{
+  "1917-06-24_0509": {
+    "all_even_words_including_short": [
+      {
+        "index": 1,
+        "word": "lidajysamy",
+        "length": 10
+      },
+      {
+        "index": 3,
+        "word": "mevecafema",
+        "length": 10
+      },
+      {
+        "index": 4,
+        "word": "pokelutazi",
+        "length": 10
+      },
+      {
+        "index": 5,
+        "word": "riyecafafi",
+        "length": 10
+      },
+      {
+        "index": 6,
+        "word": "cymefymeca",
+        "length": 10
+      },
+      {
+        "index": 7,
+        "word": "madamymiri",
+        "length": 10
+      },
+      {
+        "index": 8,
+        "word": "pujihokehe",
+        "length": 10
+      }
+    ],
+    "odd_words_original_untouched": [
+      {
+        "word_index": 2,
+        "word": "vemucayri",
+        "length": 9,
+        "tentative_prefix_pairs": [
+          "ve",
+          "mu",
+          "ca",
+          "yr"
+        ],
+        "unpaired_final_letter": "i"
+      }
+    ],
+    "even_pair_total": 35,
+    "valid_pair_total": 35,
+    "invalid_pairs": [],
+    "allowed_bigrams": 251,
+    "null_n": 10000,
+    "null_mean": 21.9263,
+    "null_std": 2.7917,
+    "null_max": 32,
+    "upper_tail_p_plus1": 9.999000099990002e-05
+  },
+  "1917-06-29_0511": {
+    "all_even_words_including_short": [
+      {
+        "index": 1,
+        "word": "mukoacyobe",
+        "length": 10
+      },
+      {
+        "index": 2,
+        "word": "myzoasdoke",
+        "length": 10
+      },
+      {
+        "index": 3,
+        "word": "catejidoke",
+        "length": 10
+      },
+      {
+        "index": 4,
+        "word": "yokigeleyi",
+        "length": 10
+      },
+      {
+        "index": 5,
+        "word": "liriopen",
+        "length": 8
+      },
+      {
+        "index": 6,
+        "word": "duricidule",
+        "length": 10
+      },
+      {
+        "index": 7,
+        "word": "kohokycuee",
+        "length": 10
+      },
+      {
+        "index": 8,
+        "word": "kuxomifumu",
+        "length": 10
+      },
+      {
+        "index": 9,
+        "word": "hutadynyyg",
+        "length": 10
+      },
+      {
+        "index": 10,
+        "word": "capakazuye",
+        "length": 10
+      },
+      {
+        "index": 11,
+        "word": "mycykafevu",
+        "length": 10
+      },
+      {
+        "index": 12,
+        "word": "damoumhosy",
+        "length": 10
+      },
+      {
+        "index": 13,
+        "word": "cydicapayo",
+        "length": 10
+      },
+      {
+        "index": 14,
+        "word": "benyzoac",
+        "length": 8
+      },
+      {
+        "index": 15,
+        "word": "hinucuge",
+        "length": 8
+      },
+      {
+        "index": 16,
+        "word": "rifyjabo",
+        "length": 8
+      },
+      {
+        "index": 17,
+        "word": "mahykagica",
+        "length": 10
+      },
+      {
+        "index": 18,
+        "word": "fegajiriby",
+        "length": 10
+      },
+      {
+        "index": 19,
+        "word": "jomoaxfojy",
+        "length": 10
+      },
+      {
+        "index": 20,
+        "word": "micycoteco",
+        "length": 10
+      },
+      {
+        "index": 21,
+        "word": "fuhodijige",
+        "length": 10
+      },
+      {
+        "index": 22,
+        "word": "cafemigymu",
+        "length": 10
+      },
+      {
+        "index": 23,
+        "word": "pokycekige",
+        "length": 10
+      },
+      {
+        "index": 24,
+        "word": "rudubyrijo",
+        "length": 10
+      },
+      {
+        "index": 25,
+        "word": "jorinimafy",
+        "length": 10
+      },
+      {
+        "index": 26,
+        "word": "fojylisiby",
+        "length": 10
+      },
+      {
+        "index": 27,
+        "word": "mikypomice",
+        "length": 10
+      },
+      {
+        "index": 28,
+        "word": "miyaminoma",
+        "length": 10
+      },
+      {
+        "index": 29,
+        "word": "fykazokipa",
+        "length": 10
+      }
+    ],
+    "odd_words_original_untouched": [],
+    "even_pair_total": 141,
+    "valid_pair_total": 140,
+    "invalid_pairs": [
+      {
+        "word_index": 7,
+        "pair_index": 5,
+        "symbol": "ee"
+      }
+    ],
+    "allowed_bigrams": 251,
+    "null_n": 10000,
+    "null_mean": 90.8782,
+    "null_std": 5.5622,
+    "null_max": 111,
+    "upper_tail_p_plus1": 9.999000099990002e-05
+  },
+  "1916-04-03_POSITIVE_CONTROL": {
+    "all_even_words_including_short": [
+      {
+        "index": 1,
+        "word": "baxuxepeja",
+        "length": 10
+      },
+      {
+        "index": 2,
+        "word": "qicijinati",
+        "length": 10
+      },
+      {
+        "index": 3,
+        "word": "bemigasiqi",
+        "length": 10
+      },
+      {
+        "index": 4,
+        "word": "jakebiqoye",
+        "length": 10
+      },
+      {
+        "index": 5,
+        "word": "kufonemige",
+        "length": 10
+      },
+      {
+        "index": 6,
+        "word": "tuxaboboba",
+        "length": 10
+      },
+      {
+        "index": 7,
+        "word": "gedocijiga",
+        "length": 10
+      },
+      {
+        "index": 8,
+        "word": "poyevayoxa",
+        "length": 10
+      },
+      {
+        "index": 9,
+        "word": "leyoleveke",
+        "length": 10
+      },
+      {
+        "index": 10,
+        "word": "biromapesa",
+        "length": 10
+      },
+      {
+        "index": 11,
+        "word": "vorobenife",
+        "length": 10
+      },
+      {
+        "index": 12,
+        "word": "xikebiqoye",
+        "length": 10
+      },
+      {
+        "index": 13,
+        "word": "qekufiyaqa",
+        "length": 10
+      },
+      {
+        "index": 14,
+        "word": "tijaqixiqo",
+        "length": 10
+      },
+      {
+        "index": 15,
+        "word": "xitonatula",
+        "length": 10
+      },
+      {
+        "index": 16,
+        "word": "xopavajejo",
+        "length": 10
+      },
+      {
+        "index": 17,
+        "word": "ropezano",
+        "length": 8
+      }
+    ],
+    "odd_words_original_untouched": [],
+    "even_pair_total": 84,
+    "valid_pair_total": 84,
+    "invalid_pairs": [],
+    "allowed_bigrams": 251,
+    "null_n": 10000,
+    "null_mean": 49.3315,
+    "null_std": 4.6762,
+    "null_max": 66,
+    "upper_tail_p_plus1": 9.999000099990002e-05
+  }
+}

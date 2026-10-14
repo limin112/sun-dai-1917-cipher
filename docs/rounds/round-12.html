@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Round 12 · 孙戴1917六月密电</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="inner">
+<a class="brand" href="../index.html"><span class="seal">密</span>sun-dai-1917-cipher</a>
+<nav><a href="../index.html">首页</a><a href="../blockers.html">卡点与求助</a><a href="../telegrams.html">密电原文</a><a href="../rounds.html" class=on>研究轮次</a><a href="../sources.html">资料来源</a></nav>
+</div></header>
+<main>
+<div class="narrow">
+<div class="kicker">Round 12 · 2026-10-08</div>
+<h1>爱知大学实物展品影像与真实历史数字转换表</h1>
+<div><span class="tag archive">新档案/材料</span><span class="tag neg">排除/负结果</span></div>
+<section class="summary"><h2>本轮要点</h2><ul><li>成功打开爱知大学纪念中心“広東政府首脳間で用いられた暗号電報”展品原图（山田纯三郎旧藏）。</li><li>由展品 5 个样例（時機大可為）在 9600 种表中唯一恢复 20×5 数字表：辅音 xyzbcdfghjklmnpqrstv，元音 uoiea。</li><li>冻结此表测六月：0509 有 5/35、0511 有 22/125 槽位不可识别，几乎全部含 y → 该表不能直接用于六月。</li><li>发现展品下方另有 a/o/i/e/u/y 六行假名表，值得追查。</li></ul>
+<div class="meta">六月电报已验证译文仍为 0 字。以下为原始报告全文，结论以更高轮次为准。</div></section>
+<h2>报告全文</h2>
+
+<p>日期：2026-10-08（Asia/Shanghai）<br />
+目标：JACAR <strong>B03050090200</strong>，<strong>1917-06-24 帧0509、1917-06-29 帧0511</strong>。<br />
+<strong>破译状态：目标新明文仍为0字；完整密钥/真实六月原图仍未取得。</strong></p>
+<h2>1. 与 Round 11 相比的真正增量</h2>
+<p>以前爱知大学相关展品网页及 <code>19EU5116_RT8_a.jpg</code> 曾访问失败。本轮通过官方 <code>Com1000075.html</code> 中图片链接，<strong>成功直接打开官方公开实物照片</strong>：</p>
+<ul>
+<li>爱知大学纪念中心展品页（标题“広東政府首脳間で用いられた暗号電報”）：https://edu.aichi-u.ac.jp/toa/collection/gallery02/Com1000075.html</li>
+<li>成功可见的展品影像： https://edu.aichi-u.ac.jp/toa/collection/gallery02/19EU5116_RT8.jpg</li>
+</ul>
+<p>馆方说明这批物件系<strong>山田純三郎在与孙文收发电报时使用</strong>。照片可见左侧手写样例，底部另有拉丁字母×日文假名的表，右侧有封装件。<strong>图片版权由爱知大学纪念中心保留</strong>，本复现包仅保留网址、摘录及计算结果，不转载馆方照片。</p>
+<p><strong>来源边界</strong>：并不是首次在学界发现这件展品。Cryptiana 历史密码研究者早已在公开文章中讨论此物件及其样例，并提出底部是将假名转成罗马字母的另一种转换表，而非左上角的数字→罗马字码表。出处：https://github.com/NoAutopilot/cipher-lab/blob/main/sources/cryptiana/web/chinesecrypto_e.htm 。此次新增是本项目<strong>实际访问了之前打不开的官方展品原图</strong>，并执行了针对六月输入的新程序检验；<strong>没有获得1923年胡汉民书简</strong>，也没有拿到1917年六月档案原图。</p>
+<h2>2. 从实物展示的五个真实例子恢复数字转换表</h2>
+<p>展品左上角的例子及已公开研究者释读（四位中文电码→四个英文字母）：</p>
+<pre><code>汉字  時    機    大    可    為
+数字  2514  2894  1129  0668  3634
+字母  caze  dite  zude  yuni  gufe
+分十字母词：cazeditezu deyunigufe
+</code></pre>
+<p>这些字母与数字是<em>真实展品的演示样本</em>，不是本题六月电报的已知明文。</p>
+<p>枚举已被历史研究证实存在的一类系统化表：20辅音（去w）依圆环轮换/反向、五元音任意排列、行/列两种编号法、00首或尾，总共 <strong>9600</strong> 种，不猜中文正文。把每四位数拆成两个两位数，比对对应四字母，在本限定家族内，只有一把钥匙满足全部5例（10个双字母映射）：</p>
+<pre><code>辅音顺序（20）：xyzbcdfghjklmnpqrstv
+元音顺序（5）：uoiea
+编号：每个辅音连续排列五个元音；01..99,00
+</code></pre>
+<p>使用五段中的四段训练，第五段检验：留掉第2、3、4、5段时，训练集各给出唯一候选并准确预测留出段；留掉第1段时有四把候选钥匙，<strong>不能</strong>独立唯一预测第一段。本项是<strong>同一份展品内部的交叉检验</strong>，不是新取的独立明密对，更不是验证六月译文。</p>
+<h2>3. 冻结真实表，检验六月：不成立，且失败位置集中在 y</h2>
+<p>只选已在原轮次保存的公开转录中<strong>完整10字母</strong>词；每词从首位按两字母拆开。由于这批历史表的字母对是“辅音＋元音”，另加允许元辅位置翻转的<em>更宽松</em>条件（CV或VC）。不做任何六月字符校正、中文打分或猜正文。</p>
+<table>
+<thead>
+<tr>
+<th>电报</th>
+<th style="text-align: right;">有效双字母槽位</th>
+<th style="text-align: right;">此历史数字表可识别</th>
+<th style="text-align: right;">不可识别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1917-06-24，0509</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;"><strong>5</strong></td>
+</tr>
+<tr>
+<td>1917-06-29，0511</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: right;"><strong>22</strong></td>
+</tr>
+</tbody>
+</table>
+<p>05-09的5个失败符号全是 <code>jy/my/cy/fy/my</code>；0511的22个失败中，<strong>21个包含字母 y</strong>，唯一例外是 <code>ee</code>。而这一份<strong>历史数字表</strong>中 <code>y</code> 是辅音，任何 <code>my</code>/<code>cy</code>/<code>jy</code>/<code>fy</code> 等两个辅音相连都不合法。</p>
+<p>这只是针对展品左上角<strong>这一张具体20×5历史数字转换表</strong>及所声明分组的否定：<strong>不可把它未经修改地直接用于六月</strong>。不排除1917年孙中山和戴季陶使用其他秘表、不排除抄写失误、短词的合法混合码类、或使用底部独立的假名转换表。早期公开三月密码本也不同，不能将已解案例冒充本题。</p>
+<h2>4. 新的有史料指向的线索：同一展品的六行假名表</h2>
+<p>照片下方卡片左侧直观可辨 <strong>a/o/i/e/u/y</strong> 六个拉丁行标，横向是若干大写辅音列，格内为<strong>日文假名</strong>。这与六月密文需要 y 担任第二种角色的结构现象值得并列检查：日本相关通信者确曾保存不同于五元音数字表的“六行假名转码表”。</p>
+<p><strong>但绝不能据此宣称六月加密了日语</strong>：该卡片可能有其他发送对象/年代，图像分辨率也不足以从本次取得的网页缩图准确转录全部假名/列名；它也未必就是六月两封使用的同一表。Round8已经指出把 y 计作第六元音时大多数双字母组可解释，但仍有 0509、0511 的违例，不是新的六月译文。下一步是从馆方获得<strong>独立扫描且可核准完整表格的影像和图录/年代/用途</strong>，然后再做逐组假名解码与回转检验；不对这张低分辨率图片强行 OCR。</p>
+<h2>5. 正对照与失败记录</h2>
+<ul>
+<li>测试已知1916-04-03电报中的80个双字母结构，80/80落在20×5表的<strong>语法容许空间</strong>，只是正对照结构检查；<strong>本表并不是该封电报的真实密钥</strong>。</li>
+<li>本次真实馆方影像网页可浏览，但容器直接下载因 DNS 错误失败，因此<strong>复现包没有原图副本</strong>。<code>sources/sources.json</code> 保存链接、访问层级与版权说明。</li>
+<li>冻结 1917 目标数据仍然来自 Daniel Bourdeau 的公开原转录及程序变体；六月 <code>image_verified=false</code>。原始转录中 <code>mevecafema(u)</code>、<code>hutadyny(y)go</code> 等疑读未静默修改。完整不足10字母的词仍原样列于结果的 <code>excluded</code>，没有补齐。</li>
+<li>JACAR 0509/0511 实际扫描、明确有“文密”前缀的1916年0416原件、1923年胡汉民原书简，<strong>本次均未取得</strong>。</li>
+</ul>
+<h2>6. 后续优先级</h2>
+<p>继续寻找可读的六月原图与明确书写“文密”的1916年0416原图；向爱知大学公开馆藏或馆方开放的高清图查底部<strong>假名表</strong>（注意不是1923年胡汉民的另一封书简），并查看此表年代及曾否用于孙—戴线路；能获得完整原表后再准确试译。未拿到可靠真实密钥/语义独立验证前，目标译文必须保持0字。</p>
+<h2>7. 复现方式</h2>
+<pre><code>python museum_key_test.py
+</code></pre>
+<p>标准库即可。输入 <code>input/ciphertexts.json</code> 原样继承Round11。脚本完全重算9600个候选的五样例/留一交叉检查，对每封六月目标按完整10字母词计算映射及22/5个失败的逐槽位置。结果在 <code>results/museum_numeric_key_test.json</code>，控制台记录在 <code>results/museum_key_run.log</code>，<code>MANIFEST.sha256</code> 记录交付文件的SHA-256。</p>
+<p><strong>最终：取到一个之前打不开的馆方原始展品照片并重新计算了其中真实数字表，否定其直接作为六月密钥。没有任何新的经验证六月正文。</strong></p>
+<h2>本轮材料（原样归档）</h2><ul class=files><li><a href="../../rounds/round12/MANIFEST.sha256">MANIFEST.sha256</a></li><li><a href="../../rounds/round12/README.md">README.md</a></li><li><a href="../../rounds/round12/WENMI_ROUND12.md">WENMI_ROUND12.md</a></li><li><a href="../../rounds/round12/input/ciphertexts.json">input/ciphertexts.json</a></li><li><a href="../../rounds/round12/museum_key_test.py">museum_key_test.py</a></li><li><a href="../../rounds/round12/results/museum_key_run.log">results/museum_key_run.log</a></li><li><a href="../../rounds/round12/results/museum_numeric_key_test.json">results/museum_numeric_key_test.json</a></li><li><a href="../../rounds/round12/sources/sources.json">sources/sources.json</a></li></ul>
+<div class="pager"><a href="round-11.html">← Round 11</a><a href="../rounds.html">全部轮次</a><a href="round-13.html">Round 13 →</a></div>
+</div>
+</main>
+<footer>孙中山—戴季陶 1917 年六月密电 · 开放研究档案 · 文字与代码 CC BY 4.0 · JACAR 影像版权归原馆，本站不转载</footer>
+</body>
+</html>

@@ -1,0 +1,279 @@
+{
+  "primary_within_word_null": {
+    "seed": 171717,
+    "draws": 50000,
+    "shuffle_model": "shuffle_within_words",
+    "observed_b_phase0": {
+      "repeat_pairs_total": 2,
+      "cross_segment_repeat_pairs": 2,
+      "cross_segment_distinct_types": 2,
+      "within_last_sheet_pairs": 0
+    },
+    "observed_b_phase2": {
+      "repeat_pairs_total": 8,
+      "cross_segment_repeat_pairs": 7,
+      "cross_segment_distinct_types": 3,
+      "within_last_sheet_pairs": 1
+    },
+    "observed_max_b_phase0_or_2": {
+      "repeat_pairs_total": 8,
+      "cross_segment_repeat_pairs": 7,
+      "cross_segment_distinct_types": 3
+    },
+    "ge_in_n": {
+      "cross_segment_distinct_types": 962
+    },
+    "mean_max_null": {
+      "repeat_pairs_total": 1.14204,
+      "cross_segment_repeat_pairs": 0.7551,
+      "cross_segment_distinct_types": 0.74226
+    },
+    "max_null": {
+      "repeat_pairs_total": 7,
+      "cross_segment_repeat_pairs": 6,
+      "cross_segment_distinct_types": 5
+    },
+    "p_plus1_corrected": {
+      "repeat_pairs_total": 1.999960000799984e-05,
+      "cross_segment_repeat_pairs": 1.999960000799984e-05,
+      "cross_segment_distinct_types": 0.019259614807703846
+    },
+    "warning": "exploratory statistic: hypotheses/phases were discussed in Round16 before scoring; p controls only this declared within-run two-phase search, not all earlier discovery choices."
+  },
+  "secondary_within_segment_null": {
+    "seed": 19171917,
+    "draws": 12000,
+    "shuffle_model": "shuffle_within_segment",
+    "observed_b_phase0": {
+      "repeat_pairs_total": 2,
+      "cross_segment_repeat_pairs": 2,
+      "cross_segment_distinct_types": 2,
+      "within_last_sheet_pairs": 0
+    },
+    "observed_b_phase2": {
+      "repeat_pairs_total": 8,
+      "cross_segment_repeat_pairs": 7,
+      "cross_segment_distinct_types": 3,
+      "within_last_sheet_pairs": 1
+    },
+    "observed_max_b_phase0_or_2": {
+      "repeat_pairs_total": 8,
+      "cross_segment_repeat_pairs": 7,
+      "cross_segment_distinct_types": 3
+    },
+    "ge_in_n": {
+      "cross_segment_distinct_types": 153,
+      "repeat_pairs_total": 1,
+      "cross_segment_repeat_pairs": 1
+    },
+    "mean_max_null": {
+      "repeat_pairs_total": 0.8813333333333333,
+      "cross_segment_repeat_pairs": 0.6491666666666667,
+      "cross_segment_distinct_types": 0.63275
+    },
+    "max_null": {
+      "repeat_pairs_total": 8,
+      "cross_segment_repeat_pairs": 7,
+      "cross_segment_distinct_types": 5
+    },
+    "p_plus1_corrected": {
+      "repeat_pairs_total": 0.00016665277893508876,
+      "cross_segment_repeat_pairs": 0.00016665277893508876,
+      "cross_segment_distinct_types": 0.012832263978001834
+    },
+    "warning": "exploratory statistic: hypotheses/phases were discussed in Round16 before scoring; p controls only this declared within-run two-phase search, not all earlier discovery choices."
+  },
+  "eight_phase_triple_repeat_null": {
+    "n": 12000,
+    "seed": 479,
+    "phase_combinations_tested_per_draw": 8,
+    "observed_max_triple_distinct_and_cross_pairs": [
+      2,
+      7
+    ],
+    "best_phase_offsets_0509_0511a_0511b": [
+      0,
+      0,
+      2
+    ],
+    "null_max_triple": 1,
+    "null_mean_max_triple": 0.013,
+    "ge_lexicographic": 0,
+    "p_plus1_lexicographic": 8.332638946754438e-05,
+    "note": "More conservative phase search than the two-variant b-only test; this still does not correct for all hypotheses selected in previous research rounds."
+  },
+  "march_known_key_positive_control": {
+    "name": "1917 March published Sun–Dai telegrams (KNOWN independent key); only used as positive control, never June plaintext",
+    "source_sha": "c93f061da84d11ea3b2941dde78c970fe801df88",
+    "segments_word_counts": [
+      22,
+      7,
+      12
+    ],
+    "segment_letter_counts": [
+      218,
+      68,
+      120
+    ],
+    "source_not_perfect_original": "March 23 has known unresolved damaged groups, treated literally.",
+    "cross_segment_repeated_codes_observed": 5,
+    "repeated_code_types": [
+      "faco",
+      "jiko",
+      "jipa",
+      "nejo",
+      "xozi"
+    ],
+    "n": 12000,
+    "shuffle_model": "shuffle_within_words",
+    "ge": 1,
+    "p_plus1": 0.00016665277893508876,
+    "null_mean": 0.38658333333333333,
+    "null_max": 5
+  },
+  "phase2_repeat_locations": {
+    "cafe": {
+      "per_segment": [
+        1,
+        1,
+        1
+      ],
+      "occurrences": {
+        "0509": [
+          {
+            "pattern": "cafe",
+            "zero_based_letter_offset": 24,
+            "word_ids": [
+              3
+            ],
+            "crosses_word_boundary": false
+          }
+        ],
+        "0511a": [
+          {
+            "pattern": "cafe",
+            "zero_based_letter_offset": 160,
+            "word_ids": [
+              17,
+              18
+            ],
+            "crosses_word_boundary": true
+          }
+        ],
+        "0511b": [
+          {
+            "pattern": "cafe",
+            "zero_based_letter_offset": 30,
+            "word_ids": [
+              4
+            ],
+            "crosses_word_boundary": false
+          }
+        ]
+      }
+    },
+    "kige": {
+      "per_segment": [
+        0,
+        1,
+        1
+      ],
+      "occurrences": {
+        "0509": [],
+        "0511a": [
+          {
+            "pattern": "kige",
+            "zero_based_letter_offset": 32,
+            "word_ids": [
+              4
+            ],
+            "crosses_word_boundary": false
+          }
+        ],
+        "0511b": [
+          {
+            "pattern": "kige",
+            "zero_based_letter_offset": 46,
+            "word_ids": [
+              5
+            ],
+            "crosses_word_boundary": false
+          }
+        ]
+      }
+    },
+    "mafy": {
+      "per_segment": [
+        0,
+        0,
+        2
+      ],
+      "occurrences": {
+        "0509": [],
+        "0511a": [],
+        "0511b": [
+          {
+            "pattern": "mafy",
+            "zero_based_letter_offset": 66,
+            "word_ids": [
+              7
+            ],
+            "crosses_word_boundary": false
+          },
+          {
+            "pattern": "mafy",
+            "zero_based_letter_offset": 98,
+            "word_ids": [
+              10,
+              11
+            ],
+            "crosses_word_boundary": true
+          }
+        ]
+      }
+    },
+    "mupo": {
+      "per_segment": [
+        1,
+        1,
+        1
+      ],
+      "occurrences": {
+        "0509": [
+          {
+            "pattern": "mupo",
+            "zero_based_letter_offset": 28,
+            "word_ids": [
+              3,
+              4
+            ],
+            "crosses_word_boundary": true
+          }
+        ],
+        "0511a": [
+          {
+            "pattern": "mupo",
+            "zero_based_letter_offset": 0,
+            "word_ids": [
+              1
+            ],
+            "crosses_word_boundary": false
+          }
+        ],
+        "0511b": [
+          {
+            "pattern": "mupo",
+            "zero_based_letter_offset": 38,
+            "word_ids": [
+              4,
+              5
+            ],
+            "crosses_word_boundary": true
+          }
+        ]
+      }
+    }
+  },
+  "source_reading_basis": "CC BY 4.0 Brice Dudout / Claude transcription, not text recertified from JACAR official PDF",
+  "validation": "No candidate Chinese plaintext, no numeric substitution key recovered."
+}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Round 14 · 孙戴1917六月密电</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="inner">
+<a class="brand" href="../index.html"><span class="seal">密</span>sun-dai-1917-cipher</a>
+<nav><a href="../index.html">首页</a><a href="../blockers.html">卡点与求助</a><a href="../telegrams.html">密电原文</a><a href="../rounds.html" class=on>研究轮次</a><a href="../sources.html">资料来源</a></nav>
+</div></header>
+<main>
+<div class="narrow">
+<div class="kicker">Round 14 · 2026-10-10</div>
+<h1>y 双角色的可复现结构检验</h1>
+<div><span class="tag struct">结构发现</span></div>
+<section class="summary"><h2>本轮要点</h2><ul><li>假设：a/e/i/o/u 只作元音，其它只作辅音，y 可兼两者，两字母组 CV/VC 皆可。</li><li>0509 35/35、0511 124/125（含8字母词 140/141）合法；唯一例外 kohokycuee 的 ee。</li><li>词内随机重排 10,000 次对照 p&lt;0.0001；1916-04-03 汕头电报正对照 84/84。</li><li>Kuzuoglu (2018) 指出 1913《仁密電碼本》等具名码本（党史馆 yiban050/5.3），“文密”可能也是具名私密本。</li></ul>
+<div class="meta">六月电报已验证译文仍为 0 字。以下为原始报告全文，结论以更高轮次为准。</div></section>
+<h2>报告全文</h2>
+
+<p>研究日期：2026-10-10（Asia/Shanghai）。目标始终为 JACAR <strong>B03050090200</strong>：<strong>1917-06-24 帧0509</strong> 孙中山→戴季陶及 <strong>1917-06-29 帧0511</strong> 戴季陶→孙中山。本报告不将1916汕头电报或任何五月电报当作本题译文。</p>
+<p><strong>验收状态：六月可验证新明文 0 字；确切密钥 0 把；六月两帧原始影像仍未取得；<code>image_verified=false</code>。</strong> 本轮发现的是可复核的字母结构约束，不是译文，也不是已经证实的历史码本。</p>
+<h2>1. 衔接和来源</h2>
+<p>本轮首先核对会话可用的 <code>WENMI_ROUND13.md</code> 和 <code>sun_wenmi_round13.zip</code>；Round13 已将爱知大学实物上的五码例子与 Kuzuoglu (2018) 全部100格第64号数字表验证一致。完整冻结源从 Round13 ZIP 精确提取到 <code>input/ciphertexts.json</code>，SHA-256 <code>620e469ec26d6534df2dbad0553d79844f1d9df8e68e47a95194a1c0563a8136</code>。原始公开转录 <code>raw_june_notes</code> 与研究者程序输入 <code>analysis_variants</code> 原样分栏保留。原件尚未校验，绝不悄悄修正 <code>hutadyny(y)go</code>、<code>mevecafema(u)</code> 或短词。</p>
+<p>相关公开档案与材料：</p>
+<ul>
+<li>日本 JACAR <a href="https://www.jacar.archives.go.jp/das/meta/B03050090200">B03050090200</a>、<a href="https://www.jacar.archives.go.jp/das/meta/B03050090000">B03050090000</a>。本轮 web PDF URL 仍不能访问、元数据URL 返回403；容器请求出现DNS异常，<strong>未读取任何新的六月原件像素</strong>。</li>
+<li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sunyatsen/y1917/NOTES.md">Daniel Bourdeau 的公开研究/转录</a>（版本仍将六月目标标记 <em>not read</em>），以及 <a href="https://dbourdeau.github.io/cyphersolver/sunintercepts.html">9月研究页</a>。</li>
+<li><a href="https://doi.org/10.1080/01611194.2018.1449146">Kuzuoglu (2018), <em>Chinese cryptography</em></a>。论文印出了第64号表（20个辅音行 <code>xyzbcdfghjklmnpqrstv</code> × 5个元音列 <code>uoiea</code>），并在脚注5确指<strong>1913年4月 <code>仁密電碼本</code></strong>，PHI 一般档案 <code>yiban050/5.3</code>，以及后期 <code>誠密</code>、<code>東密</code>、<code>雍密</code> 等专名码本。这是独立的<strong>历史命名/藏品记录</strong>，使“文密是某一具名的私人中文密本”成为有实际类比的候选；但<strong>没有找到<code>文密</code>同名字册或目标密钥</strong>。</li>
+<li>爱知大学展品公开图：https://edu.aichi-u.ac.jp/toa/collection/gallery02/19EU5116_RT8.jpg（前轮已核对，不冒称本轮重新取得）。</li>
+</ul>
+<h2>2. 本轮新检验：让 y 同时承担两种位置角色</h2>
+<p>已知第64号历史表将字母 <strong>y 放在辅音行</strong>，而公开研究将1917六月的若干 y 判作<strong>第六元音</strong>。两种历史/转录迹象此前分别出现，但过往模型固定 y 为一类，出现 <code>ac/cy/ya</code> 奇环矛盾。于是测试<em>预先明确定义的扩展句法模型</em>：</p>
+<ul>
+<li>普通元音 <code>a,e,i,o,u</code> <strong>只能</strong>是元音。</li>
+<li>普通辅音 <code>b,c,d,f,g,h,j,k,l,m,n,p,q,r,s,t,v,w,x,z</code> <strong>只能</strong>是辅音。</li>
+<li><strong>y 可当元音，也可当辅音</strong>（例如 <code>my</code> 可解释 m＋元音y，<code>ya</code> 可解释辅音y＋a）。</li>
+<li>单位为两个字母，词内从首字母固定分组；两种顺序都允许（CV/VC）；<code>yy</code> 也允许，<code>ee</code> 必不允许。</li>
+</ul>
+<p>代码独立用两个实现验证：直接谓词 <code>dual()</code>（主脚本），及穷举全部允许字母对（独立脚本，词长为8和10均保留）。这只是<strong>字母组合可能性</strong>，未确定哪个组合对应 00–99，也没有生成任何经认可的中文。</p>
+<h2>3. 实测结果与独立否证控制</h2>
+<table>
+<thead>
+<tr>
+<th>冻结分析输入</th>
+<th style="text-align: right;">用于保守主检验的10字母词</th>
+<th style="text-align: right;">双字母槽位</th>
+<th style="text-align: right;">y只作辅音（5元音）</th>
+<th style="text-align: right;">y只作元音（6元音）</th>
+<th style="text-align: right;"><strong>y双角色</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1917-06-24 0509</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">30/35</td>
+<td style="text-align: right;">34/35</td>
+<td style="text-align: right;"><strong>35/35</strong></td>
+</tr>
+<tr>
+<td>1917-06-29 0511</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: right;">103/125</td>
+<td style="text-align: right;">118/125</td>
+<td style="text-align: right;"><strong>124/125</strong></td>
+</tr>
+</tbody>
+</table>
+<p>对<strong>不填补字母且长度为偶数的所有词</strong>另外独立复核：0511 <strong>140/141</strong>（含四个完整8字母词，之前已报告但曾被排除在10字母测试之外）。唯一不合上述特定语法的槽位：<strong>0511第7个词 <code>kohokycuee</code> 的第5对 <code>ee</code></strong>。0509完整10字母词35/35；其9字母词 <code>vemucayri</code> 保留原样，仅可在不改变文本前提下记录前四对 <code>ve/mu/ca/yr</code> 都符合，最后 <code>i</code> 孤立，<strong>不得将这四对当作可靠的原始完整码词</strong>。若仅做候选前缀展示，0509计39/39；但保守统计仍应使用35/35。</p>
+<p><strong>随机对照</strong>：每封电报将每个被使用的偶数字母词内部随机重排10000次（保留词的长度和各词字母多重集，打乱相邻关系），每轮同样计数双角色合法槽位。0509（10字母词35槽）平均21.93，最多31，真实35；0511（8/10字母词141槽）平均90.88，真实140，模拟最高值未达到真实值，两者 Monte Carlo 加1尾概率均 <code>&lt;0.0001</code>（仅针对预设的这一重排零假设；后验提出模型，<strong>不作形式上发现概率/密钥概率</strong>）。</p>
+<p><strong>历史算法正对照</strong>：1916-04-03早已公开的汕头转录仅作为代码测试数据，扩展句法对其所有偶数字母词 <strong>84/84</strong>（其中16个10字母词80对，另8字母词4对）全合法；这绝不算新的目标电报成果。数字映射正对照独立将历史第64号表的 <code>時機大可為</code> 与 <code>明密碼電報</code> 合计 <strong>10/10</strong> 已发表四字母—四数字示例精确回算一致，证明主脚本表的数字实现未读错文献，而<strong>不能证明其适用于六月</strong>。</p>
+<p><strong>疑读敏感性</strong>：在保持两类显式版本独立的条件下，<code>hutadynyyg</code>→<code>hutadynygo</code> 或保留可选 y 的11字母版本；0511 都仍恰好 <strong>140/141</strong>，失败始终为 <code>kohokycuee</code> 末尾 <code>ee</code>；<code>mevecafema</code> 加可选 u 形成11字母词后，0509逐词已有的完整前缀仍都符合，但新增一个无法判定的单字母尾巴。详见 <code>results/variant_sensitivity.json</code>。</p>
+<h2>4. 数字层小试验：没有取回秘密钥匙</h2>
+<p>以2018文献真实第64号100格表作为<strong>历史可重现外层示例</strong>，增加一个未在史料确认的规则：当 y 跟普通辅音同对时，y 可依次替代五元音中的任一元音；当 y 跟普通元音配对时，沿用历史表里 <strong>y 自身为辅音行</strong>的定义。让两个顺序相反的拼写反查同一双数字。</p>
+<p>这能让0509原35槽全部转成<em>候选</em>两位数字、0511原125槽除<code>ee</code>外124槽转成候选两位数字；然而 <strong>5种 y 别名均可做到，且未经核实其任何一把是目标实际使用的表</strong>。下游四位数字由于短词位置、单独一对缺口和1917真实中文码本版次缺失，不具备整体回转/中文校验条件。全部5种连续数字候选仅保留在 JSON，<strong>绝不编造中文释读</strong>。</p>
+<h2>5. 证据级别与下一轮有用动作</h2>
+<p>发现的“y 既可能在辅音位，也可能在元音位”使观察到的160个十字母词双组中，只有1组不能按此统一句法解释；含完整8字母词则为175/176。结构上的大改进来自<strong>放宽符号角色</strong>，并非找到真实密钥。<code>ee</code> 有可能是原图误读、特殊替代对、换码/边界，或者直接反驳该模型，均<strong>无原始影像证据</strong>。不能静默修改它。</p>
+<p>优先核实<strong>JACAR 0511 第7词 <code>kohokycuee</code> 字母的原始图</strong>（尤其末两位）及0509的 <code>vemucayri</code> 缺口，然后取得 PHI 1913 <code>仁密電碼本</code> <code>yiban050/5.3</code> 的档案目录和版式以核对“文密”是否也指一部具名中文密本；继续追 PHI <code>yiban333/2.2</code> / <code>yiban050/1.2</code>，以及爱知大学1923胡汉民书简、1916 JACAR <code>文密</code> 0416。若到手实际表/明密留底，再做结合相位、词长和坐标/码本版本的约束解码。不能凭语法可行、模拟 p 值或四位数字有中文查表项来宣称破译。</p>
+<h2>6. 复现和保存</h2>
+<p>标准 Python 3，零第三方依赖：</p>
+<pre><code class="language-bash">python dual_y_real_table.py
+python extended_independent_check.py
+python variant_sensitivity.py
+</code></pre>
+<ul>
+<li><code>input/ciphertexts.json</code>：原样冻结的 Round13 输入，两套六月读法保留并打 <code>image_verified=false</code>。</li>
+<li><code>dual_y_real_table.py</code>：原刊第64号100格映射＋正对照＋对原版10字母词10000次重排＋五种y别名的<strong>候选数字</strong>。</li>
+<li><code>extended_independent_check.py</code>：独立穷举字母对/保留8字母词的验证与10000次重排。</li>
+<li><code>variant_sensitivity.py</code>：明确各疑读版本与剩余异常定位。</li>
+<li><code>results/dual_y_results.json</code>、<code>results/extended_independent_results.json</code>、<code>results/variant_sensitivity.json</code>：完整结果。</li>
+<li><code>results/*.log</code>：实际运行记录。</li>
+<li><code>sources/README.md</code>：访问层级和馆藏号。</li>
+</ul>
+<p><strong>最终状态：字母结构已提高可解释度；六月译文为零字，明密表仍未得到，原图仍未校验。后续研究任务应保持运行。</strong></p>
+<h2>本轮材料（原样归档）</h2><ul class=files><li><a href="../../rounds/round14/MANIFEST.sha256">MANIFEST.sha256</a></li><li><a href="../../rounds/round14/README.md">README.md</a></li><li><a href="../../rounds/round14/WENMI_ROUND14.md">WENMI_ROUND14.md</a></li><li><a href="../../rounds/round14/dual_y_real_table.py">dual_y_real_table.py</a></li><li><a href="../../rounds/round14/extended_independent_check.py">extended_independent_check.py</a></li><li><a href="../../rounds/round14/input/ciphertexts.json">input/ciphertexts.json</a></li><li><a href="../../rounds/round14/results/dual_y_results.json">results/dual_y_results.json</a></li><li><a href="../../rounds/round14/results/extended_independent_results.json">results/extended_independent_results.json</a></li><li><a href="../../rounds/round14/results/extended_run.log">results/extended_run.log</a></li><li><a href="../../rounds/round14/results/run.log">results/run.log</a></li><li><a href="../../rounds/round14/results/variant_run.log">results/variant_run.log</a></li><li><a href="../../rounds/round14/results/variant_sensitivity.json">results/variant_sensitivity.json</a></li><li><a href="../../rounds/round14/sources/README.md">sources/README.md</a></li><li><a href="../../rounds/round14/variant_sensitivity.py">variant_sensitivity.py</a></li></ul>
+<div class="pager"><a href="round-13.html">← Round 13</a><a href="../rounds.html">全部轮次</a><a href="round-15.html">Round 15 →</a></div>
+</div>
+</main>
+<footer>孙中山—戴季陶 1917 年六月密电 · 开放研究档案 · 文字与代码 CC BY 4.0 · JACAR 影像版权归原馆，本站不转载</footer>
+</body>
+</html>

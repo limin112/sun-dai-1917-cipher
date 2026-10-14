@@ -1,0 +1,377 @@
+{
+ "B": {
+  "A_swap_noshift": {
+   "syllables": [
+    40,
+    141
+   ],
+   "shuffle_in_message": {
+    "G_cons": 13.52,
+    "G_vow": 4.43,
+    "z_cons": -1.0,
+    "z_vow": -0.21,
+    "p_cons": 0.8477880529867533
+   },
+   "shuffle_same_word_position": {
+    "G_cons": 13.52,
+    "G_vow": 4.43,
+    "z_cons": -1.02,
+    "z_vow": -0.19,
+    "p_cons": 0.8482879280179955
+   },
+   "repeat_pairs": 2,
+   "repeated_codes": {
+    "cafe": 2,
+    "mupo": 2
+   }
+  },
+  "B_swap_shift_b": {
+   "syllables": [
+    40,
+    141
+   ],
+   "shuffle_in_message": {
+    "G_cons": 48.09,
+    "G_vow": 9.34,
+    "z_cons": 4.05,
+    "z_vow": 1.33,
+    "p_cons": 0.0012496875781054736
+   },
+   "shuffle_same_word_position": {
+    "G_cons": 48.09,
+    "G_vow": 9.34,
+    "z_cons": 4.25,
+    "z_vow": 1.34,
+    "p_cons": 0.0007498125468632841
+   },
+   "repeat_pairs": 9,
+   "repeated_codes": {
+    "cafe": 3,
+    "mupo": 3,
+    "kige": 2,
+    "fojy": 2,
+    "mafy": 2
+   }
+  },
+  "C_VC_null": {
+   "syllables": [
+    40,
+    134
+   ],
+   "shuffle_in_message": {
+    "G_cons": 60.95,
+    "G_vow": 9.8,
+    "z_cons": 6.28,
+    "z_vow": 1.47,
+    "p_cons": 0.00024993751562109475
+   },
+   "shuffle_same_word_position": {
+    "G_cons": 60.95,
+    "G_vow": 9.8,
+    "z_cons": 6.14,
+    "z_vow": 1.56,
+    "p_cons": 0.00024993751562109475
+   },
+   "repeat_pairs": 11,
+   "repeated_codes": {
+    "cafe": 3,
+    "mupo": 3,
+    "yobe": 2,
+    "kige": 2,
+    "capa": 2,
+    "fojy": 2,
+    "mafy": 2
+   }
+  },
+  "random_removal_control": {
+   "removed_sheet_a": 6,
+   "removed_sheet_b": 1,
+   "trials": 16000,
+   "P_G_ge_obs": 0.006874570339353791,
+   "P_repeats_ge_obs": 0.0003749765639647522
+  },
+  "VC_null_codes": {
+   "0509": [
+    "lida",
+    "jysa",
+    "myve",
+    "muce",
+    "kyri",
+    "meve",
+    "cafe",
+    "mupo",
+    "kelu",
+    "tazi",
+    "riye",
+    "cafa",
+    "ficy",
+    "mefy",
+    "meca",
+    "mada",
+    "mymi",
+    "ripu",
+    "jiho",
+    "kehe"
+   ],
+   "0511": [
+    "mupo",
+    "yobe",
+    "myzo",
+    "doke",
+    "cate",
+    "jido",
+    "keyo",
+    "kige",
+    "leyi",
+    "liri",
+    "duri",
+    "cidu",
+    "leko",
+    "hoky",
+    "cuce",
+    "kuxo",
+    "mifu",
+    "muhu",
+    "tady",
+    "nygo",
+    "capa",
+    "kazu",
+    "yemy",
+    "cyka",
+    "fevu",
+    "damo",
+    "hosy",
+    "cydi",
+    "capa",
+    "yobe",
+    "nyzo",
+    "hinu",
+    "cuge",
+    "rify",
+    "jabo",
+    "mahy",
+    "kagi",
+    "cafe",
+    "gaji",
+    "riby",
+    "jomo",
+    "fojy",
+    "micy",
+    "cote",
+    "cofu",
+    "hodi",
+    "jige",
+    "cafe",
+    "migy",
+    "mupo",
+    "kyce",
+    "kige",
+    "rudu",
+    "byri",
+    "jojo",
+    "rini",
+    "mafy",
+    "fojy",
+    "lisi",
+    "bymi",
+    "kypo",
+    "mice",
+    "miya",
+    "mino",
+    "mafy",
+    "kazo",
+    "kipa"
+   ],
+   "sheet_a_codes": 40.0,
+   "sheet_b_codes": 27.0
+  }
+ },
+ "D": {
+  "A_swap_noshift": {
+   "syllables": [
+    40,
+    141
+   ],
+   "shuffle_in_message": {
+    "G_cons": 12.17,
+    "G_vow": 5.0,
+    "z_cons": -1.41,
+    "z_vow": -0.03,
+    "p_cons": 0.9455136215946014
+   },
+   "shuffle_same_word_position": {
+    "G_cons": 12.17,
+    "G_vow": 5.0,
+    "z_cons": -1.45,
+    "z_vow": -0.01,
+    "p_cons": 0.9450137465633591
+   },
+   "repeat_pairs": 3,
+   "repeated_codes": {
+    "cafe": 2,
+    "mupo": 2,
+    "bemy": 2
+   }
+  },
+  "B_swap_shift_b": {
+   "syllables": [
+    40,
+    141
+   ],
+   "shuffle_in_message": {
+    "G_cons": 42.3,
+    "G_vow": 9.37,
+    "z_cons": 3.04,
+    "z_vow": 1.34,
+    "p_cons": 0.006248437890527368
+   },
+   "shuffle_same_word_position": {
+    "G_cons": 42.3,
+    "G_vow": 9.37,
+    "z_cons": 3.13,
+    "z_vow": 1.36,
+    "p_cons": 0.00424893776555861
+   },
+   "repeat_pairs": 9,
+   "repeated_codes": {
+    "cafe": 3,
+    "mupo": 3,
+    "bemy": 2,
+    "kige": 2,
+    "mafy": 2
+   }
+  },
+  "C_VC_null": {
+   "syllables": [
+    40,
+    134
+   ],
+   "shuffle_in_message": {
+    "G_cons": 57.32,
+    "G_vow": 9.41,
+    "z_cons": 5.47,
+    "z_vow": 1.36,
+    "p_cons": 0.00024993751562109475
+   },
+   "shuffle_same_word_position": {
+    "G_cons": 57.32,
+    "G_vow": 9.41,
+    "z_cons": 5.43,
+    "z_vow": 1.44,
+    "p_cons": 0.00024993751562109475
+   },
+   "repeat_pairs": 11,
+   "repeated_codes": {
+    "cafe": 3,
+    "mupo": 3,
+    "yobe": 2,
+    "myzo": 2,
+    "kige": 2,
+    "capa": 2,
+    "mafy": 2
+   }
+  },
+  "random_removal_control": {
+   "removed_sheet_a": 6,
+   "removed_sheet_b": 1,
+   "trials": 16000,
+   "P_G_ge_obs": 0.006812074245359665,
+   "P_repeats_ge_obs": 0.0007499531279295044
+  },
+  "VC_null_codes": {
+   "0509": [
+    "lida",
+    "jysa",
+    "myve",
+    "muce",
+    "kyri",
+    "meve",
+    "cafe",
+    "mupo",
+    "kelu",
+    "bazi",
+    "riye",
+    "cafa",
+    "ficy",
+    "mefy",
+    "meca",
+    "mada",
+    "mymi",
+    "ripu",
+    "jiho",
+    "hehe"
+   ],
+   "0511": [
+    "mupo",
+    "yobe",
+    "myzo",
+    "dohe",
+    "caty",
+    "jido",
+    "heyo",
+    "kige",
+    "leyi",
+    "liri",
+    "duri",
+    "cidu",
+    "leko",
+    "hoky",
+    "cuce",
+    "kuxo",
+    "mifu",
+    "muhu",
+    "tady",
+    "nyfo",
+    "capa",
+    "kazu",
+    "yemy",
+    "cyka",
+    "fevu",
+    "damo",
+    "hosy",
+    "cydi",
+    "capa",
+    "yobe",
+    "myzo",
+    "hinu",
+    "cuge",
+    "rify",
+    "gabo",
+    "mahy",
+    "kagi",
+    "cafe",
+    "gaji",
+    "riby",
+    "fomo",
+    "fojy",
+    "micy",
+    "cote",
+    "cofu",
+    "hodi",
+    "gige",
+    "cafe",
+    "nigy",
+    "mupo",
+    "kyce",
+    "kige",
+    "rudu",
+    "byri",
+    "jogo",
+    "rini",
+    "mafy",
+    "fogy",
+    "lisi",
+    "cymi",
+    "kypo",
+    "wice",
+    "niya",
+    "mino",
+    "mafy",
+    "kago",
+    "kipa"
+   ],
+   "sheet_a_codes": 40.0,
+   "sheet_b_codes": 27.0
+  }
+ }
+}

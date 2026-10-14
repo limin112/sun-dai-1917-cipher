@@ -1,0 +1,212 @@
+{
+  "independent_witness_as_is": {
+    "changes_are_hypotheses_NOT_acceptance": {},
+    "chars_0511a": 172,
+    "chars_total": 282,
+    "b_phase0": {
+      "repeat_pairs_total": 2,
+      "cross_segment_repeat_pairs": 2,
+      "cross_segment_distinct_types": 2,
+      "within_last_sheet_pairs": 0
+    },
+    "b_phase2": {
+      "repeat_pairs_total": 8,
+      "cross_segment_repeat_pairs": 7,
+      "cross_segment_distinct_types": 3,
+      "within_last_sheet_pairs": 1
+    },
+    "repeat_types_bphase2": {
+      "cafe": [
+        1,
+        1,
+        1
+      ],
+      "kige": [
+        0,
+        1,
+        1
+      ],
+      "mafy": [
+        0,
+        0,
+        2
+      ],
+      "mupo": [
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "only_0511b_word8_g_to_j": {
+    "changes_are_hypotheses_NOT_acceptance": {
+      "25": "fojylisicy"
+    },
+    "chars_0511a": 172,
+    "chars_total": 282,
+    "b_phase0": {
+      "repeat_pairs_total": 2,
+      "cross_segment_repeat_pairs": 2,
+      "cross_segment_distinct_types": 2,
+      "within_last_sheet_pairs": 0
+    },
+    "b_phase2": {
+      "repeat_pairs_total": 9,
+      "cross_segment_repeat_pairs": 7,
+      "cross_segment_distinct_types": 3,
+      "within_last_sheet_pairs": 2
+    },
+    "repeat_types_bphase2": {
+      "cafe": [
+        1,
+        1,
+        1
+      ],
+      "fojy": [
+        0,
+        0,
+        2
+      ],
+      "kige": [
+        0,
+        1,
+        1
+      ],
+      "mafy": [
+        0,
+        0,
+        2
+      ],
+      "mupo": [
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "only_0511a_word12_wm_to_um": {
+    "changes_are_hypotheses_NOT_acceptance": {
+      "11": "damoumhosy"
+    },
+    "chars_0511a": 172,
+    "chars_total": 282,
+    "b_phase0": {
+      "repeat_pairs_total": 2,
+      "cross_segment_repeat_pairs": 2,
+      "cross_segment_distinct_types": 2,
+      "within_last_sheet_pairs": 0
+    },
+    "b_phase2": {
+      "repeat_pairs_total": 8,
+      "cross_segment_repeat_pairs": 7,
+      "cross_segment_distinct_types": 3,
+      "within_last_sheet_pairs": 1
+    },
+    "repeat_types_bphase2": {
+      "cafe": [
+        1,
+        1,
+        1
+      ],
+      "kige": [
+        0,
+        1,
+        1
+      ],
+      "mafy": [
+        0,
+        0,
+        2
+      ],
+      "mupo": [
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "both_editorial_alternatives": {
+    "changes_are_hypotheses_NOT_acceptance": {
+      "25": "fojylisicy",
+      "11": "damoumhosy"
+    },
+    "chars_0511a": 172,
+    "chars_total": 282,
+    "b_phase0": {
+      "repeat_pairs_total": 2,
+      "cross_segment_repeat_pairs": 2,
+      "cross_segment_distinct_types": 2,
+      "within_last_sheet_pairs": 0
+    },
+    "b_phase2": {
+      "repeat_pairs_total": 9,
+      "cross_segment_repeat_pairs": 7,
+      "cross_segment_distinct_types": 3,
+      "within_last_sheet_pairs": 2
+    },
+    "repeat_types_bphase2": {
+      "cafe": [
+        1,
+        1,
+        1
+      ],
+      "fojy": [
+        0,
+        0,
+        2
+      ],
+      "kige": [
+        0,
+        1,
+        1
+      ],
+      "mafy": [
+        0,
+        0,
+        2
+      ],
+      "mupo": [
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "remove_terminal_e_from_both_odd_length_words": {
+    "changes_are_hypotheses_NOT_acceptance": {
+      "0": "muposacyob",
+      "2": "catyidoh"
+    },
+    "chars_0511a": 170,
+    "chars_total": 280,
+    "b_phase0": {
+      "repeat_pairs_total": 1,
+      "cross_segment_repeat_pairs": 1,
+      "cross_segment_distinct_types": 1,
+      "within_last_sheet_pairs": 0
+    },
+    "b_phase2": {
+      "repeat_pairs_total": 5,
+      "cross_segment_repeat_pairs": 4,
+      "cross_segment_distinct_types": 2,
+      "within_last_sheet_pairs": 1
+    },
+    "repeat_types_bphase2": {
+      "cafe": [
+        1,
+        0,
+        1
+      ],
+      "mafy": [
+        0,
+        0,
+        2
+      ],
+      "mupo": [
+        1,
+        1,
+        1
+      ]
+    }
+  }
+}

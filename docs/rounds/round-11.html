@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Round 11 · 孙戴1917六月密电</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="inner">
+<a class="brand" href="../index.html"><span class="seal">密</span>sun-dai-1917-cipher</a>
+<nav><a href="../index.html">首页</a><a href="../blockers.html">卡点与求助</a><a href="../telegrams.html">密电原文</a><a href="../rounds.html" class=on>研究轮次</a><a href="../sources.html">资料来源</a></nav>
+</div></header>
+<main>
+<div class="narrow">
+<div class="kicker">Round 11 · 2026-10-07</div>
+<h1>原始资料入口复核 + 任意私人表恢复法的正对照失败</h1>
+<div><span class="tag archive">新档案/材料</span><span class="tag neg">排除/负结果</span></div>
+<section class="summary"><h2>本轮要点</h2><ul><li>爱知大学馆藏目录 PDF 页图核实：1923-02-10 胡汉民→藤瀬政次郎书简，备注“孫中山との間の暗号電報，用法…”（仅目录，正文未得）。</li><li>新算法：任意两字母→00–99 单射表 + 标准电码 + 语言模型退火。</li><li>正对照失败：在 1917 年 3 月已解电报上，假明文得分高于真钥（−307 vs −381），只对上 1/51 个映射 → 该路线会制造“伪中文”。</li></ul>
+<div class="meta">六月电报已验证译文仍为 0 字。以下为原始报告全文，结论以更高轮次为准。</div></section>
+<h2>报告全文</h2>
+
+<p>日期：2026-10-07</p>
+<p>目标仅为 JACAR B03050090200：1917-06-24 帧0509、1917-06-29 帧0511。</p>
+<p><strong>状态：六月目标经验证的新明文仍为 0 字；完整密钥仍未找到。六月原图仍未取得。</strong> 本轮没有把任何流畅候选当作译文。</p>
+<h2>1. 本轮真正新增的档案层面结果</h2>
+<p>爱知大学 2016 年馆藏目录中，旧线索“270 / 整理138 / 24-6”这次做了 PDF 页图核验：该行确为 <strong>胡漢民 → 藤瀬政次郎，1923-02-10，書簡</strong>，备注为：</p>
+<blockquote>
+<p>孫中山との間の暗号電報，用法，時間，場所の説明</p>
+</blockquote>
+<p>这比此前只依赖文本抽取更可靠，但仍只是<strong>目录元数据</strong>，不是书简正文，更不是 1917 年六月密钥。爱知大学官方说明称“孫文、山田良政・純三郎関係資料”的微缩胶片版可在大学图书馆阅览；1996 年补遗的检索文本进一步称，上一批书简资料于 1995 年 8 月制成微缩胶片并在丰桥校区图书馆供阅览。本轮仍未得到原书简影像。</p>
+<p>JACAR 的 B03050090200 官方元数据可检索，确认该项覆盖 1917-03-29 至 1917-09-21、共 11 图，但六月 0509/0511 原图仍未成功打开，故所有六月字符继续标记为 <strong>image_verified=false</strong>。</p>
+<h2>2. 新算法：把“私人表不是规则表”真正放宽到任意映射</h2>
+<p>公开研究已指出六月有 y 和非 CV 串，简单系统化 20×5 / 六元音家族都不能读。本轮因此测试一个明显更宽的模型：</p>
+<ol>
+<li>只取完整十字母词，从词首按两字母切成符号，不要求 CV。</li>
+<li>每个出现过的两字母符号可任意、但一一地映射到 00…99。</li>
+<li>相邻两个两位数拼成四位数，再查标准中文电报码。</li>
+<li>搜索完全不预设元音、辅音、行列顺序、旋转或加数。</li>
+</ol>
+<p>它可以容纳 y 和 <code>my</code>、<code>as</code>、<code>fo</code> 之类非传统 CV 组合，因此不是 Round8 的“两类字母固定换名”重复实验。</p>
+<h2>3. 先做独立正对照，结果：方法失败</h2>
+<p>训练评分器只用了 1916 年公开已读/部分已读的孙中山相关电报，共 36 段、1256 个汉字；<strong>没有把 1917 年 3 月正对照明文放进训练语料</strong>。</p>
+<p>正对照使用 1917-03-25 与 1917-03-26 两份电报。它们有独立已知的 March key：辅音顺序 <code>klmnpqrstvxyzbcdfghj</code>，元音 <code>aeuoi</code>，vowel-major，offset 1，无加数。</p>
+<p>按公开未完全校正的转录直接代入真钥匙，得到的原始译码在干净位置接近已发表明文，在已知抄写/辨读错误处出现乱码。评分约 <strong>-381.814</strong>。</p>
+<p>随后做盲搜索：12 次重启 × 每次 60,000 步 simulated annealing，在 51 个已出现两字母符号的任意 00…99 单射表上优化。结果反而找到评分更高的假明文（约 <strong>-307.464</strong>），但与真实密钥只吻合 <strong>1 / 51</strong> 个符号映射。</p>
+<p>这说明：<strong>“任意私人表 + 当前短语料语言评分”的搜索会严重过拟合。</strong> 它甚至不能从独立已知题恢复 March key，所以没有资格拿去解释六月。任何由这个算法生成的“看起来像中文”的六月候选都必须丢弃。</p>
+<p>这不是对“私人任意表”历史假设的否定；只是否定了当前这套盲恢复方法和评分器在现有数据量下的可识别性。</p>
+<h2>4. 为什么这仍值得保存</h2>
+<p>这个负结果封住了一条很容易制造假突破的路线：以后不能因为任意表搜索吐出“电、款、覆、日”等高频词就宣布破译。正对照显示，语言模型完全可以把错误密钥拟合得比真钥匙分数更高。</p>
+<p>下一轮若继续任意表路线，必须先加入真正的新约束，例如：原图校定字符、同线路更多文密、实际私人码本/书简中的表结构、已知明密对、或能约束码类/字段的历史规则。否则继续扩大随机搜索只是制造更多伪中文。</p>
+<h2>5. 冻结与复现</h2>
+<ul>
+<li><code>input/ciphertexts.json</code>：原样继承 Round10；六月 <code>image_verified=false</code>。</li>
+<li><code>input/training_corpus.json</code>：本轮评分语料、提取规则和四个 GitHub 文件 SHA。</li>
+<li><code>results/arbitrary_table_positive_control.json</code>：正对照参数与完整结果。</li>
+<li><code>arbitrary_table_positive_control.py</code>：复现支架；要求提供与记录 SHA 一致的 <code>tw.csv</code>。</li>
+<li><code>sources/sources.json</code>：JACAR、爱知大学及 GitHub 来源层级。</li>
+<li><code>results/run.log</code>：实际执行摘要。</li>
+</ul>
+<p><strong>最终状态：没有新增可接受的六月明文；没有停用研究任务。</strong></p>
+<h2>本轮材料（原样归档）</h2><ul class=files><li><a href="../../rounds/round11/MANIFEST.sha256">MANIFEST.sha256</a></li><li><a href="../../rounds/round11/README.md">README.md</a></li><li><a href="../../rounds/round11/WENMI_ROUND11.md">WENMI_ROUND11.md</a></li><li><a href="../../rounds/round11/arbitrary_table_positive_control.py">arbitrary_table_positive_control.py</a></li><li><a href="../../rounds/round11/checkpoint.json">checkpoint.json</a></li><li><a href="../../rounds/round11/input/ciphertexts.json">input/ciphertexts.json</a></li><li><a href="../../rounds/round11/input/training_corpus.json">input/training_corpus.json</a></li><li><a href="../../rounds/round11/report.html">report.html</a></li><li><a href="../../rounds/round11/results/arbitrary_table_positive_control.json">results/arbitrary_table_positive_control.json</a></li><li><a href="../../rounds/round11/results/run.log">results/run.log</a></li><li><a href="../../rounds/round11/sources/sources.json">sources/sources.json</a></li></ul>
+<div class="pager"><span></span><a href="../rounds.html">全部轮次</a><a href="round-12.html">Round 12 →</a></div>
+</div>
+</main>
+<footer>孙中山—戴季陶 1917 年六月密电 · 开放研究档案 · 文字与代码 CC BY 4.0 · JACAR 影像版权归原馆，本站不转载</footer>
+</body>
+</html>

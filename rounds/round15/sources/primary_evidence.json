@@ -1,0 +1,44 @@
+{
+  "research_date": "2026-10-11",
+  "source1": {
+    "title": "日本論",
+    "author": "戴季陶",
+    "edition": "民國17年（1928）民智書局本",
+    "book_catalogue_url": "https://commons.wikimedia.org/wiki/File:NLC416-03jh003405-24940_%E6%97%A5%E6%9C%AC%E8%AB%96.pdf",
+    "scanned_pdf_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/NLC416-03jh003405-24940_%E6%97%A5%E6%9C%AC%E8%AB%96.pdf",
+    "holding_institution": "中国国家图书馆（扫描由 Wikimedia Commons 转载）",
+    "images_total": 197,
+    "image_inspection_method": "web PDF screenshots, visual reading; no OCR; PDF was not downloaded into container",
+    "image_inspected": true,
+    "observations": [
+      {"printed_page": 103, "pdf_index_zero_based": 119, "status": "visually checked", "summary": "戴季陶回忆自己六月十六日自上海起行，抵东京大约二十一日，受孙中山派遣调查复辟动向；日期用'大約'，不能当精确行程。"},
+      {"printed_page": 105, "pdf_index_zero_based": 121, "status": "visually checked", "summary": "会见秋山真之，拿出孙中山之信；询问中国局势，秋山认为清朝复辟即使发生也会很快失败。"},
+      {"printed_page": 106, "pdf_index_zero_based": 122, "status": "visually checked", "summary": "进一步拜见田中义一，将信出示并讨论张勋复辟危险；这是回忆叙述，不是密电明文。"},
+      {"printed_page": 108, "pdf_index_zero_based": 124, "status": "visually checked", "summary": "戴季陶说当晚写一封很详细的报告寄给孙中山，完成调查，在东京停留三四天后启程返沪。报告本身未找到。"}
+    ]
+  },
+  "source2": {
+    "title": "日本論",
+    "author": "戴季陶",
+    "edition": "臺北中央文物，1954年初版，132頁",
+    "official_catalogue_url": "https://taiwanebook.ncl.edu.tw/*/book/NCL-000001976",
+    "pdfjs_viewer_url": "https://taiwanebook.ncl.edu.tw/ebkFiles/NCL-000001976/NCL-000001976.PDF",
+    "holding_institution": "臺灣國家圖書館",
+    "catalogue_verified": true,
+    "actual_printed_pages_71_72_read": false,
+    "note": "已获取精确馆方题录和 PDF URL，但原 PDF 读取失败，绝不拿1928版103-108页冒充此1954版71-72页。"
+  },
+  "source3": {
+    "title": "B03050090200, target telegram transcriptions",
+    "url": "https://github.com/dbourdeau/cyphersolver/blob/main/targets/sunyatsen/y1917/NOTES.md",
+    "read_method": "GitHub connector fetch",
+    "archive_original_images_read": false,
+    "claim": "公开研究者转录仍把1917-06-29 0511记为东京→上海。"
+  },
+  "outstanding_sources": [
+    {"archive": "JACAR B03050090200", "frame": "0509;0511", "original_images_read": false},
+    {"archive": "JACAR B03050090000", "frame": "0416", "original_images_read": false},
+    {"archive": "PHI yiban050/5.3", "original_images_read": false},
+    {"archive": "愛知大學 270/整理138/24-6", "original_1923_letter_read": false}
+  ]
+}

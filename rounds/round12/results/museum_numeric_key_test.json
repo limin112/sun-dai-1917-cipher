@@ -1,0 +1,4065 @@
+{
+  "leave_one_4digit_codeout_crossvalidation": [
+    {
+      "heldout_index": 1,
+      "heldout_number": "2514",
+      "heldout_word": "caze",
+      "key_count_after_training_four": 4,
+      "predictions": [
+        "caze",
+        "coze",
+        "daze",
+        "doze"
+      ],
+      "predicted_correctly": false
+    },
+    {
+      "heldout_index": 2,
+      "heldout_number": "2894",
+      "heldout_word": "dite",
+      "key_count_after_training_four": 1,
+      "predictions": [
+        "dite"
+      ],
+      "predicted_correctly": true
+    },
+    {
+      "heldout_index": 3,
+      "heldout_number": "1129",
+      "heldout_word": "zude",
+      "key_count_after_training_four": 1,
+      "predictions": [
+        "zude"
+      ],
+      "predicted_correctly": true
+    },
+    {
+      "heldout_index": 4,
+      "heldout_number": "0668",
+      "heldout_word": "yuni",
+      "key_count_after_training_four": 1,
+      "predictions": [
+        "yuni"
+      ],
+      "predicted_correctly": true
+    },
+    {
+      "heldout_index": 5,
+      "heldout_number": "3634",
+      "heldout_word": "gufe",
+      "key_count_after_training_four": 1,
+      "predictions": [
+        "gufe"
+      ],
+      "predicted_correctly": true
+    }
+  ],
+  "museum_example": {
+    "characters": "時機大可為",
+    "code_numbers_4digits": [
+      "2514",
+      "2894",
+      "1129",
+      "0668",
+      "3634"
+    ],
+    "four_letters": [
+      "caze",
+      "dite",
+      "zude",
+      "yuni",
+      "gufe"
+    ],
+    "ten_letter_regroup": "cazeditezu deyunigufe"
+  },
+  "model_family_count": 19200,
+  "match_count": 1,
+  "key_descriptions": [
+    {
+      "reverse": false,
+      "shift": 17,
+      "consonants": "xyzbcdfghjklmnpqrstv",
+      "vowels": "uoiea",
+      "fill": "rows",
+      "start": 1
+    }
+  ],
+  "tests": {
+    "0:1917-06-24_0509:reverse_allowed=False": {
+      "name": "1917-06-24_0509",
+      "total": 35,
+      "matched": 30,
+      "unknown_count": 5,
+      "unmapped": [
+        {
+          "word_index": 1,
+          "word": "lidajysamy",
+          "slot": 3,
+          "token": "jy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 1,
+          "word": "lidajysamy",
+          "slot": 5,
+          "token": "my",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 6,
+          "word": "cymefymeca",
+          "slot": 1,
+          "token": "cy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 6,
+          "word": "cymefymeca",
+          "slot": 3,
+          "token": "fy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 7,
+          "word": "madamymiri",
+          "slot": 3,
+          "token": "my",
+          "number": null,
+          "orientation": null
+        }
+      ],
+      "matched_slots": [
+        {
+          "word_index": 1,
+          "word": "lidajysamy",
+          "slot": 1,
+          "token": "li",
+          "number": 58,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "lidajysamy",
+          "slot": 2,
+          "token": "da",
+          "number": 30,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "lidajysamy",
+          "slot": 4,
+          "token": "sa",
+          "number": 90,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "mevecafema",
+          "slot": 1,
+          "token": "me",
+          "number": 64,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "mevecafema",
+          "slot": 2,
+          "token": "ve",
+          "number": 99,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "mevecafema",
+          "slot": 3,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "mevecafema",
+          "slot": 4,
+          "token": "fe",
+          "number": 34,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "mevecafema",
+          "slot": 5,
+          "token": "ma",
+          "number": 65,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "pokelutazi",
+          "slot": 1,
+          "token": "po",
+          "number": 72,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "pokelutazi",
+          "slot": 2,
+          "token": "ke",
+          "number": 54,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "pokelutazi",
+          "slot": 3,
+          "token": "lu",
+          "number": 56,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "pokelutazi",
+          "slot": 4,
+          "token": "ta",
+          "number": 95,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "pokelutazi",
+          "slot": 5,
+          "token": "zi",
+          "number": 13,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "riyecafafi",
+          "slot": 1,
+          "token": "ri",
+          "number": 83,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "riyecafafi",
+          "slot": 2,
+          "token": "ye",
+          "number": 9,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "riyecafafi",
+          "slot": 3,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "riyecafafi",
+          "slot": 4,
+          "token": "fa",
+          "number": 35,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "riyecafafi",
+          "slot": 5,
+          "token": "fi",
+          "number": 33,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "cymefymeca",
+          "slot": 2,
+          "token": "me",
+          "number": 64,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "cymefymeca",
+          "slot": 4,
+          "token": "me",
+          "number": 64,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "cymefymeca",
+          "slot": 5,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "madamymiri",
+          "slot": 1,
+          "token": "ma",
+          "number": 65,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "madamymiri",
+          "slot": 2,
+          "token": "da",
+          "number": 30,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "madamymiri",
+          "slot": 4,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "madamymiri",
+          "slot": 5,
+          "token": "ri",
+          "number": 83,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "pujihokehe",
+          "slot": 1,
+          "token": "pu",
+          "number": 71,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "pujihokehe",
+          "slot": 2,
+          "token": "ji",
+          "number": 48,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "pujihokehe",
+          "slot": 3,
+          "token": "ho",
+          "number": 42,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "pujihokehe",
+          "slot": 4,
+          "token": "ke",
+          "number": 54,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "pujihokehe",
+          "slot": 5,
+          "token": "he",
+          "number": 44,
+          "orientation": "cv"
+        }
+      ],
+      "excluded": [
+        [
+          2,
+          "vemucayri",
+          9
+        ]
+      ]
+    },
+    "0:1917-06-24_0509:reverse_allowed=True": {
+      "name": "1917-06-24_0509",
+      "total": 35,
+      "matched": 30,
+      "unknown_count": 5,
+      "unmapped": [
+        {
+          "word_index": 1,
+          "word": "lidajysamy",
+          "slot": 3,
+          "token": "jy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 1,
+          "word": "lidajysamy",
+          "slot": 5,
+          "token": "my",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 6,
+          "word": "cymefymeca",
+          "slot": 1,
+          "token": "cy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 6,
+          "word": "cymefymeca",
+          "slot": 3,
+          "token": "fy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 7,
+          "word": "madamymiri",
+          "slot": 3,
+          "token": "my",
+          "number": null,
+          "orientation": null
+        }
+      ],
+      "matched_slots": [
+        {
+          "word_index": 1,
+          "word": "lidajysamy",
+          "slot": 1,
+          "token": "li",
+          "number": 58,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "lidajysamy",
+          "slot": 2,
+          "token": "da",
+          "number": 30,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "lidajysamy",
+          "slot": 4,
+          "token": "sa",
+          "number": 90,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "mevecafema",
+          "slot": 1,
+          "token": "me",
+          "number": 64,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "mevecafema",
+          "slot": 2,
+          "token": "ve",
+          "number": 99,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "mevecafema",
+          "slot": 3,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "mevecafema",
+          "slot": 4,
+          "token": "fe",
+          "number": 34,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "mevecafema",
+          "slot": 5,
+          "token": "ma",
+          "number": 65,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "pokelutazi",
+          "slot": 1,
+          "token": "po",
+          "number": 72,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "pokelutazi",
+          "slot": 2,
+          "token": "ke",
+          "number": 54,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "pokelutazi",
+          "slot": 3,
+          "token": "lu",
+          "number": 56,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "pokelutazi",
+          "slot": 4,
+          "token": "ta",
+          "number": 95,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "pokelutazi",
+          "slot": 5,
+          "token": "zi",
+          "number": 13,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "riyecafafi",
+          "slot": 1,
+          "token": "ri",
+          "number": 83,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "riyecafafi",
+          "slot": 2,
+          "token": "ye",
+          "number": 9,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "riyecafafi",
+          "slot": 3,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "riyecafafi",
+          "slot": 4,
+          "token": "fa",
+          "number": 35,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "riyecafafi",
+          "slot": 5,
+          "token": "fi",
+          "number": 33,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "cymefymeca",
+          "slot": 2,
+          "token": "me",
+          "number": 64,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "cymefymeca",
+          "slot": 4,
+          "token": "me",
+          "number": 64,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "cymefymeca",
+          "slot": 5,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "madamymiri",
+          "slot": 1,
+          "token": "ma",
+          "number": 65,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "madamymiri",
+          "slot": 2,
+          "token": "da",
+          "number": 30,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "madamymiri",
+          "slot": 4,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "madamymiri",
+          "slot": 5,
+          "token": "ri",
+          "number": 83,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "pujihokehe",
+          "slot": 1,
+          "token": "pu",
+          "number": 71,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "pujihokehe",
+          "slot": 2,
+          "token": "ji",
+          "number": 48,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "pujihokehe",
+          "slot": 3,
+          "token": "ho",
+          "number": 42,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "pujihokehe",
+          "slot": 4,
+          "token": "ke",
+          "number": 54,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "pujihokehe",
+          "slot": 5,
+          "token": "he",
+          "number": 44,
+          "orientation": "cv"
+        }
+      ],
+      "excluded": [
+        [
+          2,
+          "vemucayri",
+          9
+        ]
+      ]
+    },
+    "0:1917-06-29_0511:reverse_allowed=False": {
+      "name": "1917-06-29_0511",
+      "total": 125,
+      "matched": 99,
+      "unknown_count": 26,
+      "unmapped": [
+        {
+          "word_index": 1,
+          "word": "mukoacyobe",
+          "slot": 3,
+          "token": "ac",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 2,
+          "word": "myzoasdoke",
+          "slot": 1,
+          "token": "my",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 2,
+          "word": "myzoasdoke",
+          "slot": 3,
+          "token": "as",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 7,
+          "word": "kohokycuee",
+          "slot": 3,
+          "token": "ky",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 7,
+          "word": "kohokycuee",
+          "slot": 5,
+          "token": "ee",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 9,
+          "word": "hutadynyyg",
+          "slot": 3,
+          "token": "dy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 9,
+          "word": "hutadynyyg",
+          "slot": 4,
+          "token": "ny",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 9,
+          "word": "hutadynyyg",
+          "slot": 5,
+          "token": "yg",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 11,
+          "word": "mycykafevu",
+          "slot": 1,
+          "token": "my",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 11,
+          "word": "mycykafevu",
+          "slot": 2,
+          "token": "cy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 12,
+          "word": "damoumhosy",
+          "slot": 3,
+          "token": "um",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 12,
+          "word": "damoumhosy",
+          "slot": 5,
+          "token": "sy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 13,
+          "word": "cydicapayo",
+          "slot": 1,
+          "token": "cy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 17,
+          "word": "mahykagica",
+          "slot": 2,
+          "token": "hy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 18,
+          "word": "fegajiriby",
+          "slot": 5,
+          "token": "by",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 19,
+          "word": "jomoaxfojy",
+          "slot": 3,
+          "token": "ax",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 19,
+          "word": "jomoaxfojy",
+          "slot": 5,
+          "token": "jy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 20,
+          "word": "micycoteco",
+          "slot": 2,
+          "token": "cy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 22,
+          "word": "cafemigymu",
+          "slot": 4,
+          "token": "gy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 23,
+          "word": "pokycekige",
+          "slot": 2,
+          "token": "ky",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 24,
+          "word": "rudubyrijo",
+          "slot": 3,
+          "token": "by",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 25,
+          "word": "jorinimafy",
+          "slot": 5,
+          "token": "fy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 26,
+          "word": "fojylisiby",
+          "slot": 2,
+          "token": "jy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 26,
+          "word": "fojylisiby",
+          "slot": 5,
+          "token": "by",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 27,
+          "word": "mikypomice",
+          "slot": 2,
+          "token": "ky",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 29,
+          "word": "fykazokipa",
+          "slot": 1,
+          "token": "fy",
+          "number": null,
+          "orientation": null
+        }
+      ],
+      "matched_slots": [
+        {
+          "word_index": 1,
+          "word": "mukoacyobe",
+          "slot": 1,
+          "token": "mu",
+          "number": 61,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "mukoacyobe",
+          "slot": 2,
+          "token": "ko",
+          "number": 52,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "mukoacyobe",
+          "slot": 4,
+          "token": "yo",
+          "number": 7,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "mukoacyobe",
+          "slot": 5,
+          "token": "be",
+          "number": 19,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "myzoasdoke",
+          "slot": 2,
+          "token": "zo",
+          "number": 12,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "myzoasdoke",
+          "slot": 4,
+          "token": "do",
+          "number": 27,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "myzoasdoke",
+          "slot": 5,
+          "token": "ke",
+          "number": 54,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "catejidoke",
+          "slot": 1,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "catejidoke",
+          "slot": 2,
+          "token": "te",
+          "number": 94,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "catejidoke",
+          "slot": 3,
+          "token": "ji",
+          "number": 48,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "catejidoke",
+          "slot": 4,
+          "token": "do",
+          "number": 27,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "catejidoke",
+          "slot": 5,
+          "token": "ke",
+          "number": 54,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "yokigeleyi",
+          "slot": 1,
+          "token": "yo",
+          "number": 7,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "yokigeleyi",
+          "slot": 2,
+          "token": "ki",
+          "number": 53,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "yokigeleyi",
+          "slot": 3,
+          "token": "ge",
+          "number": 39,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "yokigeleyi",
+          "slot": 4,
+          "token": "le",
+          "number": 59,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "yokigeleyi",
+          "slot": 5,
+          "token": "yi",
+          "number": 8,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "duricidule",
+          "slot": 1,
+          "token": "du",
+          "number": 26,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "duricidule",
+          "slot": 2,
+          "token": "ri",
+          "number": 83,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "duricidule",
+          "slot": 3,
+          "token": "ci",
+          "number": 23,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "duricidule",
+          "slot": 4,
+          "token": "du",
+          "number": 26,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "duricidule",
+          "slot": 5,
+          "token": "le",
+          "number": 59,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "kohokycuee",
+          "slot": 1,
+          "token": "ko",
+          "number": 52,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "kohokycuee",
+          "slot": 2,
+          "token": "ho",
+          "number": 42,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "kohokycuee",
+          "slot": 4,
+          "token": "cu",
+          "number": 21,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "kuxomifumu",
+          "slot": 1,
+          "token": "ku",
+          "number": 51,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "kuxomifumu",
+          "slot": 2,
+          "token": "xo",
+          "number": 2,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "kuxomifumu",
+          "slot": 3,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "kuxomifumu",
+          "slot": 4,
+          "token": "fu",
+          "number": 31,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "kuxomifumu",
+          "slot": 5,
+          "token": "mu",
+          "number": 61,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 9,
+          "word": "hutadynyyg",
+          "slot": 1,
+          "token": "hu",
+          "number": 41,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 9,
+          "word": "hutadynyyg",
+          "slot": 2,
+          "token": "ta",
+          "number": 95,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "capakazuye",
+          "slot": 1,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "capakazuye",
+          "slot": 2,
+          "token": "pa",
+          "number": 75,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "capakazuye",
+          "slot": 3,
+          "token": "ka",
+          "number": 55,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "capakazuye",
+          "slot": 4,
+          "token": "zu",
+          "number": 11,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "capakazuye",
+          "slot": 5,
+          "token": "ye",
+          "number": 9,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "mycykafevu",
+          "slot": 3,
+          "token": "ka",
+          "number": 55,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "mycykafevu",
+          "slot": 4,
+          "token": "fe",
+          "number": 34,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "mycykafevu",
+          "slot": 5,
+          "token": "vu",
+          "number": 96,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "damoumhosy",
+          "slot": 1,
+          "token": "da",
+          "number": 30,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "damoumhosy",
+          "slot": 2,
+          "token": "mo",
+          "number": 62,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "damoumhosy",
+          "slot": 4,
+          "token": "ho",
+          "number": 42,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "cydicapayo",
+          "slot": 2,
+          "token": "di",
+          "number": 28,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "cydicapayo",
+          "slot": 3,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "cydicapayo",
+          "slot": 4,
+          "token": "pa",
+          "number": 75,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "cydicapayo",
+          "slot": 5,
+          "token": "yo",
+          "number": 7,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 17,
+          "word": "mahykagica",
+          "slot": 1,
+          "token": "ma",
+          "number": 65,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 17,
+          "word": "mahykagica",
+          "slot": 3,
+          "token": "ka",
+          "number": 55,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 17,
+          "word": "mahykagica",
+          "slot": 4,
+          "token": "gi",
+          "number": 38,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 17,
+          "word": "mahykagica",
+          "slot": 5,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 18,
+          "word": "fegajiriby",
+          "slot": 1,
+          "token": "fe",
+          "number": 34,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 18,
+          "word": "fegajiriby",
+          "slot": 2,
+          "token": "ga",
+          "number": 40,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 18,
+          "word": "fegajiriby",
+          "slot": 3,
+          "token": "ji",
+          "number": 48,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 18,
+          "word": "fegajiriby",
+          "slot": 4,
+          "token": "ri",
+          "number": 83,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 19,
+          "word": "jomoaxfojy",
+          "slot": 1,
+          "token": "jo",
+          "number": 47,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 19,
+          "word": "jomoaxfojy",
+          "slot": 2,
+          "token": "mo",
+          "number": 62,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 19,
+          "word": "jomoaxfojy",
+          "slot": 4,
+          "token": "fo",
+          "number": 32,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 20,
+          "word": "micycoteco",
+          "slot": 1,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 20,
+          "word": "micycoteco",
+          "slot": 3,
+          "token": "co",
+          "number": 22,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 20,
+          "word": "micycoteco",
+          "slot": 4,
+          "token": "te",
+          "number": 94,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 20,
+          "word": "micycoteco",
+          "slot": 5,
+          "token": "co",
+          "number": 22,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 21,
+          "word": "fuhodijige",
+          "slot": 1,
+          "token": "fu",
+          "number": 31,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 21,
+          "word": "fuhodijige",
+          "slot": 2,
+          "token": "ho",
+          "number": 42,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 21,
+          "word": "fuhodijige",
+          "slot": 3,
+          "token": "di",
+          "number": 28,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 21,
+          "word": "fuhodijige",
+          "slot": 4,
+          "token": "ji",
+          "number": 48,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 21,
+          "word": "fuhodijige",
+          "slot": 5,
+          "token": "ge",
+          "number": 39,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 22,
+          "word": "cafemigymu",
+          "slot": 1,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 22,
+          "word": "cafemigymu",
+          "slot": 2,
+          "token": "fe",
+          "number": 34,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 22,
+          "word": "cafemigymu",
+          "slot": 3,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 22,
+          "word": "cafemigymu",
+          "slot": 5,
+          "token": "mu",
+          "number": 61,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 23,
+          "word": "pokycekige",
+          "slot": 1,
+          "token": "po",
+          "number": 72,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 23,
+          "word": "pokycekige",
+          "slot": 3,
+          "token": "ce",
+          "number": 24,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 23,
+          "word": "pokycekige",
+          "slot": 4,
+          "token": "ki",
+          "number": 53,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 23,
+          "word": "pokycekige",
+          "slot": 5,
+          "token": "ge",
+          "number": 39,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 24,
+          "word": "rudubyrijo",
+          "slot": 1,
+          "token": "ru",
+          "number": 81,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 24,
+          "word": "rudubyrijo",
+          "slot": 2,
+          "token": "du",
+          "number": 26,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 24,
+          "word": "rudubyrijo",
+          "slot": 4,
+          "token": "ri",
+          "number": 83,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 24,
+          "word": "rudubyrijo",
+          "slot": 5,
+          "token": "jo",
+          "number": 47,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 25,
+          "word": "jorinimafy",
+          "slot": 1,
+          "token": "jo",
+          "number": 47,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 25,
+          "word": "jorinimafy",
+          "slot": 2,
+          "token": "ri",
+          "number": 83,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 25,
+          "word": "jorinimafy",
+          "slot": 3,
+          "token": "ni",
+          "number": 68,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 25,
+          "word": "jorinimafy",
+          "slot": 4,
+          "token": "ma",
+          "number": 65,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 26,
+          "word": "fojylisiby",
+          "slot": 1,
+          "token": "fo",
+          "number": 32,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 26,
+          "word": "fojylisiby",
+          "slot": 3,
+          "token": "li",
+          "number": 58,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 26,
+          "word": "fojylisiby",
+          "slot": 4,
+          "token": "si",
+          "number": 88,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 27,
+          "word": "mikypomice",
+          "slot": 1,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 27,
+          "word": "mikypomice",
+          "slot": 3,
+          "token": "po",
+          "number": 72,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 27,
+          "word": "mikypomice",
+          "slot": 4,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 27,
+          "word": "mikypomice",
+          "slot": 5,
+          "token": "ce",
+          "number": 24,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 28,
+          "word": "miyaminoma",
+          "slot": 1,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 28,
+          "word": "miyaminoma",
+          "slot": 2,
+          "token": "ya",
+          "number": 10,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 28,
+          "word": "miyaminoma",
+          "slot": 3,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 28,
+          "word": "miyaminoma",
+          "slot": 4,
+          "token": "no",
+          "number": 67,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 28,
+          "word": "miyaminoma",
+          "slot": 5,
+          "token": "ma",
+          "number": 65,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 29,
+          "word": "fykazokipa",
+          "slot": 2,
+          "token": "ka",
+          "number": 55,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 29,
+          "word": "fykazokipa",
+          "slot": 3,
+          "token": "zo",
+          "number": 12,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 29,
+          "word": "fykazokipa",
+          "slot": 4,
+          "token": "ki",
+          "number": 53,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 29,
+          "word": "fykazokipa",
+          "slot": 5,
+          "token": "pa",
+          "number": 75,
+          "orientation": "cv"
+        }
+      ],
+      "excluded": [
+        [
+          5,
+          "liriopen",
+          8
+        ],
+        [
+          14,
+          "benyzoac",
+          8
+        ],
+        [
+          15,
+          "hinucuge",
+          8
+        ],
+        [
+          16,
+          "rifyjabo",
+          8
+        ]
+      ]
+    },
+    "0:1917-06-29_0511:reverse_allowed=True": {
+      "name": "1917-06-29_0511",
+      "total": 125,
+      "matched": 103,
+      "unknown_count": 22,
+      "unmapped": [
+        {
+          "word_index": 2,
+          "word": "myzoasdoke",
+          "slot": 1,
+          "token": "my",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 7,
+          "word": "kohokycuee",
+          "slot": 3,
+          "token": "ky",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 7,
+          "word": "kohokycuee",
+          "slot": 5,
+          "token": "ee",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 9,
+          "word": "hutadynyyg",
+          "slot": 3,
+          "token": "dy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 9,
+          "word": "hutadynyyg",
+          "slot": 4,
+          "token": "ny",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 9,
+          "word": "hutadynyyg",
+          "slot": 5,
+          "token": "yg",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 11,
+          "word": "mycykafevu",
+          "slot": 1,
+          "token": "my",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 11,
+          "word": "mycykafevu",
+          "slot": 2,
+          "token": "cy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 12,
+          "word": "damoumhosy",
+          "slot": 5,
+          "token": "sy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 13,
+          "word": "cydicapayo",
+          "slot": 1,
+          "token": "cy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 17,
+          "word": "mahykagica",
+          "slot": 2,
+          "token": "hy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 18,
+          "word": "fegajiriby",
+          "slot": 5,
+          "token": "by",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 19,
+          "word": "jomoaxfojy",
+          "slot": 5,
+          "token": "jy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 20,
+          "word": "micycoteco",
+          "slot": 2,
+          "token": "cy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 22,
+          "word": "cafemigymu",
+          "slot": 4,
+          "token": "gy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 23,
+          "word": "pokycekige",
+          "slot": 2,
+          "token": "ky",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 24,
+          "word": "rudubyrijo",
+          "slot": 3,
+          "token": "by",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 25,
+          "word": "jorinimafy",
+          "slot": 5,
+          "token": "fy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 26,
+          "word": "fojylisiby",
+          "slot": 2,
+          "token": "jy",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 26,
+          "word": "fojylisiby",
+          "slot": 5,
+          "token": "by",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 27,
+          "word": "mikypomice",
+          "slot": 2,
+          "token": "ky",
+          "number": null,
+          "orientation": null
+        },
+        {
+          "word_index": 29,
+          "word": "fykazokipa",
+          "slot": 1,
+          "token": "fy",
+          "number": null,
+          "orientation": null
+        }
+      ],
+      "matched_slots": [
+        {
+          "word_index": 1,
+          "word": "mukoacyobe",
+          "slot": 1,
+          "token": "mu",
+          "number": 61,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "mukoacyobe",
+          "slot": 2,
+          "token": "ko",
+          "number": 52,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "mukoacyobe",
+          "slot": 3,
+          "token": "ac",
+          "number": 25,
+          "orientation": "vc"
+        },
+        {
+          "word_index": 1,
+          "word": "mukoacyobe",
+          "slot": 4,
+          "token": "yo",
+          "number": 7,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "mukoacyobe",
+          "slot": 5,
+          "token": "be",
+          "number": 19,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "myzoasdoke",
+          "slot": 2,
+          "token": "zo",
+          "number": 12,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "myzoasdoke",
+          "slot": 3,
+          "token": "as",
+          "number": 90,
+          "orientation": "vc"
+        },
+        {
+          "word_index": 2,
+          "word": "myzoasdoke",
+          "slot": 4,
+          "token": "do",
+          "number": 27,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "myzoasdoke",
+          "slot": 5,
+          "token": "ke",
+          "number": 54,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "catejidoke",
+          "slot": 1,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "catejidoke",
+          "slot": 2,
+          "token": "te",
+          "number": 94,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "catejidoke",
+          "slot": 3,
+          "token": "ji",
+          "number": 48,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "catejidoke",
+          "slot": 4,
+          "token": "do",
+          "number": 27,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "catejidoke",
+          "slot": 5,
+          "token": "ke",
+          "number": 54,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "yokigeleyi",
+          "slot": 1,
+          "token": "yo",
+          "number": 7,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "yokigeleyi",
+          "slot": 2,
+          "token": "ki",
+          "number": 53,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "yokigeleyi",
+          "slot": 3,
+          "token": "ge",
+          "number": 39,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "yokigeleyi",
+          "slot": 4,
+          "token": "le",
+          "number": 59,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "yokigeleyi",
+          "slot": 5,
+          "token": "yi",
+          "number": 8,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "duricidule",
+          "slot": 1,
+          "token": "du",
+          "number": 26,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "duricidule",
+          "slot": 2,
+          "token": "ri",
+          "number": 83,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "duricidule",
+          "slot": 3,
+          "token": "ci",
+          "number": 23,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "duricidule",
+          "slot": 4,
+          "token": "du",
+          "number": 26,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "duricidule",
+          "slot": 5,
+          "token": "le",
+          "number": 59,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "kohokycuee",
+          "slot": 1,
+          "token": "ko",
+          "number": 52,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "kohokycuee",
+          "slot": 2,
+          "token": "ho",
+          "number": 42,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "kohokycuee",
+          "slot": 4,
+          "token": "cu",
+          "number": 21,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "kuxomifumu",
+          "slot": 1,
+          "token": "ku",
+          "number": 51,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "kuxomifumu",
+          "slot": 2,
+          "token": "xo",
+          "number": 2,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "kuxomifumu",
+          "slot": 3,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "kuxomifumu",
+          "slot": 4,
+          "token": "fu",
+          "number": 31,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "kuxomifumu",
+          "slot": 5,
+          "token": "mu",
+          "number": 61,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 9,
+          "word": "hutadynyyg",
+          "slot": 1,
+          "token": "hu",
+          "number": 41,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 9,
+          "word": "hutadynyyg",
+          "slot": 2,
+          "token": "ta",
+          "number": 95,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "capakazuye",
+          "slot": 1,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "capakazuye",
+          "slot": 2,
+          "token": "pa",
+          "number": 75,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "capakazuye",
+          "slot": 3,
+          "token": "ka",
+          "number": 55,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "capakazuye",
+          "slot": 4,
+          "token": "zu",
+          "number": 11,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "capakazuye",
+          "slot": 5,
+          "token": "ye",
+          "number": 9,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "mycykafevu",
+          "slot": 3,
+          "token": "ka",
+          "number": 55,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "mycykafevu",
+          "slot": 4,
+          "token": "fe",
+          "number": 34,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "mycykafevu",
+          "slot": 5,
+          "token": "vu",
+          "number": 96,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "damoumhosy",
+          "slot": 1,
+          "token": "da",
+          "number": 30,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "damoumhosy",
+          "slot": 2,
+          "token": "mo",
+          "number": 62,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "damoumhosy",
+          "slot": 3,
+          "token": "um",
+          "number": 61,
+          "orientation": "vc"
+        },
+        {
+          "word_index": 12,
+          "word": "damoumhosy",
+          "slot": 4,
+          "token": "ho",
+          "number": 42,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "cydicapayo",
+          "slot": 2,
+          "token": "di",
+          "number": 28,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "cydicapayo",
+          "slot": 3,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "cydicapayo",
+          "slot": 4,
+          "token": "pa",
+          "number": 75,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "cydicapayo",
+          "slot": 5,
+          "token": "yo",
+          "number": 7,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 17,
+          "word": "mahykagica",
+          "slot": 1,
+          "token": "ma",
+          "number": 65,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 17,
+          "word": "mahykagica",
+          "slot": 3,
+          "token": "ka",
+          "number": 55,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 17,
+          "word": "mahykagica",
+          "slot": 4,
+          "token": "gi",
+          "number": 38,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 17,
+          "word": "mahykagica",
+          "slot": 5,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 18,
+          "word": "fegajiriby",
+          "slot": 1,
+          "token": "fe",
+          "number": 34,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 18,
+          "word": "fegajiriby",
+          "slot": 2,
+          "token": "ga",
+          "number": 40,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 18,
+          "word": "fegajiriby",
+          "slot": 3,
+          "token": "ji",
+          "number": 48,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 18,
+          "word": "fegajiriby",
+          "slot": 4,
+          "token": "ri",
+          "number": 83,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 19,
+          "word": "jomoaxfojy",
+          "slot": 1,
+          "token": "jo",
+          "number": 47,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 19,
+          "word": "jomoaxfojy",
+          "slot": 2,
+          "token": "mo",
+          "number": 62,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 19,
+          "word": "jomoaxfojy",
+          "slot": 3,
+          "token": "ax",
+          "number": 5,
+          "orientation": "vc"
+        },
+        {
+          "word_index": 19,
+          "word": "jomoaxfojy",
+          "slot": 4,
+          "token": "fo",
+          "number": 32,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 20,
+          "word": "micycoteco",
+          "slot": 1,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 20,
+          "word": "micycoteco",
+          "slot": 3,
+          "token": "co",
+          "number": 22,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 20,
+          "word": "micycoteco",
+          "slot": 4,
+          "token": "te",
+          "number": 94,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 20,
+          "word": "micycoteco",
+          "slot": 5,
+          "token": "co",
+          "number": 22,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 21,
+          "word": "fuhodijige",
+          "slot": 1,
+          "token": "fu",
+          "number": 31,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 21,
+          "word": "fuhodijige",
+          "slot": 2,
+          "token": "ho",
+          "number": 42,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 21,
+          "word": "fuhodijige",
+          "slot": 3,
+          "token": "di",
+          "number": 28,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 21,
+          "word": "fuhodijige",
+          "slot": 4,
+          "token": "ji",
+          "number": 48,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 21,
+          "word": "fuhodijige",
+          "slot": 5,
+          "token": "ge",
+          "number": 39,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 22,
+          "word": "cafemigymu",
+          "slot": 1,
+          "token": "ca",
+          "number": 25,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 22,
+          "word": "cafemigymu",
+          "slot": 2,
+          "token": "fe",
+          "number": 34,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 22,
+          "word": "cafemigymu",
+          "slot": 3,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 22,
+          "word": "cafemigymu",
+          "slot": 5,
+          "token": "mu",
+          "number": 61,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 23,
+          "word": "pokycekige",
+          "slot": 1,
+          "token": "po",
+          "number": 72,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 23,
+          "word": "pokycekige",
+          "slot": 3,
+          "token": "ce",
+          "number": 24,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 23,
+          "word": "pokycekige",
+          "slot": 4,
+          "token": "ki",
+          "number": 53,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 23,
+          "word": "pokycekige",
+          "slot": 5,
+          "token": "ge",
+          "number": 39,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 24,
+          "word": "rudubyrijo",
+          "slot": 1,
+          "token": "ru",
+          "number": 81,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 24,
+          "word": "rudubyrijo",
+          "slot": 2,
+          "token": "du",
+          "number": 26,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 24,
+          "word": "rudubyrijo",
+          "slot": 4,
+          "token": "ri",
+          "number": 83,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 24,
+          "word": "rudubyrijo",
+          "slot": 5,
+          "token": "jo",
+          "number": 47,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 25,
+          "word": "jorinimafy",
+          "slot": 1,
+          "token": "jo",
+          "number": 47,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 25,
+          "word": "jorinimafy",
+          "slot": 2,
+          "token": "ri",
+          "number": 83,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 25,
+          "word": "jorinimafy",
+          "slot": 3,
+          "token": "ni",
+          "number": 68,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 25,
+          "word": "jorinimafy",
+          "slot": 4,
+          "token": "ma",
+          "number": 65,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 26,
+          "word": "fojylisiby",
+          "slot": 1,
+          "token": "fo",
+          "number": 32,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 26,
+          "word": "fojylisiby",
+          "slot": 3,
+          "token": "li",
+          "number": 58,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 26,
+          "word": "fojylisiby",
+          "slot": 4,
+          "token": "si",
+          "number": 88,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 27,
+          "word": "mikypomice",
+          "slot": 1,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 27,
+          "word": "mikypomice",
+          "slot": 3,
+          "token": "po",
+          "number": 72,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 27,
+          "word": "mikypomice",
+          "slot": 4,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 27,
+          "word": "mikypomice",
+          "slot": 5,
+          "token": "ce",
+          "number": 24,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 28,
+          "word": "miyaminoma",
+          "slot": 1,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 28,
+          "word": "miyaminoma",
+          "slot": 2,
+          "token": "ya",
+          "number": 10,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 28,
+          "word": "miyaminoma",
+          "slot": 3,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 28,
+          "word": "miyaminoma",
+          "slot": 4,
+          "token": "no",
+          "number": 67,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 28,
+          "word": "miyaminoma",
+          "slot": 5,
+          "token": "ma",
+          "number": 65,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 29,
+          "word": "fykazokipa",
+          "slot": 2,
+          "token": "ka",
+          "number": 55,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 29,
+          "word": "fykazokipa",
+          "slot": 3,
+          "token": "zo",
+          "number": 12,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 29,
+          "word": "fykazokipa",
+          "slot": 4,
+          "token": "ki",
+          "number": 53,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 29,
+          "word": "fykazokipa",
+          "slot": 5,
+          "token": "pa",
+          "number": 75,
+          "orientation": "cv"
+        }
+      ],
+      "excluded": [
+        [
+          5,
+          "liriopen",
+          8
+        ],
+        [
+          14,
+          "benyzoac",
+          8
+        ],
+        [
+          15,
+          "hinucuge",
+          8
+        ],
+        [
+          16,
+          "rifyjabo",
+          8
+        ]
+      ]
+    },
+    "0:1916-04-03_POSITIVE_CONTROL:reverse_allowed=False": {
+      "name": "1916-04-03_POSITIVE_CONTROL",
+      "total": 80,
+      "matched": 80,
+      "unknown_count": 0,
+      "unmapped": [],
+      "matched_slots": [
+        {
+          "word_index": 1,
+          "word": "baxuxepeja",
+          "slot": 1,
+          "token": "ba",
+          "number": 20,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "baxuxepeja",
+          "slot": 2,
+          "token": "xu",
+          "number": 1,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "baxuxepeja",
+          "slot": 3,
+          "token": "xe",
+          "number": 4,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "baxuxepeja",
+          "slot": 4,
+          "token": "pe",
+          "number": 74,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "baxuxepeja",
+          "slot": 5,
+          "token": "ja",
+          "number": 50,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "qicijinati",
+          "slot": 1,
+          "token": "qi",
+          "number": 78,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "qicijinati",
+          "slot": 2,
+          "token": "ci",
+          "number": 23,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "qicijinati",
+          "slot": 3,
+          "token": "ji",
+          "number": 48,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "qicijinati",
+          "slot": 4,
+          "token": "na",
+          "number": 70,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "qicijinati",
+          "slot": 5,
+          "token": "ti",
+          "number": 93,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "bemigasiqi",
+          "slot": 1,
+          "token": "be",
+          "number": 19,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "bemigasiqi",
+          "slot": 2,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "bemigasiqi",
+          "slot": 3,
+          "token": "ga",
+          "number": 40,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "bemigasiqi",
+          "slot": 4,
+          "token": "si",
+          "number": 88,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "bemigasiqi",
+          "slot": 5,
+          "token": "qi",
+          "number": 78,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "jakebiqoye",
+          "slot": 1,
+          "token": "ja",
+          "number": 50,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "jakebiqoye",
+          "slot": 2,
+          "token": "ke",
+          "number": 54,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "jakebiqoye",
+          "slot": 3,
+          "token": "bi",
+          "number": 18,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "jakebiqoye",
+          "slot": 4,
+          "token": "qo",
+          "number": 77,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "jakebiqoye",
+          "slot": 5,
+          "token": "ye",
+          "number": 9,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "kufonemige",
+          "slot": 1,
+          "token": "ku",
+          "number": 51,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "kufonemige",
+          "slot": 2,
+          "token": "fo",
+          "number": 32,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "kufonemige",
+          "slot": 3,
+          "token": "ne",
+          "number": 69,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "kufonemige",
+          "slot": 4,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "kufonemige",
+          "slot": 5,
+          "token": "ge",
+          "number": 39,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "tuxaboboba",
+          "slot": 1,
+          "token": "tu",
+          "number": 91,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "tuxaboboba",
+          "slot": 2,
+          "token": "xa",
+          "number": 5,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "tuxaboboba",
+          "slot": 3,
+          "token": "bo",
+          "number": 17,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "tuxaboboba",
+          "slot": 4,
+          "token": "bo",
+          "number": 17,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "tuxaboboba",
+          "slot": 5,
+          "token": "ba",
+          "number": 20,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "gedocijiga",
+          "slot": 1,
+          "token": "ge",
+          "number": 39,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "gedocijiga",
+          "slot": 2,
+          "token": "do",
+          "number": 27,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "gedocijiga",
+          "slot": 3,
+          "token": "ci",
+          "number": 23,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "gedocijiga",
+          "slot": 4,
+          "token": "ji",
+          "number": 48,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "gedocijiga",
+          "slot": 5,
+          "token": "ga",
+          "number": 40,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "poyevayoxa",
+          "slot": 1,
+          "token": "po",
+          "number": 72,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "poyevayoxa",
+          "slot": 2,
+          "token": "ye",
+          "number": 9,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "poyevayoxa",
+          "slot": 3,
+          "token": "va",
+          "number": 0,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "poyevayoxa",
+          "slot": 4,
+          "token": "yo",
+          "number": 7,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "poyevayoxa",
+          "slot": 5,
+          "token": "xa",
+          "number": 5,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 9,
+          "word": "leyoleveke",
+          "slot": 1,
+          "token": "le",
+          "number": 59,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 9,
+          "word": "leyoleveke",
+          "slot": 2,
+          "token": "yo",
+          "number": 7,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 9,
+          "word": "leyoleveke",
+          "slot": 3,
+          "token": "le",
+          "number": 59,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 9,
+          "word": "leyoleveke",
+          "slot": 4,
+          "token": "ve",
+          "number": 99,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 9,
+          "word": "leyoleveke",
+          "slot": 5,
+          "token": "ke",
+          "number": 54,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "biromapesa",
+          "slot": 1,
+          "token": "bi",
+          "number": 18,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "biromapesa",
+          "slot": 2,
+          "token": "ro",
+          "number": 82,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "biromapesa",
+          "slot": 3,
+          "token": "ma",
+          "number": 65,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "biromapesa",
+          "slot": 4,
+          "token": "pe",
+          "number": 74,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "biromapesa",
+          "slot": 5,
+          "token": "sa",
+          "number": 90,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "vorobenife",
+          "slot": 1,
+          "token": "vo",
+          "number": 97,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "vorobenife",
+          "slot": 2,
+          "token": "ro",
+          "number": 82,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "vorobenife",
+          "slot": 3,
+          "token": "be",
+          "number": 19,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "vorobenife",
+          "slot": 4,
+          "token": "ni",
+          "number": 68,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "vorobenife",
+          "slot": 5,
+          "token": "fe",
+          "number": 34,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "xikebiqoye",
+          "slot": 1,
+          "token": "xi",
+          "number": 3,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "xikebiqoye",
+          "slot": 2,
+          "token": "ke",
+          "number": 54,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "xikebiqoye",
+          "slot": 3,
+          "token": "bi",
+          "number": 18,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "xikebiqoye",
+          "slot": 4,
+          "token": "qo",
+          "number": 77,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "xikebiqoye",
+          "slot": 5,
+          "token": "ye",
+          "number": 9,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "qekufiyaqa",
+          "slot": 1,
+          "token": "qe",
+          "number": 79,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "qekufiyaqa",
+          "slot": 2,
+          "token": "ku",
+          "number": 51,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "qekufiyaqa",
+          "slot": 3,
+          "token": "fi",
+          "number": 33,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "qekufiyaqa",
+          "slot": 4,
+          "token": "ya",
+          "number": 10,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "qekufiyaqa",
+          "slot": 5,
+          "token": "qa",
+          "number": 80,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 14,
+          "word": "tijaqixiqo",
+          "slot": 1,
+          "token": "ti",
+          "number": 93,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 14,
+          "word": "tijaqixiqo",
+          "slot": 2,
+          "token": "ja",
+          "number": 50,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 14,
+          "word": "tijaqixiqo",
+          "slot": 3,
+          "token": "qi",
+          "number": 78,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 14,
+          "word": "tijaqixiqo",
+          "slot": 4,
+          "token": "xi",
+          "number": 3,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 14,
+          "word": "tijaqixiqo",
+          "slot": 5,
+          "token": "qo",
+          "number": 77,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 15,
+          "word": "xitonatula",
+          "slot": 1,
+          "token": "xi",
+          "number": 3,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 15,
+          "word": "xitonatula",
+          "slot": 2,
+          "token": "to",
+          "number": 92,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 15,
+          "word": "xitonatula",
+          "slot": 3,
+          "token": "na",
+          "number": 70,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 15,
+          "word": "xitonatula",
+          "slot": 4,
+          "token": "tu",
+          "number": 91,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 15,
+          "word": "xitonatula",
+          "slot": 5,
+          "token": "la",
+          "number": 60,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 16,
+          "word": "xopavajejo",
+          "slot": 1,
+          "token": "xo",
+          "number": 2,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 16,
+          "word": "xopavajejo",
+          "slot": 2,
+          "token": "pa",
+          "number": 75,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 16,
+          "word": "xopavajejo",
+          "slot": 3,
+          "token": "va",
+          "number": 0,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 16,
+          "word": "xopavajejo",
+          "slot": 4,
+          "token": "je",
+          "number": 49,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 16,
+          "word": "xopavajejo",
+          "slot": 5,
+          "token": "jo",
+          "number": 47,
+          "orientation": "cv"
+        }
+      ],
+      "excluded": [
+        [
+          17,
+          "ropezano",
+          8
+        ]
+      ]
+    },
+    "0:1916-04-03_POSITIVE_CONTROL:reverse_allowed=True": {
+      "name": "1916-04-03_POSITIVE_CONTROL",
+      "total": 80,
+      "matched": 80,
+      "unknown_count": 0,
+      "unmapped": [],
+      "matched_slots": [
+        {
+          "word_index": 1,
+          "word": "baxuxepeja",
+          "slot": 1,
+          "token": "ba",
+          "number": 20,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "baxuxepeja",
+          "slot": 2,
+          "token": "xu",
+          "number": 1,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "baxuxepeja",
+          "slot": 3,
+          "token": "xe",
+          "number": 4,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "baxuxepeja",
+          "slot": 4,
+          "token": "pe",
+          "number": 74,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 1,
+          "word": "baxuxepeja",
+          "slot": 5,
+          "token": "ja",
+          "number": 50,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "qicijinati",
+          "slot": 1,
+          "token": "qi",
+          "number": 78,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "qicijinati",
+          "slot": 2,
+          "token": "ci",
+          "number": 23,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "qicijinati",
+          "slot": 3,
+          "token": "ji",
+          "number": 48,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "qicijinati",
+          "slot": 4,
+          "token": "na",
+          "number": 70,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 2,
+          "word": "qicijinati",
+          "slot": 5,
+          "token": "ti",
+          "number": 93,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "bemigasiqi",
+          "slot": 1,
+          "token": "be",
+          "number": 19,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "bemigasiqi",
+          "slot": 2,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "bemigasiqi",
+          "slot": 3,
+          "token": "ga",
+          "number": 40,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "bemigasiqi",
+          "slot": 4,
+          "token": "si",
+          "number": 88,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 3,
+          "word": "bemigasiqi",
+          "slot": 5,
+          "token": "qi",
+          "number": 78,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "jakebiqoye",
+          "slot": 1,
+          "token": "ja",
+          "number": 50,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "jakebiqoye",
+          "slot": 2,
+          "token": "ke",
+          "number": 54,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "jakebiqoye",
+          "slot": 3,
+          "token": "bi",
+          "number": 18,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "jakebiqoye",
+          "slot": 4,
+          "token": "qo",
+          "number": 77,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 4,
+          "word": "jakebiqoye",
+          "slot": 5,
+          "token": "ye",
+          "number": 9,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "kufonemige",
+          "slot": 1,
+          "token": "ku",
+          "number": 51,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "kufonemige",
+          "slot": 2,
+          "token": "fo",
+          "number": 32,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "kufonemige",
+          "slot": 3,
+          "token": "ne",
+          "number": 69,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "kufonemige",
+          "slot": 4,
+          "token": "mi",
+          "number": 63,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 5,
+          "word": "kufonemige",
+          "slot": 5,
+          "token": "ge",
+          "number": 39,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "tuxaboboba",
+          "slot": 1,
+          "token": "tu",
+          "number": 91,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "tuxaboboba",
+          "slot": 2,
+          "token": "xa",
+          "number": 5,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "tuxaboboba",
+          "slot": 3,
+          "token": "bo",
+          "number": 17,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "tuxaboboba",
+          "slot": 4,
+          "token": "bo",
+          "number": 17,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 6,
+          "word": "tuxaboboba",
+          "slot": 5,
+          "token": "ba",
+          "number": 20,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "gedocijiga",
+          "slot": 1,
+          "token": "ge",
+          "number": 39,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "gedocijiga",
+          "slot": 2,
+          "token": "do",
+          "number": 27,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "gedocijiga",
+          "slot": 3,
+          "token": "ci",
+          "number": 23,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "gedocijiga",
+          "slot": 4,
+          "token": "ji",
+          "number": 48,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 7,
+          "word": "gedocijiga",
+          "slot": 5,
+          "token": "ga",
+          "number": 40,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "poyevayoxa",
+          "slot": 1,
+          "token": "po",
+          "number": 72,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "poyevayoxa",
+          "slot": 2,
+          "token": "ye",
+          "number": 9,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "poyevayoxa",
+          "slot": 3,
+          "token": "va",
+          "number": 0,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "poyevayoxa",
+          "slot": 4,
+          "token": "yo",
+          "number": 7,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 8,
+          "word": "poyevayoxa",
+          "slot": 5,
+          "token": "xa",
+          "number": 5,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 9,
+          "word": "leyoleveke",
+          "slot": 1,
+          "token": "le",
+          "number": 59,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 9,
+          "word": "leyoleveke",
+          "slot": 2,
+          "token": "yo",
+          "number": 7,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 9,
+          "word": "leyoleveke",
+          "slot": 3,
+          "token": "le",
+          "number": 59,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 9,
+          "word": "leyoleveke",
+          "slot": 4,
+          "token": "ve",
+          "number": 99,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 9,
+          "word": "leyoleveke",
+          "slot": 5,
+          "token": "ke",
+          "number": 54,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "biromapesa",
+          "slot": 1,
+          "token": "bi",
+          "number": 18,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "biromapesa",
+          "slot": 2,
+          "token": "ro",
+          "number": 82,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "biromapesa",
+          "slot": 3,
+          "token": "ma",
+          "number": 65,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "biromapesa",
+          "slot": 4,
+          "token": "pe",
+          "number": 74,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 10,
+          "word": "biromapesa",
+          "slot": 5,
+          "token": "sa",
+          "number": 90,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "vorobenife",
+          "slot": 1,
+          "token": "vo",
+          "number": 97,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "vorobenife",
+          "slot": 2,
+          "token": "ro",
+          "number": 82,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "vorobenife",
+          "slot": 3,
+          "token": "be",
+          "number": 19,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "vorobenife",
+          "slot": 4,
+          "token": "ni",
+          "number": 68,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 11,
+          "word": "vorobenife",
+          "slot": 5,
+          "token": "fe",
+          "number": 34,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "xikebiqoye",
+          "slot": 1,
+          "token": "xi",
+          "number": 3,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "xikebiqoye",
+          "slot": 2,
+          "token": "ke",
+          "number": 54,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "xikebiqoye",
+          "slot": 3,
+          "token": "bi",
+          "number": 18,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "xikebiqoye",
+          "slot": 4,
+          "token": "qo",
+          "number": 77,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 12,
+          "word": "xikebiqoye",
+          "slot": 5,
+          "token": "ye",
+          "number": 9,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "qekufiyaqa",
+          "slot": 1,
+          "token": "qe",
+          "number": 79,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "qekufiyaqa",
+          "slot": 2,
+          "token": "ku",
+          "number": 51,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "qekufiyaqa",
+          "slot": 3,
+          "token": "fi",
+          "number": 33,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "qekufiyaqa",
+          "slot": 4,
+          "token": "ya",
+          "number": 10,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 13,
+          "word": "qekufiyaqa",
+          "slot": 5,
+          "token": "qa",
+          "number": 80,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 14,
+          "word": "tijaqixiqo",
+          "slot": 1,
+          "token": "ti",
+          "number": 93,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 14,
+          "word": "tijaqixiqo",
+          "slot": 2,
+          "token": "ja",
+          "number": 50,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 14,
+          "word": "tijaqixiqo",
+          "slot": 3,
+          "token": "qi",
+          "number": 78,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 14,
+          "word": "tijaqixiqo",
+          "slot": 4,
+          "token": "xi",
+          "number": 3,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 14,
+          "word": "tijaqixiqo",
+          "slot": 5,
+          "token": "qo",
+          "number": 77,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 15,
+          "word": "xitonatula",
+          "slot": 1,
+          "token": "xi",
+          "number": 3,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 15,
+          "word": "xitonatula",
+          "slot": 2,
+          "token": "to",
+          "number": 92,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 15,
+          "word": "xitonatula",
+          "slot": 3,
+          "token": "na",
+          "number": 70,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 15,
+          "word": "xitonatula",
+          "slot": 4,
+          "token": "tu",
+          "number": 91,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 15,
+          "word": "xitonatula",
+          "slot": 5,
+          "token": "la",
+          "number": 60,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 16,
+          "word": "xopavajejo",
+          "slot": 1,
+          "token": "xo",
+          "number": 2,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 16,
+          "word": "xopavajejo",
+          "slot": 2,
+          "token": "pa",
+          "number": 75,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 16,
+          "word": "xopavajejo",
+          "slot": 3,
+          "token": "va",
+          "number": 0,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 16,
+          "word": "xopavajejo",
+          "slot": 4,
+          "token": "je",
+          "number": 49,
+          "orientation": "cv"
+        },
+        {
+          "word_index": 16,
+          "word": "xopavajejo",
+          "slot": 5,
+          "token": "jo",
+          "number": 47,
+          "orientation": "cv"
+        }
+      ],
+      "excluded": [
+        [
+          17,
+          "ropezano",
+          8
+        ]
+      ]
+    }
+  },
+  "source_keys": {
+    "official_gallery_url": "https://edu.aichi-u.ac.jp/toa/collection/gallery02/Com1000075.html",
+    "image_link": "https://edu.aichi-u.ac.jp/toa/collection/gallery02/19EU5116_RT8.jpg",
+    "independent_published_transcription": "https://github.com/NoAutopilot/cipher-lab/blob/main/sources/cryptiana/web/chinesecrypto_e.htm",
+    "input_ciphertexts": "public notes/fam6, original scans not checked"
+  }
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>密电原文 · 孙戴1917六月密电</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="inner">
+<a class="brand" href="index.html"><span class="seal">密</span>sun-dai-1917-cipher</a>
+<nav><a href="index.html">首页</a><a href="blockers.html">卡点与求助</a><a href="telegrams.html" class=on>密电原文</a><a href="rounds.html">研究轮次</a><a href="sources.html">资料来源</a></nav>
+</div></header>
+<main>
+<div class="narrow">
+<div class="kicker">The ciphertexts</div>
+<h1>密电原文与读本</h1>
+<p class="lede">目标：日本亚洲历史资料中心（JACAR）<b>B03050090200</b> 帧 <b>0509</b>（1917-06-24，孙中山 上海 → 戴季陶 东京，署名 <code>Sunwen</code>）与帧 <b>0511</b>（1917-06-29，戴季陶 东京 → 孙中山 上海，两张电报纸，署名 <code>Tai</code>）。</p>
+<blockquote>扫描影像受 JACAR 权利约束，本仓库不转载。可在 Brice Dudout 公开页面查看复制图：
+<a href="https://bdudout.github.io/wenmi/assets/img/fiches/scan-0509-full.webp">0509</a> ·
+<a href="https://bdudout.github.io/wenmi/assets/img/fiches/scan-0511-full.webp">0511</a>。
+黄底 = 已知存在争议的读法。</blockquote>
+
+<h2>读本 1：Bourdeau 原始转录（raw，冻结不改）</h2>
+<p>来源：<a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sunyatsen/y1917/NOTES.md">dbourdeau/cyphersolver</a>，冻结于 <a href="../data/ciphertexts.json">data/ciphertexts.json</a>。</p>
+<div class="tele"><span class="label">1917-06-24_0509</span>Lidajysamy <span class="unc">vemucayri</span> <span class="unc">mevecafema(u)</span> pokelutazi riyecafafi cymefymeca madamymiri pujihokehe Sunwen</div><div class="tele"><span class="label">1917-06-29_0511</span>Mukoacyobe myzoasdoke catejidoke yokigeleyi liriopen duricidule <span class="unc">kohokycuee</span> kuxomifumu <span class="unc">hutadyny(y)go</span> capakazuye mycykafevu <span class="unc">damoumhosy</span> cydicapayo benyzoac hinucuge <span class="unc">rifyjabo(?)</span> mahykagica fegajiriby jomoaxfojy micycoteco fuhodijige cafemigymu pokycekige rudubyrijo jorinimafy fojylisiby mikypomice miyaminoma fykazokipa Tai</div>
+
+<h2>读本 2：Dudout 独立盲读（witness）</h2>
+<p>来源：<a href="https://bdudout.github.io/wenmi/zh-hans/telegrams.html">bdudout/wenmi</a>（CC BY 4.0），冻结于 <a href="../data/independent_witness.json">data/independent_witness.json</a>。不是唯一核定原文。</p>
+<div class="tele"><span class="label">1917-06-24_0509（8 词）</span>lidajysamy <span class="unc">vemucicyri</span> mevecafemu pokelubazi riyecafafi cymefymeca madamymiri pujihohehe</div><div class="tele"><span class="label">1917-06-29_0511 第1页（18 词）</span><span class="unc">muposacyobe</span> myzoasdohe <span class="unc">catyidohe</span> yokigeleyi liriopen duricidule <span class="unc">kohokycuce</span> kuxomifumu hutadynyfo capakazuye mycykafevu <span class="unc">damowmhosy</span> cydicapayo bemyzoac hinucuge rifygabo mahykagica fegajiriby</div><div class="tele"><span class="label">1917-06-29_0511 第2页（11 词）</span>fomoaxfojy micycoteco fuhodigige cafenigymu pokycekige rudubyrijo gorinimafy <span class="unc">fogylisicy</span> mikypowice niyaminoma fykagokipa</div>
+
+<h2>Round 18 解析：删除元音开头虚码后的四字母电码流</h2>
+<p>同色下划线 = 重复电码（cafe×3、mupo×3、yobe、kige、capa、fojy、mafy 各×2）。这是<b>结构假设</b>，不是译文；重复的 <code>yobe myzo</code> 双码是将来做已知明文攻击的首选位置。</p>
+<div class="tele"><span class="label">0509（1917-06-24 孙→戴，20 码）</span>lida jysa myve muce kyri meve <mark class="r1">cafe</mark> <mark class="r2">mupo</mark> kelu tazi riye cafa ficy mefy meca mada mymi ripu jiho kehe</div><div class="tele"><span class="label">0511a（1917-06-29 戴→孙，第1页 40 码）</span><mark class="r2">mupo</mark> <mark class="r3">yobe</mark> myzo doke cate jido keyo <mark class="r4">kige</mark> leyi liri duri cidu leko hoky cuce kuxo mifu muhu tady nygo <mark class="r5">capa</mark> kazu yemy cyka fevu damo hosy cydi <mark class="r5">capa</mark> <mark class="r3">yobe</mark> nyzo hinu cuge rify jabo mahy kagi <mark class="r1">cafe</mark> gaji riby</div><div class="tele"><span class="label">0511b（第2页 27 码）</span>jomo <mark class="r6">fojy</mark> micy cote cofu hodi jige <mark class="r1">cafe</mark> migy <mark class="r2">mupo</mark> kyce <mark class="r4">kige</mark> rudu byri jojo rini <mark class="r7">mafy</mark> <mark class="r6">fojy</mark> lisi bymi kypo mice miya mino <mark class="r7">mafy</mark> kazo kipa</div>
+
+<h2>已知的字符级疑点</h2>
+<table>
+<tr><th>位置</th><th>候选读法</th><th>状态</th></tr>
+<tr><td>0509 第2词</td><td><code>vemucäyri</code>（摩斯 ä）→ <code>vemucekyri</code> / <code>vemucaayri</code> / <code>vemucrtyri</code>；独立视觉读 <code>vemucicyri</code></td><td>未定（R17）</td></tr>
+<tr><td>0509 第3词</td><td><code>mevecafema(u)</code> / <code>mevecafemu</code></td><td>R16 倾向 10 字母</td></tr>
+<tr><td>0511 第1词</td><td><code>mukoacyobe</code> / <code>muposacyobe</code>（11字母）</td><td>未定</td></tr>
+<tr><td>0511 第3词</td><td><code>catejidoke</code> / <code>catyidohe</code>（9字母）</td><td>未定</td></tr>
+<tr><td>0511 第7词</td><td><code>kohokycuee</code> / <code>kohokycuce</code></td><td>R18 唯一强负相位词，重点复核</td></tr>
+<tr><td>0511 第9词</td><td><code>hutadyny(y)go</code> / <code>hutadynyfo</code></td><td>未定</td></tr>
+<tr><td>0511 第12词</td><td><code>damoumhosy</code> / <code>damowmhosy</code></td><td>未定</td></tr>
+<tr><td>0511 页界</td><td>第1页末 / 第2页首是否漏、增一组</td><td>R18 虚码解析后不再需要</td></tr>
+</table>
+</div>
+</main>
+<footer>孙中山—戴季陶 1917 年六月密电 · 开放研究档案 · 文字与代码 CC BY 4.0 · JACAR 影像版权归原馆，本站不转载</footer>
+</body>
+</html>

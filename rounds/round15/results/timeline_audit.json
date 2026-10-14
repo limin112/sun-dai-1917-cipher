@@ -1,0 +1,36 @@
+{
+  "research_date": "2026-10-11",
+  "ciphertext_sha256": "620e469ec26d6534df2dbad0553d79844f1d9df8e68e47a95194a1c0563a8136",
+  "original_archive_image_verified": false,
+  "verified_june_characters": 0,
+  "historical_key_found": false,
+  "evidence_scope": "1928 first-person retrospective, not the 1917 letter or June original image",
+  "observed_arrival": "about 1917-06-21 (first-person 1928 book p103)",
+  "sensitivity_arrival_assumption": "[1917-06-20,1917-06-22] is a testing window, not historical fact",
+  "possible_tokyo_departure_interval": [
+    "1917-06-22",
+    "1917-06-26"
+  ],
+  "june29_telegram_transcription": "Tokyo -> Shanghai; date 1917-06-29, public 3rd-party notes only",
+  "conditional_timing_tension": true,
+  "timing_tension_is_proof_of_archival_mistake": false,
+  "possible_explanations": [
+    "retrospective date uncertainty",
+    "travel/return timing differs",
+    "Tokyo origin or sending date must be checked against actual archived telegram",
+    "multiple trips cannot be excluded"
+  ],
+  "novel_actionable_search_lead": "Look for a detailed report letter authored Dai Jitao to Sun Yat-sen, c. June 21-29 1917, covering meetings with Akiyama Saneyuki and Tanaka Giichi. Search independent Chinese/Japanese archival letter registers.",
+  "raw_vs_analysis_variant_kept_separate": true,
+  "june_anomalies_left_untouched": {
+    "0509": "vemucayri",
+    "0511": "kohokycuee; hutadyny(y)go"
+  },
+  "algorithm_controls": {
+    "synthetic_date_arithmetic_positive": "PASS",
+    "synthetic_date_window_negative": "PASS",
+    "target_image_guard": "PASS"
+  },
+  "target_plaintext_candidates": [],
+  "important_caution": "No algorithm produced any verified Chinese for 0509/0511; a historical report mentioned in a memoir may differ completely from a telegram."
+}

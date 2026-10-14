@@ -1,0 +1,11 @@
+{
+  "round": 11,
+  "date": "2026-10-07",
+  "targets": ["B03050090200 frame 0509 1917-06-24", "B03050090200 frame 0511 1917-06-29"],
+  "image_verified": false,
+  "verified_new_plaintext_chars": 0,
+  "full_key_found": false,
+  "new_primary_material": false,
+  "structural_result": "Unrestricted arbitrary two-letter-symbol -> 00..99 language-model recovery rejected after failing independent March 1917 known-key positive control (1/51 exact mappings; false key scored above true key).",
+  "next_priority": "Acquire June page images or the Aichi 1923-02-10 Hu Hanmin -> Fujise Seijiro letter/microfilm; only then add constraints to private-table/book-code search."
+}

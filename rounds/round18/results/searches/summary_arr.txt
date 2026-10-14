@@ -1,0 +1,79 @@
+B lw6 arr1234 add0 R 0 77.735 0.8935 cons=chpztbkgmfvdrjlnyxs vow=i0a1y5e3u4o2 serp=0 off=65 add2=0
+B lw6 arr1234 add111 R 0 74.483 0.8561 cons=ypnkfvzhbjlmcgdrtsx vow=i2a1y4e5u0o3 serp=1 off=43 add2=0
+B lw6 arr1234 add9889 R 0 80.414 0.9243 cons=pvgmlkcdzfjbnhrysxt vow=i1a0y3e2u4o5 serp=1 off=82 add2=0
+B lw6 arr1243 add0 R 0 75.158 0.8639 cons=xtgmkbzfjdplycrhnvs vow=i0a1y5e4u3o2 serp=0 off=82 add2=0
+B lw6 arr1243 add111 R 0 75.576 0.8687 cons=nsjcmrylzhgfkdpbvtx vow=i5a2y1e3u4o0 serp=1 off=87 add2=0
+B lw6 arr1243 add9889 R 0 68.280 0.7848 cons=fkbjlpgszvcrymhndtx vow=i3a2y5e4u0o1 serp=0 off=41 add2=0
+B lw6 arr1324 add0 R 0 70.449 0.8098 cons=tyrfkdpbszgmhjclnxv vow=i4a1y2e5u0o3 serp=0 off=35 add2=0
+B lw6 arr1324 add111 R 0 74.758 0.8593 cons=mckhrjlydfgbvspztxn vow=i5a1y2e3u4o0 serp=1 off=1 add2=0
+B lw6 arr1324 add9889 R 0 75.153 0.8638 cons=gvnsrjlmcpydkfbhtzx vow=i0a1y3e2u5o4 serp=0 off=77 add2=0
+B lw6 arr1342 add0 R 0 79.850 0.9178 cons=bsdmknljhgpycfrtzvx vow=i5a4y2e0u3o1 serp=1 off=87 add2=0
+B lw6 arr1342 add111 R 0 75.622 0.8692 cons=kcfypdnlhsztgbmjrxv vow=i1a0y5e3u2o4 serp=1 off=18 add2=0
+B lw6 arr1342 add9889 R 0 80.423 0.9244 cons=ysvgzlcmkbrdfhpnjtx vow=i0a1y3e5u4o2 serp=0 off=70 add2=0
+B lw6 arr1423 add0 R 0 78.186 0.8987 cons=dtlhypzmrkgcnbjfsxv vow=i2a0y3e5u1o4 serp=1 off=58 add2=0
+B lw6 arr1423 add111 R 0 75.417 0.8669 cons=gvfsmbyckzrhnpdjltx vow=i3a0y2e5u1o4 serp=1 off=76 add2=0
+B lw6 arr1423 add9889 R 0 66.103 0.7598 cons=yhfbgzpvnckmrljdtsx vow=i2a3y5e1u4o0 serp=1 off=48 add2=0
+B lw6 arr1432 add0 R 0 79.917 0.9186 cons=ptszcmljkrndgyhfbxv vow=i3a1y0e2u5o4 serp=1 off=76 add2=0
+B lw6 arr1432 add111 R 0 64.053 0.7362 cons=khlryvsngbmjfdcpzxt vow=i2a5y0e4u3o1 serp=1 off=44 add2=0
+B lw6 arr1432 add9889 R 0 66.982 0.7699 cons=cnmltjphrfdgvzykbsx vow=i2a4y1e0u5o3 serp=0 off=15 add2=0
+B lw5 arr1234 add0 R 0 141.015 1.6209 cons=xmchljknbytvprfdzsg vow=i1a<y2e4u3o0 serp=0 off=94 add2=0
+B lw5 arr1234 add111 R 0 116.544 1.3396 cons=zxvskrcmfjndyplghtb vow=i4a2y1e<u3o0 serp=1 off=78 add2=0
+B lw5 arr1234 add9889 R 0 128.821 1.4807 cons=mklhjxtbnyfzdrcspgv vow=i3a0y4e2u1o; serp=1 off=1 add2=0
+B lw5 arr1243 add0 R 0 126.627 1.4555 cons=xrmfgjhtypczklvnbds vow=i:a0y2e1u3o4 serp=1 off=91 add2=0
+B lw5 arr1243 add111 R 0 124.227 1.4279 cons=gsmfcjnkxhrvlpdtbyz vow=i2a>y4e3u1o0 serp=1 off=88 add2=0
+B lw5 arr1243 add9889 R 0 124.142 1.4269 cons=hpztgvmcnkjfldxsybr vow=i1a4y0e2u3o; serp=0 off=71 add2=0
+B lw5 arr1324 add0 R 0 137.571 1.5813 cons=bsvkmcnhlpfztjydrxg vow=i4a=y0e2u1o3 serp=1 off=85 add2=0
+B lw5 arr1324 add111 R 0 111.812 1.2852 cons=nxdzmkrchjvgpbtyfls vow=i>a3y4e1u0o2 serp=1 off=81 add2=0
+B lw5 arr1324 add9889 R 0 143.195 1.6459 cons=vszxrcymkjgtbfnplhd vow=i4a0y1e:u3o2 serp=0 off=82 add2=0
+B lw5 arr1342 add0 R 0 141.728 1.6291 cons=pbcmrghvfnyktljdszx vow=i0a4y1e=u3o2 serp=1 off=92 add2=0
+B lw5 arr1342 add111 R 0 111.884 1.2860 cons=ymkjxcdbfgzhlrtnspv vow=i3a4y1e2u0o> serp=1 off=98 add2=0
+B lw5 arr1342 add9889 R 0 125.592 1.4436 cons=xntzsvpghbkmcdjyrfl vow=i1a0y2e4u3o= serp=0 off=59 add2=0
+B lw5 arr1423 add0 R 0 119.415 1.3726 cons=vsmcjktgnyflbxhdzrp vow=i2a3y1e0u4o> serp=1 off=92 add2=0
+B lw5 arr1423 add111 R 0 123.798 1.4230 cons=jlbhgtnpyzdvrcmkxfs vow=i2a<y0e4u3o1 serp=1 off=38 add2=0
+B lw5 arr1423 add9889 R 0 125.089 1.4378 cons=ndxhtgfbzsvyprkmjcl vow=i2a<y4e1u0o3 serp=1 off=34 add2=0
+B lw5 arr1432 add0 R 0 124.129 1.4268 cons=xsbcmklthgnpdfryjvz vow=i1a:y3e0u4o2 serp=1 off=87 add2=0
+B lw5 arr1432 add111 R 0 141.672 1.6284 cons=nkfmycjgvtdzlrpxbsh vow=i1a4y2e3u;o0 serp=0 off=94 add2=0
+B lw5 arr1432 add9889 R 0 127.774 1.4687 cons=vkmsrjldtphngbcyfzx vow=i=a0y1e3u4o2 serp=1 off=94 add2=0
+D lw6 arr1234 add0 R 0 77.805 0.8943 cons=zhgdvypbcmkljfrntxsw vow=i5a1y0e2u3o4 serp=0 off=52 add2=0
+D lw6 arr1234 add111 R 0 84.436 0.9705 cons=lrhtzpgcjmkbfdnyvxsw vow=i4a5y2e0u1o3 serp=1 off=58 add2=0
+D lw6 arr1234 add9889 R 0 73.728 0.8474 cons=mkhnrtglcyfjdbzspxwv vow=i1a0y5e4u2o3 serp=1 off=1 add2=0
+D lw6 arr1243 add0 R 0 84.156 0.9673 cons=nbjdhgfplvzckrymtwsx vow=i5a0y1e3u2o4 serp=0 off=34 add2=0
+D lw6 arr1243 add111 R 0 62.586 0.7194 cons=gbhzlyjspdtcfmknrxwv vow=i1a5y2e0u3o4 serp=1 off=34 add2=0
+D lw6 arr1243 add9889 R 0 71.913 0.8266 cons=lrncjypvzmhgkfdsbwxt vow=i5a2y3e1u4o0 serp=0 off=47 add2=0
+D lw6 arr1324 add0 R 0 73.869 0.8491 cons=vcmjhkglnyzrfdpbtwsx vow=i4a5y0e1u3o2 serp=0 off=95 add2=0
+D lw6 arr1324 add111 R 0 71.567 0.8226 cons=rclfjzhybpgvsmdknwxt vow=i3a5y4e0u1o2 serp=1 off=23 add2=0
+D lw6 arr1324 add9889 R 0 68.134 0.7831 cons=fpzvtyknmcjbgldhrwsx vow=i1a5y3e2u4o0 serp=1 off=68 add2=0
+D lw6 arr1342 add0 R 0 68.008 0.7817 cons=rmgsnjfpklbzvdchywtx vow=i0a5y1e3u4o2 serp=0 off=19 add2=0
+D lw6 arr1342 add111 R 0 58.215 0.6691 cons=ljfkdszpgrncymhbvwtx vow=i5a0y4e3u2o1 serp=0 off=41 add2=0
+D lw6 arr1342 add9889 R 0 67.499 0.7759 cons=mglnpyhfbszvkdjcrtwx vow=i2a3y4e1u0o5 serp=0 off=27 add2=0
+D lw6 arr1423 add0 R 0 69.995 0.8045 cons=htyjlsfpzrcmkgbndwvx vow=i2a1y4e5u0o3 serp=1 off=43 add2=0
+D lw6 arr1423 add111 R 0 56.703 0.6518 cons=ckzpbngljdysthmfrwxv vow=i3a0y4e2u1o5 serp=0 off=21 add2=0
+D lw6 arr1423 add9889 R 0 67.937 0.7809 cons=zypclmskgnrjfhdtvwxb vow=i5a0y4e3u1o2 serp=1 off=82 add2=0
+D lw6 arr1432 add0 R 0 65.311 0.7507 cons=hjypslfzdbgvmkrcntwx vow=i0a5y2e3u4o1 serp=0 off=31 add2=0
+D lw6 arr1432 add111 R 0 62.314 0.7163 cons=cdnzhrpkbvjtlgmfysxw vow=i4a0y2e3u5o1 serp=1 off=18 add2=0
+D lw6 arr1432 add9889 R 0 65.817 0.7565 cons=tzylcnmjkpfdrhbgswxv vow=i2a1y3e4u0o5 serp=1 off=83 add2=0
+D lw5 arr1234 add0 R 0 126.563 1.4548 cons=pytfwnzvxbmkcrgsjlhd vow=i3a4y1e;u2o0 serp=1 off=49 add2=0
+D lw5 arr1234 add111 R 0 122.504 1.4081 cons=pyrcwzxvbsmjtdgkhnfl vow=i<a0y1e3u2o4 serp=1 off=53 add2=0
+D lw5 arr1234 add9889 R 0 120.568 1.3858 cons=swxnmrckzgbdtyvpjflh vow=i1a4y2e3u;o0 serp=1 off=80 add2=0
+D lw5 arr1243 add0 R 0 118.328 1.3601 cons=jywdzvspgmlhcknbrxtf vow=i2a=y0e3u1o4 serp=1 off=54 add2=0
+D lw5 arr1243 add111 R 0 119.938 1.3786 cons=rkbsgdvzfchmtwjpnlxy vow=i=a0y1e2u4o3 serp=1 off=57 add2=0
+D lw5 arr1243 add9889 R 0 122.136 1.4039 cons=fhrjzspvtmykbcdngxwl vow=i:a4y2e1u3o0 serp=0 off=57 add2=0
+D lw5 arr1324 add0 R 0 117.532 1.3509 cons=cgsrmpblykdvnfjxwtzh vow=i1a3y2e>u0o4 serp=0 off=3 add2=0
+D lw5 arr1324 add111 R 0 119.625 1.3750 cons=fdlsyhpkntwxvzgbmrcj vow=i0a2y1e3u>o4 serp=1 off=22 add2=0
+D lw5 arr1324 add9889 R 0 126.122 1.4497 cons=fghtlydwzxsvckmnjrbp vow=i0a<y3e2u1o4 serp=0 off=45 add2=0
+D lw5 arr1342 add0 R 0 121.291 1.3941 cons=ngjdfybhltrxzvwspcmk vow=i0a=y3e1u4o2 serp=0 off=13 add2=0
+D lw5 arr1342 add111 R 0 118.965 1.3674 cons=hlsvxbzkcmndpfjwygtr vow=i<a1y2e4u3o0 serp=0 off=64 add2=0
+D lw5 arr1342 add9889 R 0 132.386 1.5217 cons=ynczbxstlpmgdfwrhjkv vow=i2a4y0e>u3o1 serp=1 off=59 add2=0
+D lw5 arr1423 add0 R 0 126.632 1.4555 cons=lhbnyfjztvpmcgskrxwd vow=i2a3y0e1u4o; serp=0 off=45 add2=0
+D lw5 arr1423 add111 R 0 117.094 1.3459 cons=lmhkynxfrjdwpzsvbctg vow=i3a4y0e1u2o< serp=0 off=16 add2=0
+D lw5 arr1423 add9889 R 0 118.756 1.3650 cons=lhtnfxspvzmkcrjgwydb vow=i4a0y<e2u3o1 serp=0 off=55 add2=0
+D lw5 arr1432 add0 R 0 122.420 1.4071 cons=zjhxdlsnpvtwcmykrgfb vow=i3a2y0e1u4o; serp=0 off=40 add2=0
+D lw5 arr1432 add111 R 0 115.136 1.3234 cons=chzbsvwjnpgdxfrmktly vow=i4a0y2e1u=o3 serp=0 off=27 add2=0
+D lw5 arr1432 add9889 R 0 129.276 1.4859 cons=wgnzldpbvxsymcjkhrtf vow=i3a4y2e1u0o; serp=1 off=44 add2=0
+B sa2 cw17 R 0 91.699 1.0540 | T0 maj=0 serp=1 off=81 cons=pvzmckjdrbfyhntlgxs vow=i0a1y2e3u4o5
+B sa2 cw19 R 0 90.129 1.0360 | T0 maj=0 serp=1 off=81 cons=pnsmckjdrbfyhztlgvx vow=i0a1y2e3u4o5
+B sa2 cw20 R 0 83.602 0.9609 | T0 maj=0 serp=1 off=87 cons=nsmcljdrbfyhpkzgtvx vow=o0u1e2y3a4i5
+D sa2 cw17 R 0 73.560 0.8455 | T0 maj=0 serp=0 off=59 cons=tfrpgsymkdhlnvzcjbxw vow=i0o1y2a3u4e5
+D sa2 cw19 R 0 72.906 0.8380 | T0 maj=0 serp=0 off=82 cons=nzbcmktydjghfrplswxv vow=e0i1y2a3o4u5
+D sa2 cw20 R 0 70.071 0.8054 | T0 maj=0 serp=0 off=13 cons=cldhrnmygzfptsbkjwvx vow=o0u1i2y3a4e5
+DONE

@@ -1,0 +1,13 @@
+1917-06-24_0509 complete words 7 slots 35 excluded [(2, 'vemucayri')]
+  ordinary5 {'observed': 30, 'null_mean': 18.4166, 'null_stdev': 2.9532, 'null_max': 28, 'upper_tail_p_plus1': 9.999000099990002e-05} fails: [(1, 'jy'), (1, 'my'), (6, 'cy'), (6, 'fy'), (7, 'my')]
+  sixvowel_yonly {'observed': 34, 'null_mean': 19.2914, 'null_stdev': 3.0857, 'null_max': 30, 'upper_tail_p_plus1': 9.999000099990002e-05} fails: [(5, 'ye')]
+  y_dualrole {'observed': 35, 'null_mean': 21.854, 'null_stdev': 2.8091, 'null_max': 31, 'upper_tail_p_plus1': 9.999000099990002e-05} fails: []
+ alias successes: [('u', 35), ('o', 35), ('i', 35), ('e', 35), ('a', 35)]
+1917-06-29_0511 complete words 25 slots 125 excluded [(5, 'liriopen'), (14, 'benyzoac'), (15, 'hinucuge'), (16, 'rifyjabo')]
+  ordinary5 {'observed': 103, 'null_mean': 66.0096, 'null_stdev': 5.6624, 'null_max': 87, 'upper_tail_p_plus1': 9.999000099990002e-05} fails: [(2, 'my'), (7, 'ky'), (7, 'ee'), (9, 'dy'), (9, 'ny'), (9, 'yg'), (11, 'my'), (11, 'cy'), (12, 'sy'), (13, 'cy'), (17, 'hy'), (18, 'by'), (19, 'jy'), (20, 'cy'), (22, 'gy'), (23, 'ky'), (24, 'by'), (25, 'fy'), (26, 'jy'), (26, 'by'), (27, 'ky'), (29, 'fy')]
+  sixvowel_yonly {'observed': 118, 'null_mean': 68.4616, 'null_stdev': 5.8777, 'null_max': 90, 'upper_tail_p_plus1': 9.999000099990002e-05} fails: [(1, 'yo'), (4, 'yo'), (4, 'yi'), (7, 'ee'), (10, 'ye'), (13, 'yo'), (28, 'ya')]
+  y_dualrole {'observed': 124, 'null_mean': 80.7356, 'null_stdev': 5.2433, 'null_max': 98, 'upper_tail_p_plus1': 9.999000099990002e-05} fails: [(7, 'ee')]
+ alias successes: [('u', 124), ('o', 124), ('i', 124), ('e', 124), ('a', 124)]
+positive historical demonstrations 10 matched 10
+1916 apr baseline {'ordinary5': {'observed': 80, 'null_mean': 44.4168, 'null_stdev': 4.7464, 'null_max': 62, 'upper_tail_p_plus1': 0.0001999600079984003}, 'sixvowel_yonly': {'observed': 74, 'null_mean': 43.5392, 'null_stdev': 4.6101, 'null_max': 58, 'upper_tail_p_plus1': 0.0001999600079984003}, 'y_dualrole': {'observed': 80, 'null_mean': 46.978, 'null_stdev': 4.5291, 'null_max': 63, 'upper_tail_p_plus1': 0.0001999600079984003}}
+wrote /mnt/data/wenmi_round14/results/dual_y_results.json

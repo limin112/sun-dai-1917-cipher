@@ -1,0 +1,14 @@
+{
+  "research_date":"2026-10-12",
+  "primary_archive_ref":"JACAR B03050090200, frames 0509 and 0511, original direct PDF still unavailable",
+  "secondary_reproduced_photos_visually_inspected":true,
+  "secondary_photos": {
+    "0509":{"url":"https://bdudout.github.io/wenmi/assets/img/fiches/scan-0509-full.webp","github_blob_sha":"afb5a943b4f1caee1e917017312c5ee04c7355ea","access":"GitHub connector base64 plus model visual inspection; NOT JACAR-hosted direct PDF"},
+    "0511":{"url":"https://bdudout.github.io/wenmi/assets/img/fiches/scan-0511-full.webp","github_blob_sha":"44ca9450a41b884dddfff994b70e61cc4cdb6a83","access":"GitHub connector base64 plus model visual inspection; NOT JACAR-hosted direct PDF"}
+  },
+  "third_party_transcription":{"author":"Brice Dudout, with Claude (Anthropic), 2026","url":"https://bdudout.github.io/wenmi/zh-hans/telegrams.html","github":"https://github.com/bdudout/wenmi/blob/main/content/zh-hans/telegrams.html","blob_sha":"4c1e2fdb452db658fc586c6a154a5b145b4c2994","license":"CC BY 4.0 for author text/code; JACAR image rights separate","quality":"blind reading, some letters still disputed"},
+  "historical_method_references":["https://bdudout.github.io/wenmi/zh-hans/method.html","https://dbourdeau.github.io/cyphersolver/sunintercepts.html","https://github.com/bdudout/wenmi/tree/main/solver"],
+  "old_round15_sha256":"620e469ec26d6534df2dbad0553d79844f1d9df8e68e47a95194a1c0563a8136",
+  "not_obtained":["JACAR raw PDF via official host","historical 1917 key and period-verified 1917 standard codebook","1923 Hu Hanmin letter body","1917 Dai to Sun original report"],
+  "misidentification_warning":"1917 Sun-Dai June messages have no explicit Wenmi or Cg prefix; 1916 keys G0/Y0 must not be claimed to decrypt them."
+}

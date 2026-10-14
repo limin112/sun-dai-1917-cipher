@@ -1,0 +1,11 @@
+2026-10-07 Round11
+- Read/froze Round10 June ciphertext input; image_verified remains false.
+- Fresh primary-source work: official JACAR metadata reachable via search index but target June images still inaccessible; no image verification.
+- Visually checked Aichi University 2016 catalog PDF row 270 (zero-index PDF screenshot page 18 in web session): 胡漢民 -> 藤瀬政次郎, 1923-02-10, note 孫中山との間の暗号電報，用法，時間，場所の説明. This is metadata only.
+- Aichi access note confirms microfilm of 孫文、山田良政・純三郎関係資料 can be consulted at Aichi University Library; 1996 supplement search text says letter materials were microfilmed Aug 1995. Original 1923 letter not obtained.
+- New algorithm: unrestricted injective observed two-letter symbol -> 00..99, concatenate adjacent symbols to 4-digit telegraph code. This admits y/non-CV clusters and is broader than prior systematic tables.
+- Frozen LM corpus: 36 solved/partly solved 1916 transcript snippets, 1256 CJK chars, excluding March 1917 control.
+- Independent positive control: 1917-03-25 and 1917-03-26, known March key not used by the blind search.
+- Correct-key raw score -381.814; blind simulated annealing (12 x 60000) found false score -307.464 and recovered only 1/51 exact symbol assignments.
+- Conclusion: blind arbitrary-table recovery with this short corpus/scorer FAILS the positive control and is rejected before June application. No June candidate plaintext accepted or generated for reporting.
+- Verified June plaintext increment: 0 characters.
