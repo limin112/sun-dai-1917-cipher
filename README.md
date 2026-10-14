@@ -8,7 +8,7 @@ held by the Japan Center for Asian Historical Records (JACAR B03050090200, frame
 All reports, code, frozen inputs, positive/negative controls and failure logs from research rounds 11–18 are here.
 **Status: unsolved.**
 
-📖 **站点 / Site**：打开 [`docs/index.html`](docs/index.html)，或启用 GitHub Pages 后访问 `https://<owner>.github.io/sun-dai-1917-cipher/`。
+📖 **站点 / Site**：打开 [`docs/index.html`](docs/index.html)，或启用 GitHub Pages 后访问 `https://limin112.github.io/sun-dai-1917-cipher/`。
 
 ## 两封电报
 
