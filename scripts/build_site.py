@@ -115,7 +115,7 @@ def page(title, body, depth=0, active=""):
 <main>
 {body}
 </main>
-<footer>孙中山—戴季陶 1917 年六月密电 · 开放研究档案 · 文字、数据与代码 CC BY 4.0 · 电报扫描图出自 JACAR（日本外务省外交史料馆藏），不在 CC BY 范围内</footer>
+<footer>孙中山—戴季陶 1917 年六月密电 · 开放研究档案 · 维护者 <a href="https://x.com/MinliBuilds">X @MinliBuilds</a> · <a href="mailto:uslimin@gmail.com">uslimin@gmail.com</a> · <a href="https://github.com/limin112/sun-dai-1917-cipher">GitHub</a><br>文字、数据与代码 CC BY 4.0 · 电报扫描图出自 JACAR（日本外务省外交史料馆藏），不在 CC BY 范围内</footer>
 </body>
 </html>
 """
@@ -299,12 +299,6 @@ def build_sources():
 
 # ---------------------------------------------------------------- blockers (卡点)
 BLOCKERS = [
-    ("JACAR 官方高分辨原图",
-     "目前只看过研究者转制的扫描复制图；本研究环境直连 JACAR 返回 403 / DNS 失败。",
-     ["从 <a href=\"https://www.jacar.archives.go.jp/das/meta/B03050090200\">JACAR B03050090200</a> 下载帧 0509、0511 原始 PDF/高清图；",
-      "逐字盲校表格“已知字符级疑点”中的位置，尤其 <code>kohokycuce</code>、<code>muposacyobe</code>、<code>catyidohe</code>、<code>damowmhosy</code>、0509 第2词的摩斯 ä；",
-      "所有元音开头的字母对（ac/as/op/um/ax）单独记录，不按“颠倒”改写。"],
-     "能消除读本分歧，结构检验与求解才有可靠输入。"),
     ("同钥匙的更多密文",
      "唯一解距离估计：自由乱序表约需 88 码，而六月两封总共 87 码。仅凭这两封，统计搜索几乎不可能得到可验收的译文。",
      ["JACAR《特定人ノ発受郵便物取調》第四卷之后的卷册；",
@@ -341,7 +335,7 @@ def build_blockers():
 <div class="kicker">Where we are stuck · Help wanted</div>
 <h1>卡点与求助</h1>
 <p class="lede">经过 18 轮，结构层面已经有可复现的信号（虚码切分、67+20 个电码、11 个重复码对），也排除了大批规则表族。
-但定量估计显示：<b>只靠现有这 87 个电码，几乎不可能解出</b>。真正缺的是新材料，而不是更多统计搜索。如果你能接触下列任一资料，非常欢迎提 Issue / PR。</p>
+但定量估计显示：<b>只靠现有这 87 个电码，几乎不可能解出</b>。真正缺的是新材料，而不是更多统计搜索。如果你能接触下列任一资料，欢迎提 <a href="https://github.com/limin112/sun-dai-1917-cipher/issues">Issue</a> / PR，或联系 <a href="https://x.com/MinliBuilds">X @MinliBuilds</a>、<a href="mailto:uslimin@gmail.com">uslimin@gmail.com</a>。</p>
 {items}
 <h2>验收标准（怎样才算“破译”）</h2>
 <p>只有同时满足以下全部条件，才称得到中文译文；单向解码、语言模型通顺、显著的随机对照、任意字母换名都不够：</p>
@@ -371,6 +365,7 @@ def build_index():
 <p class="lede">日本外务省档案（JACAR B03050090200）中有两封 1917 年 6 月孙中山与戴季陶之间的拉丁字母密电，至今无人破译。
 这里公开我们 11–18 轮研究的全部报告、代码、数据、正负对照与失败记录——以及我们卡在哪里。</p>
 <p><a href="blockers.html"><b>→ 我们卡在哪里，需要什么帮助</b></a></p>
+<p style="font-size:14px;color:var(--ink-2)">维护者 <a href="https://x.com/MinliBuilds">X @MinliBuilds</a> · <a href="mailto:uslimin@gmail.com">uslimin@gmail.com</a></p>
 </div>
 <div class="status-card">
 <div class="kicker">当前状态 · 2026-10-14 · Round 18</div>
@@ -479,6 +474,9 @@ def build_credits():
 <li>源自上述仓库的转录与数据，在各文件中保留原作者署名，并按 CC BY 4.0 再分发。</li>
 <li><b>不在 CC BY 范围内</b>：<code>docs/assets/img/jacar/</code> 的两张电报扫描图（日本外务省外交史料馆藏，JACAR 提供，注明出处转载，请遵循 JACAR 利用规定）；爱知大学展品照片未收录。</li>
 </ul>
+
+<h2>联系</h2>
+<p>维护者：<a href="https://x.com/MinliBuilds">X @MinliBuilds</a> · <a href="mailto:uslimin@gmail.com">uslimin@gmail.com</a>。有新材料、更正或想法，欢迎联系或在 <a href="https://github.com/limin112/sun-dai-1917-cipher/issues">GitHub Issues</a> 讨论。</p>
 
 <h2>研究方式说明</h2>
 <p>各轮研究大量借助 AI Agent（Claude 等）完成。所有结论附脚本、输入 SHA、正负对照与运行日志，可独立复现；任何“通顺的中文”在通过验收标准前都不算译文。</p>

@@ -16,12 +16,11 @@
 <div class="kicker">Where we are stuck · Help wanted</div>
 <h1>卡点与求助</h1>
 <p class="lede">经过 18 轮，结构层面已经有可复现的信号（虚码切分、67+20 个电码、11 个重复码对），也排除了大批规则表族。
-但定量估计显示：<b>只靠现有这 87 个电码，几乎不可能解出</b>。真正缺的是新材料，而不是更多统计搜索。如果你能接触下列任一资料，非常欢迎提 Issue / PR。</p>
+但定量估计显示：<b>只靠现有这 87 个电码，几乎不可能解出</b>。真正缺的是新材料，而不是更多统计搜索。如果你能接触下列任一资料，欢迎提 <a href="https://github.com/limin112/sun-dai-1917-cipher/issues">Issue</a> / PR，或联系 <a href="https://x.com/MinliBuilds">X @MinliBuilds</a>、<a href="mailto:uslimin@gmail.com">uslimin@gmail.com</a>。</p>
 <div class="blocker"><div class="num">01</div><div>
-<h3>JACAR 官方高分辨原图</h3><p>目前只看过研究者转制的扫描复制图；本研究环境直连 JACAR 返回 403 / DNS 失败。</p><ul><li>从 <a href="https://www.jacar.archives.go.jp/das/meta/B03050090200">JACAR B03050090200</a> 下载帧 0509、0511 原始 PDF/高清图；</li><li>逐字盲校表格“已知字符级疑点”中的位置，尤其 <code>kohokycuce</code>、<code>muposacyobe</code>、<code>catyidohe</code>、<code>damowmhosy</code>、0509 第2词的摩斯 ä；</li><li>所有元音开头的字母对（ac/as/op/um/ax）单独记录，不按“颠倒”改写。</li></ul><p class="unlock">↳ 价值：能消除读本分歧，结构检验与求解才有可靠输入。</p></div></div><div class="blocker"><div class="num">02</div><div>
-<h3>同钥匙的更多密文</h3><p>唯一解距离估计：自由乱序表约需 88 码，而六月两封总共 87 码。仅凭这两封，统计搜索几乎不可能得到可验收的译文。</p><ul><li>JACAR《特定人ノ発受郵便物取調》第四卷之后的卷册；</li><li>1917 年 7–9 月孙中山在广州期间与东京之间的电报——凡含元音开头虚码或 y 作元音的六元音电报都应纳入；</li><li>哪怕再多 100–200 码，自由表也可能进入可解区。</li></ul><p class="unlock">↳ 价值：直接把问题从“不可解”拉进“可解”区间。</p></div></div><div class="blocker"><div class="num">03</div><div>
-<h3>中文侧同文 / 留底（已知明文）</h3><p>戴季陶《日本論》自述 6 月抵东京当晚写了详尽调查报告寄给孙中山，但报告原件未找到。</p><ul><li>《國父年譜》下册第926页（派戴傳賢赴日調查復辟運動）；</li><li>《日本論》1954 台北中央文物供应社版第71–72页（台湾国家图书馆 NCL-000001976，PDF 读取失败）；</li><li>《孙中山全集》1917 年 6 月致戴季陶函电；秋山真之、田中义一档案中的相关记录。</li></ul><p class="unlock">↳ 价值：若能确认任一段原文，即可得到大量音节锚点，做已知明文攻击。</p></div></div><div class="blocker"><div class="num">04</div><div>
-<h3>具名私人码本实物</h3><p>1913《仁密電碼本》等具名码本说明“文密”可能也是一部私人重编码本；若是，必须找到码本本身。</p><ul><li>国民党党史馆档案（<a href="https://archiveds.lib.nccu.edu.tw/">政大档案探索系统</a>）：一般档案 <code>yiban050/5.3</code>（仁密）、<code>yiban333/2.2</code>（第64号）、<code>yiban050/1.2</code>（1918 日文密码），尤其凡例、附表、页眉私填数字、换密条；</li><li>爱知大学孙文—山田纯三郎资料：1923-02-10 胡汉民致藤瀬政次郎书简（目录 270 / 整理 138 / 24-6，备注“孫中山との間の暗号電報，用法，時間，場所の説明”），微缩胶片在丰桥校区图书馆；</li><li>爱知大学展品下方 a/o/i/e/u/y 六行假名表的高清扫描与年代说明。</li></ul><p class="unlock">↳ 价值：拿到真表后可直接做受约束解码 + 逐字重加密验收。</p></div></div><div class="blocker"><div class="num">05</div><div>
+<h3>同钥匙的更多密文</h3><p>唯一解距离估计：自由乱序表约需 88 码，而六月两封总共 87 码。仅凭这两封，统计搜索几乎不可能得到可验收的译文。</p><ul><li>JACAR《特定人ノ発受郵便物取調》第四卷之后的卷册；</li><li>1917 年 7–9 月孙中山在广州期间与东京之间的电报——凡含元音开头虚码或 y 作元音的六元音电报都应纳入；</li><li>哪怕再多 100–200 码，自由表也可能进入可解区。</li></ul><p class="unlock">↳ 价值：直接把问题从“不可解”拉进“可解”区间。</p></div></div><div class="blocker"><div class="num">02</div><div>
+<h3>中文侧同文 / 留底（已知明文）</h3><p>戴季陶《日本論》自述 6 月抵东京当晚写了详尽调查报告寄给孙中山，但报告原件未找到。</p><ul><li>《國父年譜》下册第926页（派戴傳賢赴日調查復辟運動）；</li><li>《日本論》1954 台北中央文物供应社版第71–72页（台湾国家图书馆 NCL-000001976，PDF 读取失败）；</li><li>《孙中山全集》1917 年 6 月致戴季陶函电；秋山真之、田中义一档案中的相关记录。</li></ul><p class="unlock">↳ 价值：若能确认任一段原文，即可得到大量音节锚点，做已知明文攻击。</p></div></div><div class="blocker"><div class="num">03</div><div>
+<h3>具名私人码本实物</h3><p>1913《仁密電碼本》等具名码本说明“文密”可能也是一部私人重编码本；若是，必须找到码本本身。</p><ul><li>国民党党史馆档案（<a href="https://archiveds.lib.nccu.edu.tw/">政大档案探索系统</a>）：一般档案 <code>yiban050/5.3</code>（仁密）、<code>yiban333/2.2</code>（第64号）、<code>yiban050/1.2</code>（1918 日文密码），尤其凡例、附表、页眉私填数字、换密条；</li><li>爱知大学孙文—山田纯三郎资料：1923-02-10 胡汉民致藤瀬政次郎书简（目录 270 / 整理 138 / 24-6，备注“孫中山との間の暗号電報，用法，時間，場所の説明”），微缩胶片在丰桥校区图书馆；</li><li>爱知大学展品下方 a/o/i/e/u/y 六行假名表的高清扫描与年代说明。</li></ul><p class="unlock">↳ 价值：拿到真表后可直接做受约束解码 + 逐字重加密验收。</p></div></div><div class="blocker"><div class="num">04</div><div>
 <h3>时序问题</h3><p>戴季陶回忆约 6 月 21 日到东京、住三四天后返沪；但 0511 标注 6 月 29 日东京发。</p><ul><li>核对 0511 电报纸上的发报局、日期戳与 JACAR 目录著录；</li><li>查戴季陶 1917 年 6 月下旬的行程记录（船期、报纸报道）。</li></ul><p class="unlock">↳ 价值：关系到 0511 的发报人与内容背景判断。</p></div></div>
 <h2>验收标准（怎样才算“破译”）</h2>
 <p>只有同时满足以下全部条件，才称得到中文译文；单向解码、语言模型通顺、显著的随机对照、任意字母换名都不够：</p>
@@ -41,6 +40,6 @@
 </ul>
 </div>
 </main>
-<footer>孙中山—戴季陶 1917 年六月密电 · 开放研究档案 · 文字、数据与代码 CC BY 4.0 · 电报扫描图出自 JACAR（日本外务省外交史料馆藏），不在 CC BY 范围内</footer>
+<footer>孙中山—戴季陶 1917 年六月密电 · 开放研究档案 · 维护者 <a href="https://x.com/MinliBuilds">X @MinliBuilds</a> · <a href="mailto:uslimin@gmail.com">uslimin@gmail.com</a> · <a href="https://github.com/limin112/sun-dai-1917-cipher">GitHub</a><br>文字、数据与代码 CC BY 4.0 · 电报扫描图出自 JACAR（日本外务省外交史料馆藏），不在 CC BY 范围内</footer>
 </body>
 </html>

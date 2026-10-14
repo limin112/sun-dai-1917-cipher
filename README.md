@@ -8,7 +8,9 @@ held by the Japan Center for Asian Historical Records (JACAR B03050090200, frame
 All reports, code, frozen inputs, positive/negative controls and failure logs from research rounds 11–18 are here.
 **Status: unsolved.**
 
-📖 **站点 / Site**：打开 [`docs/index.html`](docs/index.html)，或启用 GitHub Pages 后访问 `https://limin112.github.io/sun-dai-1917-cipher/`。
+📖 **站点 / Site**：<https://limin112.github.io/sun-dai-1917-cipher/>
+
+✉️ **维护者 / Maintainer**：X [@MinliBuilds](https://x.com/MinliBuilds) · <uslimin@gmail.com>
 
 ## 两封电报
 
@@ -27,12 +29,11 @@ All reports, code, frozen inputs, positive/negative controls and failure logs fr
 
 ## 🆘 卡点 / Help wanted
 
-详见 [`docs/blockers.html`](docs/blockers.html)。最需要：
+详见 [卡点与求助](https://limin112.github.io/sun-dai-1917-cipher/docs/blockers.html)。有线索请提 [Issue](https://github.com/limin112/sun-dai-1917-cipher/issues) 或联系 X [@MinliBuilds](https://x.com/MinliBuilds) / <uslimin@gmail.com>。最需要：
 
-1. JACAR 帧 0509 / 0511 **官方高分辨原图**，逐字盲校疑字；
-2. **同钥匙的更多密文**（1917 年 7–9 月孙在广州与东京之间的电报等）；
-3. **中文侧同文/留底**：戴季陶 1917 年 6 月赴日调查报告、《國父年譜》下册 926 页、《日本論》1954 台北版 71–72 页；
-4. **具名私人码本实物**：国民党党史馆 `yiban050/5.3`（仁密）、`yiban333/2.2`（第64号）、`yiban050/1.2`；爱知大学 1923 胡汉民致藤瀬政次郎书简（270 / 138 / 24-6）。
+1. **同钥匙的更多密文**（1917 年 7–9 月孙在广州与东京之间的电报等）；
+2. **中文侧同文/留底**：戴季陶 1917 年 6 月赴日调查报告、《國父年譜》下册 926 页、《日本論》1954 台北版 71–72 页；
+3. **具名私人码本实物**：国民党党史馆 `yiban050/5.3`（仁密）、`yiban333/2.2`（第64号）、`yiban050/1.2`；爱知大学 1923 胡汉民致藤瀬政次郎书简（270 / 138 / 24-6）。
 
 ## 仓库结构
 
