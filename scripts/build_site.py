@@ -9,12 +9,14 @@
 import html
 import json
 import re
+from urllib.parse import quote, urlsplit, urlunsplit
 from pathlib import Path
 
 import markdown
 
 ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
+SOURCE_ROOT = "https://github.com/limin112/sun-dai-1917-cipher/blob/main/"
 
 # ---------------------------------------------------------------- round metadata
 ROUNDS = [
@@ -77,14 +79,24 @@ ROUNDS = [
              "电报纸“Words: 32 / 14”与词数吻合，整词无缺失。",
          ]),
     dict(n=18, date="2026-10-14", md="rounds/round18/WENMI_ROUND18.md",
-         title="元音开头音节是“虚码”——0511 恰为 67 个电码；扩大排除范围",
+         title="候选虚码解析与密钥搜索（结论经 R19 修订）",
          tags=["struct", "neg"],
          points=[
-             "删除 7 个元音开头的字母对（ac/as/op/um/ax…）后：0509=20 码，0511=67 码（40+27），长度完全自洽。",
+             "R18 校改读本下删 7 个元音开头对可得 20+67 码；R19 说明原始盲读并不直接满足该切分。",
              "辅音奇偶 z 从 4.1 升到 6.3；重复码对 11（随机删除对照 p≈0.0004）；统计形态与 1916 真实电报吻合。",
-             "求解器在 1916 真实 Y0 密文上无先验找回原钥（正对照）；但六月在线性/5宽/Y0 同构/加数/坐标表等族全部阴性。",
-             "唯一解距离：自由乱序表约需 88 码，而六月总共只有 87 码 → 仅凭这两封电报几乎不可解，需要新材料。",
+             "求解器在一组 1916 真实 Y0 密文上找回原钥；六月已运行的各项搜索没有找到可验收候选，非表族整体排除。",
+             "R18 用约 88 与 87 码比较推断难以求解；R19 修订：该估计依赖假设，不能证明现有密文不可解。",
          ]),
+    dict(n=19, date="2026-10-15", md="rounds/round19/WENMI_ROUND19.md",
+         title="无损转录审计、同输入统计对照与可复现验收",
+         tags=["struct", "neg"],
+         points=[
+             "逐字符保留原始转录、独立盲读与 R18 读本，列出所有补删替换；R18 D 含 4 处改动。",
+             "并列比较原始字母对与方向归一化后的随机删除对照，检查词内位置和有限候选选择的影响。",
+             "虚码删除仍是候选解释；88 码只是带强假设的唯一解距离估计，不能据此证明 87 码不可解。",
+             "新增回归测试、结果校验与来源访问记录；六月已验证中文译文仍为 0 字。",
+         ]),
+
 ]
 
 TAG_LABEL = {"struct": ("struct", "结构发现"), "archive": ("archive", "新档案/材料"),
@@ -96,6 +108,9 @@ NAV = [("index.html", "首页"), ("blockers.html", "卡点与求助"), ("telegra
 
 
 def page(title, body, depth=0, active=""):
+    # Source artifacts live in Git, independently of the Pages publication root.
+    body = re.sub(r'href="\.\./((?:data|rounds|handoff)/[^"]+)"',
+                  lambda m: f'href="{SOURCE_ROOT}{m.group(1)}"', body)
     up = "../" * depth
     nav = "".join(
         f'<a href="{up}{href}"{" class=on" if href == active else ""}>{label}</a>' for href, label in NAV)
@@ -139,12 +154,25 @@ def build_rounds():
         files_html = ""
         if r["md"]:
             rdir = ROOT / Path(r["md"]).parent
-            files = sorted(p.relative_to(rdir).as_posix() for p in rdir.rglob("*") if p.is_file())
-            rel = f"../../{Path(r['md']).parent.as_posix()}/"
+            files = sorted(p.relative_to(rdir).as_posix() for p in rdir.rglob("*") if p.is_file() and "__pycache__" not in p.parts and p.suffix != ".pyc")
+            rel = SOURCE_ROOT + Path(r["md"]).parent.as_posix() + "/"
             files_html = "<h2>本轮材料（原样归档）</h2><ul class=files>" + "".join(
                 f'<li><a href="{rel}{f}">{html.escape(f)}</a></li>' for f in files) + "</ul>"
             report = md_to_html((ROOT / r["md"]).read_text(encoding="utf-8"))
             report = re.sub(r"^<h1>.*?</h1>", "", report, count=1, flags=re.S)
+            # Markdown paths are relative to the report's source directory.
+            def source_link(match):
+                href = match.group(1)
+                parsed = urlsplit(href)
+                if not parsed.path or parsed.scheme or parsed.netloc or href.startswith("/"):
+                    return match.group(0)
+                target = (rdir / parsed.path).resolve()
+                if not target.is_relative_to(ROOT):
+                    raise ValueError(f"Source link escapes repository: {href}")
+                url = SOURCE_ROOT + quote(target.relative_to(ROOT).as_posix())
+                parsed_url = urlsplit(url)
+                return f'href="{urlunsplit(parsed_url._replace(query=parsed.query, fragment=parsed.fragment))}"'
+            report = re.sub(r'href="([^"]+)"', source_link, report)
         else:
             report = "<blockquote>本轮的报告与复现包未包含在交接材料中。如你持有 Round 13 的 WENMI_ROUND13.md / sun_wenmi_round13.zip，欢迎提交 PR。</blockquote>"
         prev_link = (f'<a href="round-{ROUNDS[i-1]["n"]}.html">← Round {ROUNDS[i-1]["n"]}</a>'
@@ -181,7 +209,7 @@ def build_rounds_index():
     body = f"""<div class="narrow">
 <div class="kicker">Research log</div>
 <h1>研究轮次</h1>
-<p class="lede">每一轮都附原始报告、代码、输入 SHA、正/负对照与运行日志。后面的轮次可能推翻前面的疑读或暂定结构，请以高轮次为准。Round 1–10 未纳入本次整理（相关结论已被 11–18 轮继承或推翻）。</p>
+<p class="lede">每一轮都附原始报告、代码、输入 SHA、正/负对照与运行日志。后面的轮次可能推翻前面的疑读或暂定结构，请以高轮次为准。Round 1–10 未纳入本次整理（相关结论已被后续轮次继承或修订）。</p>
 {timeline_html()}
 </div>"""
     (DOCS / "rounds.html").write_text(page("研究轮次", body, active="rounds.html"), encoding="utf-8")
@@ -253,8 +281,8 @@ def build_telegrams():
 <p>来源：<a href="{wit['source_url']}">bdudout/wenmi</a>（CC BY 4.0），冻结于 <a href="../data/independent_witness.json">data/independent_witness.json</a>。不是唯一核定原文。</p>
 {wit_blocks}
 
-<h2>Round 18 解析：删除元音开头虚码后的四字母电码流</h2>
-<p>同色下划线 = 重复电码（cafe×3、mupo×3、yobe、kige、capa、fojy、mafy 各×2）。这是<b>结构假设</b>，不是译文；重复的 <code>yobe myzo</code> 双码是将来做已知明文攻击的首选位置。</p>
+<h2>Round 18 候选解析：删除元音开头字母对后的四字母流</h2>
+<p>同色下划线 = 重复电码（cafe×3、mupo×3、yobe、kige、capa、fojy、mafy 各×2）。这是基于 R18 B 校改读本的<b>结构假设</b>，不是译文，也不能直接代表未改动的独立盲读。R18 D 的 <code>yobe myzo</code> 重复双码只是一条待验证线索；<a href="rounds/round-19.html">R19 列出了读本改动与解析限制</a>。</p>
 {stream}
 
 <h2>已知的字符级疑点</h2>
@@ -267,7 +295,7 @@ def build_telegrams():
 <tr><td>0511 第7词</td><td><code>kohokycuee</code> / <code>kohokycuce</code></td><td>R18 唯一强负相位词，重点复核</td></tr>
 <tr><td>0511 第9词</td><td><code>hutadyny(y)go</code> / <code>hutadynyfo</code></td><td>未定</td></tr>
 <tr><td>0511 第12词</td><td><code>damoumhosy</code> / <code>damowmhosy</code></td><td>未定</td></tr>
-<tr><td>0511 页界</td><td>第1页末 / 第2页首是否漏、增一组</td><td>R18 虚码解析后不再需要</td></tr>
+<tr><td>0511 页界</td><td>第1页末 / 第2页首是否漏、增一组</td><td>R18 校改读本下可整除；原始盲读尚有异常</td></tr>
 </table>
 </div>"""
     (DOCS / "telegrams.html").write_text(page("密电原文", body, active="telegrams.html"), encoding="utf-8")
@@ -283,6 +311,7 @@ def build_sources():
 <h1>资料来源与访问记录</h1>
 <p class="lede">区分“已取得并核验”“仅定位到目录/馆藏号”“访问失败”。档号 ≠ 已获取扫描；重复的 DNS/403 失败不算进展。</p>
 {src}
+<p><a href="../rounds/round19/SOURCE_AUDIT.md">Round 19 来源复核与检索边界</a> · <a href="../rounds/round19/sources/source_audit.json">机器可读访问记录</a></p>
 <h2>各轮引用的其他材料</h2>
 <table>
 <tr><th>材料</th><th>状态</th><th>轮次</th></tr>
@@ -300,11 +329,11 @@ def build_sources():
 # ---------------------------------------------------------------- blockers (卡点)
 BLOCKERS = [
     ("同钥匙的更多密文",
-     "唯一解距离估计：自由乱序表约需 88 码，而六月两封总共 87 码。仅凭这两封，统计搜索几乎不可能得到可验收的译文。",
+     "现有密文短，且读本和表族尚未确定。R18 的约 88 码估计依赖密钥先验与语言冗余假设，不能作为不可解证明。",
      ["JACAR《特定人ノ発受郵便物取調》第四卷之后的卷册；",
-      "1917 年 7–9 月孙中山在广州期间与东京之间的电报——凡含元音开头虚码或 y 作元音的六元音电报都应纳入；",
-      "哪怕再多 100–200 码，自由表也可能进入可解区。"],
-     "直接把问题从“不可解”拉进“可解”区间。"),
+      "1917 年 7–9 月孙中山与东京之间的电报——先按日期、发收人与原始字形登记，不能仅凭元音模式认定同钥；",
+      "新增材料应先核查是否同钥；更多密文有助于约束候选，但不保证可解。"],
+     "增加独立约束，帮助区分表族、读本与候选密钥。"),
     ("中文侧同文 / 留底（已知明文）",
      "戴季陶《日本論》自述 6 月抵东京当晚写了详尽调查报告寄给孙中山，但报告原件未找到。",
      ["《國父年譜》下册第926页（派戴傳賢赴日調查復辟運動）；",
@@ -334,8 +363,7 @@ def build_blockers():
     body = f"""<div class="narrow">
 <div class="kicker">Where we are stuck · Help wanted</div>
 <h1>卡点与求助</h1>
-<p class="lede">经过 18 轮，结构层面已经有可复现的信号（虚码切分、67+20 个电码、11 个重复码对），也排除了大批规则表族。
-但定量估计显示：<b>只靠现有这 87 个电码，几乎不可能解出</b>。真正缺的是新材料，而不是更多统计搜索。如果你能接触下列任一资料，欢迎提 <a href="https://github.com/limin112/sun-dai-1917-cipher/issues">Issue</a> / PR，或联系 <a href="https://x.com/MinliBuilds">X @MinliBuilds</a>、<a href="mailto:uslimin@gmail.com">uslimin@gmail.com</a>。</p>
+<p class="lede">Round 19 重新核对了转录与统计条件：R18 校改读本下的 67+20 码、11 个重复码对可以复现，但<b>尚不足以证明虚码规则或认定某个表族不可能</b>。当前优先寻找独立材料，并完善带正对照的受约束求解。如果你能接触下列任一资料，欢迎提 <a href="https://github.com/limin112/sun-dai-1917-cipher/issues">Issue</a> / PR，或联系 <a href="https://x.com/MinliBuilds">X @MinliBuilds</a>、<a href="mailto:uslimin@gmail.com">uslimin@gmail.com</a>。</p>
 {items}
 <h2>验收标准（怎样才算“破译”）</h2>
 <p>只有同时满足以下全部条件，才称得到中文译文；单向解码、语言模型通顺、显著的随机对照、任意字母换名都不够：</p>
@@ -346,12 +374,13 @@ def build_blockers():
 <li>有未用于拟合的独立同钥电报或同文明文留底作交叉验证；</li>
 <li>所有中间文件、负结果、校验记录完整公开。</li>
 </ol>
-<h2>已经排除的路线（不必再重复）</h2>
+<h2>已有阴性结果（按实际覆盖范围解读）</h2>
 <ul>
 <li>任意两字母→00–99 单射表 + 语言模型盲搜（R11：正对照失败，会制造伪中文）；</li>
 <li>爱知大学展品 / 第64号 20×5 表原样套用（R12）；</li>
 <li>1916 G0 / Y0、1917 年 3 月已解密钥（R16）；</li>
-<li>6 宽线性表任意辅音序 / 元音序 / 蛇形 / 偏移 0–99；5 宽 + y 同码异形；Y0 同构 97,920 把；首音节千位数字排列 × 加数；一般整码加法（0000–9999）；双表共序；G0 式 6 元音坐标表（R18）。</li>
+<li>6 宽线性表任意辅音序 / 元音序 / 蛇形 / 偏移 0–99；5 宽 + y 同码异形；Y0 同构 97,920 把；首音节千位数字排列 × 加数；加数参数搜索；双表共序；G0 式 6 元音坐标表（R18）。这些是有限搜索的阴性结果，不等于穷尽表族。</li>
+<li>R18 的自由表、独立双线性表等正对照也有失败；单个正对照成功不能证明所有六月候选都可被找回。</li>
 </ul>
 </div>"""
     (DOCS / "blockers.html").write_text(page("卡点与求助", body, active="blockers.html"), encoding="utf-8")
@@ -363,19 +392,19 @@ def build_index():
 <div class="kicker">Open research archive</div>
 <h1>孙中山—戴季陶<br>1917 年六月密电</h1>
 <p class="lede">日本外务省档案（JACAR B03050090200）中有两封 1917 年 6 月孙中山与戴季陶之间的拉丁字母密电，至今无人破译。
-这里公开我们 11–18 轮研究的全部报告、代码、数据、正负对照与失败记录——以及我们卡在哪里。</p>
+这里公开我们 11–19 轮研究的全部报告、代码、数据、正负对照与失败记录——以及我们卡在哪里。</p>
 <p><a href="blockers.html"><b>→ 我们卡在哪里，需要什么帮助</b></a></p>
 <p style="font-size:14px;color:var(--ink-2)">维护者 <a href="https://x.com/MinliBuilds">X @MinliBuilds</a> · <a href="mailto:uslimin@gmail.com">uslimin@gmail.com</a></p>
 </div>
 <div class="status-card">
-<div class="kicker">当前状态 · 2026-10-14 · Round 18</div>
+<div class="kicker">当前状态 · 2026-10-15 · Round 19</div>
 <div class="big">0 字</div>
 <div>六月电报已验证中文译文</div>
 <dl>
 <dt>密钥 / 码本</dt><dd>未找到</dd>
-<dt>电码结构</dt><dd>0509 = 20 码；0511 = 67 码（40+27）</dd>
-<dt>最强结构信号</dt><dd>虚码切分后辅音奇偶 z≈6.3，重复码对 11</dd>
-<dt>主要瓶颈</dt><dd>密文太少（87 码 &lt; 唯一解距离 ≈88 码）</dd>
+<dt>候选结构</dt><dd>R18 校改读本下为 20 + 67 码</dd>
+<dt>本轮进展</dt><dd>无损转录、读本差异与统计敏感性审计</dd>
+<dt>主要瓶颈</dt><dd>疑字、密表与独立同钥材料尚未确认</dd>
 </dl>
 </div>
 </section>
@@ -423,7 +452,7 @@ CREDITS = [
          since="Round 16",
          used=[
              "帧 0509 / 0511 扫描复制图——本研究第一次看到六月原件，本仓库 <code>docs/assets/img/jacar/</code> 的两张图即取自该项目；",
-             "独立盲读转录 <a href=\"../data/independent_witness.json\">data/independent_witness.json</a>，Round 16–18 所有结构结论都在两份读本上分别验证；",
+             "独立盲读转录 <a href=\"../data/independent_witness.json\">data/independent_witness.json</a>，提供独立转录参照；R19 明确区分原始盲读与 R18 校改读本；",
              "关键纠偏：六月电报无“文密”/“Cg”前缀，1916 G0/Y0 密钥译不出；",
              "<code>solver/lm3</code> 语言模型与 1916 Y0/G0 真实数据，Round 18 求解器与正对照依赖它；",
              "元音开头字母对的“颠倒”观察——Round 18 的“虚码”解析即由此出发。",

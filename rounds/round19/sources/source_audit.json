@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-15",
+  "timezone": "Asia/Singapore",
+  "scope": "June 24/29 1917 JACAR 0509/0511; limited public-source audit of additional June–September traffic, Dai report and named codebooks",
+  "read_before_search": [
+    "handoff/SOURCES_AND_ACCESS.md",
+    "handoff/RESEARCH_STATE.md",
+    "rounds/round18/WENMI_ROUND18.md",
+    "rounds/round14/WENMI_ROUND14.md",
+    "rounds/round15/WENMI_ROUND15.md",
+    "rounds/round16/WENMI_ROUND16.md",
+    "rounds/round17/WENMI_ROUND17.md"
+  ],
+  "outcome": {
+    "new_same_key_ciphertexts": 0,
+    "new_original_codebook_scans": 0,
+    "new_dai_june_report_texts": 0,
+    "new_verified_june_plaintext_characters": 0,
+    "new_catalogue_leads": [
+      "yiban050/5.7 (undated; scholarly citation only)"
+    ]
+  },
+  "records": [
+    {
+      "id": "bourdeau-1917-current",
+      "title": "Sun Yat-sen ↔ Dai Jitao, Shanghai–Tokyo, March 1917 — NOTES.md",
+      "url": "https://github.com/dbourdeau/cyphersolver/blob/main/targets/sunyatsen/y1917/NOTES.md",
+      "accessed_date": "2026-10-15",
+      "access_method": "GitHub web page plus GitHub connector full source",
+      "source_modified_date": "2026-10-12T13:16:21Z",
+      "directly_verified": [
+        "Author source labels June 0509/0511 as unread and a different system from March.",
+        "Author inventories B03050090200 as 0503–0513, 11 images, administrative dates 1917-03-29 to 1917-09-21.",
+        "Author identifies 0508 and 0513 as clear Japanese kana telegrams; 0513 is dated 1917-09-09."
+      ],
+      "relationship_to_june": "Direct modern research on the targets; inventory information is an author's report, not this audit's direct inspection of all original frames.",
+      "evidence_grade": "R: directly read author research; not archival image verification",
+      "novelty": "Existing source rechecked; no new June decipherment; explicit scope guard for September telegram",
+      "next_step": "Obtain official item images and verify the non-June frames before expanding the same-key corpus.",
+      "failures_or_access_limits": [
+        "Author notes are not the official images.",
+        "No new same-key ciphertext obtained."
+      ]
+    },
+    {
+      "id": "dudout-telegrams-current",
+      "title": "电报逐封细读 — author HTML source, y1917-tpl",
+      "url": "https://github.com/bdudout/wenmi/blob/main/content/zh-hans/telegrams.html",
+      "accessed_date": "2026-10-15",
+      "access_method": "GitHub connector full HTML source, including template content",
+      "source_modified_date": "2026-10-14T07:15:38Z",
+      "directly_verified": [
+        "The June template explicitly marks both targets unsolved.",
+        "The current introduction refers to 26 newly deciphered telegrams from April–June 1916, not June 1917.",
+        "The author still presents inversion/transposition of irregular pairs as an interpretation, not deletion as established historical fact."
+      ],
+      "relationship_to_june": "Independent modern transcript and interpretation; no current historical key or accepted June plaintext.",
+      "evidence_grade": "R: directly read author research",
+      "novelty": "Existing source rechecked; 26 is an updated 1916 corpus count and not target progress.",
+      "next_step": "Keep R18 deletion as a competing hypothesis and carry the author's alternate transcript in sensitivity checks.",
+      "failures_or_access_limits": [
+        "Initial web fetch returned cache miss; connector full HTML succeeded.",
+        "No claim about the author's unpublished work."
+      ]
+    },
+    {
+      "id": "dudout-sources-current",
+      "title": "资料来源与致谢 — author source register",
+      "url": "https://github.com/bdudout/wenmi/blob/main/content/zh-hans/sources.html",
+      "accessed_date": "2026-10-15",
+      "access_method": "GitHub connector full source",
+      "source_modified_date": "2026-10-13T22:16:46Z",
+      "directly_verified": [
+        "B03050090200 is listed separately from the newly deciphered 1916 items.",
+        "Nearby reference codes B03050089900, B03050090000 and B03050090100 are described as 1916 materials.",
+        "Additional cipher-report references B03050730500 and B03050738800 are explicitly dated May 1916."
+      ],
+      "relationship_to_june": "Useful for avoiding false chronological inclusion; these cited earlier items are not proven same-key June 1917 traffic.",
+      "evidence_grade": "R: author source register, original archive contents not newly inspected",
+      "novelty": "Existing references rechecked, not new raw archival data.",
+      "next_step": "Search other 1917 holdings by date and correspondents, not just adjacent numeric archive codes.",
+      "failures_or_access_limits": [
+        "No fifth-volume reference code located or verified."
+      ]
+    },
+    {
+      "id": "jacar-official-access",
+      "title": "JACAR B03050090200 official metadata and search access",
+      "url": "https://www.jacar.archives.go.jp/das/meta/B03050090200",
+      "additional_urls": [
+        "https://www.jacar.archives.go.jp/aj/search?kw=Takase+Keiji&page=35",
+        "https://www.jacar.archives.go.jp/aj/meta/result?IS_KEY_S1=B03050090200&IS_KIND=SimpleSummary&IS_STYLE=default&IS_SCH=META&IS_START=1&IS_TAG_S1=InD&IS_KEYWORD=B03050090200&IS_EXTSCH=&IS_NUMBER=20"
+      ],
+      "accessed_date": "2026-10-15",
+      "access_method": "Web fetch and targeted index search",
+      "directly_verified": [
+        "Only access failure was directly verified; the search index displayed the fourth-volume item but its linked page could not be read."
+      ],
+      "relationship_to_june": "Official holding of the targets. No original PDF or additional telegram obtained.",
+      "evidence_grade": "F: failed official retrieval; search snippet is discovery only",
+      "novelty": "No evidence increment; not counted as research success.",
+      "next_step": "Use an accessible official archive session to inspect the hierarchy, all 11 frames and any actual successor volume.",
+      "failures_or_access_limits": [
+        "das/meta and legacy query endpoint: internal fetch error.",
+        "Official search result page: HTTP 403.",
+        "Search for exact series plus 第五巻 did not yield a verified fifth-volume record.",
+        "Cannot conclude no later volume or no more same-key traffic exists."
+      ]
+    },
+    {
+      "id": "nccu-official-access",
+      "title": "中國國民黨黨史檔案探索系統 — 閱覽規則",
+      "url": "https://archiveds.lib.nccu.edu.tw/mysite/about/3/",
+      "additional_urls": [
+        "https://archiveds.lib.nccu.edu.tw/",
+        "https://archiveds.lib.nccu.edu.tw/mysite/news/29/",
+        "https://archiveds.lib.nccu.edu.tw/search/?filter_bool=and&filter_field=record_group.raw&filter_op=term&filter_term=%22%E4%B8%80%E8%88%AC%E6%AA%94%E6%A1%88%22"
+      ],
+      "accessed_date": "2026-10-15",
+      "access_method": "Official pages directly read",
+      "directly_verified": [
+        "The official site exposes the General Archives collection.",
+        "The current rules describe catalog lookup and an application process for archive reading; archive reading is on premises.",
+        "Reproduction and subsequent use are subject to separate requirements, not implied by a public catalogue."
+      ],
+      "relationship_to_june": "Access route for previously cited PHI codebooks and possible Chinese-side correspondence, not a key or plaintext source itself.",
+      "evidence_grade": "A: official access-policy text only",
+      "novelty": "Current access conditions independently checked.",
+      "next_step": "Resolve the exact modern record identifiers for yiban050/5.3, yiban050/5.7 and yiban333/2.2; distinguish catalogue availability from image availability.",
+      "failures_or_access_limits": [
+        "General Archives browse link timed out.",
+        "No requested PHI item-level catalogue or image was obtained.",
+        "No application, email or other contact was sent."
+      ]
+    },
+    {
+      "id": "kuzuoglu-codebook-bibliography",
+      "title": "U. Kuzuoglu (2018), Chinese cryptography: The Chinese Nationalist Party and intelligence management, 1927–1949",
+      "url": "https://www.researchgate.net/publication/324372100_Chinese_cryptography_The_Chinese_Nationalist_Party_and_intelligence_management_1927-1949",
+      "additional_urls": [
+        "https://doi.org/10.1080/01611194.2018.1449146"
+      ],
+      "accessed_date": "2026-10-15",
+      "access_method": "Author-uploaded full-text page directly opened; footnotes 4–6 and bibliography read, not just search snippets",
+      "directly_verified": [
+        "Footnote 5 cites Ren mi, 1913/4, yiban050/5.3; Yong mi, 1923/9, yiban050/5.32; Dong mi, 1922/6, yiban050/5.33; Cheng mi, 1922/6, yiban050/5.35.",
+        "Bibliography cites the undated title 'Hu Hanmin yu Kong Geng wanglai suoyong tong mi dianmaben' at yiban050/5.7.",
+        "The 1918 Japanese-code explanation and table no. 64 references remain yiban050/1.2 and yiban333/2.2."
+      ],
+      "relationship_to_june": "Evidence for named and privately used codebooks. No documented tie of any listed item to the June 1917 targets.",
+      "evidence_grade": "B: primary scholarly archival citation; not the original codebook or current archive catalogue",
+      "novelty": "yiban050/5.7 is a newly extracted lead relative to the inspected R14–R18 reports and handoff; other references are existing leads with clarified dates.",
+      "next_step": "Verify title characters, date and image availability in the current catalogue. Prioritize 1913 Ren mi and date the undated Hu–Kong item before testing; 1922/1923 copies cannot themselves establish a 1917 key.",
+      "failures_or_access_limits": [
+        "No codebook scan or contemporaneous cipher instruction acquired.",
+        "The Chinese characters for 'tong mi' were not verified and are deliberately not supplied.",
+        "The paper is historical evidence for holdings, not proof of today's access or target usage."
+      ]
+    }
+  ],
+  "search_queries": [
+    {
+      "query": "site.jacar.archives.go.jp \"特定人ノ発受郵便物取調\" \"第五巻\"",
+      "accessed_date": "2026-10-15",
+      "result": "No newly acquired June report, original codebook or verified same-key ciphertext. Non-primary and unrelated hits not adopted."
+    },
+    {
+      "query": "\"戴傳賢\" \"民國六年\" \"日本\" \"報告\"",
+      "accessed_date": "2026-10-15",
+      "result": "No newly acquired June report, original codebook or verified same-key ciphertext. Non-primary and unrelated hits not adopted."
+    },
+    {
+      "query": "\"yiban050\" \"仁密\"",
+      "accessed_date": "2026-10-15",
+      "result": "No newly acquired June report, original codebook or verified same-key ciphertext. Non-primary and unrelated hits not adopted."
+    },
+    {
+      "query": "site.jacar.archives.go.jp \"特定人\" \"第五巻\" \"大正６\"",
+      "accessed_date": "2026-10-15",
+      "result": "No newly acquired June report, original codebook or verified same-key ciphertext. Non-primary and unrelated hits not adopted."
+    },
+    {
+      "query": "\"戴季陶\" \"1917\" \"调查报告\"",
+      "accessed_date": "2026-10-15",
+      "result": "No newly acquired June report, original codebook or verified same-key ciphertext. Non-primary and unrelated hits not adopted."
+    },
+    {
+      "query": "site.archiveds.lib.nccu.edu.tw \"仁密\"",
+      "accessed_date": "2026-10-15",
+      "result": "No newly acquired June report, original codebook or verified same-key ciphertext. Non-primary and unrelated hits not adopted."
+    },
+    {
+      "query": "\"戴季陶\" \"秋山\" \"1917\" \"报告\"",
+      "accessed_date": "2026-10-15",
+      "result": "No newly acquired June report, original codebook or verified same-key ciphertext. Non-primary and unrelated hits not adopted."
+    },
+    {
+      "query": "site.sunology.culture.tw \"戴\" \"民國六年\" \"六月\"",
+      "accessed_date": "2026-10-15",
+      "result": "No newly acquired June report, original codebook or verified same-key ciphertext. Non-primary and unrelated hits not adopted."
+    },
+    {
+      "query": "\"戴傳賢\" \"六月\" \"田中義一\"",
+      "accessed_date": "2026-10-15",
+      "result": "No newly acquired June report, original codebook or verified same-key ciphertext. Non-primary and unrelated hits not adopted."
+    },
+    {
+      "query": "\"戴季陶\" \"详尽的报告\"",
+      "accessed_date": "2026-10-15",
+      "result": "No newly acquired June report, original codebook or verified same-key ciphertext. Non-primary and unrelated hits not adopted."
+    }
+  ],
+  "report_lead": {
+    "title": "Dai Jitao June 1917 detailed report to Sun Yat-sen",
+    "status": "not_acquired",
+    "basis": "Existing R15 direct inspection of the 1928 日本論 reproduction, print pp.103–108; this audit did not reopen those page images.",
+    "source_url": "https://commons.wikimedia.org/wiki/File:NLC416-03jh003405-24940_日本論.pdf",
+    "relationship_to_june": "Retrospective account of a report is not proof the report equals 0509/0511.",
+    "next_step": "Locate the actual June 1917 report/letter under 戴傳賢, 戴季陶 and 戴天仇; require date, addressee and provenance before treating any passage as an anchor."
+  },
+  "limits": [
+    "This is a bounded public search, not an exhaustive archive survey.",
+    "No claim of nonexistence from a negative query or a fetch failure.",
+    "No original archive images redistributed.",
+    "No external messages sent."
+  ]
+}

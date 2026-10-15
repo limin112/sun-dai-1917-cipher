@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Round 19 · 孙戴1917六月密电</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="inner">
+<a class="brand" href="../index.html"><span class="seal">密</span>sun-dai-1917-cipher</a>
+<nav><a href="../index.html">首页</a><a href="../blockers.html">卡点与求助</a><a href="../telegrams.html">密电原文</a><a href="../rounds.html" class=on>研究轮次</a><a href="../sources.html">资料来源</a><a href="../credits.html">前人工作与致谢</a></nav>
+</div></header>
+<main>
+<div class="narrow">
+<div class="kicker">Round 19 · 2026-10-15</div>
+<h1>无损转录审计、同输入统计对照与可复现验收</h1>
+<div><span class="tag struct">结构发现</span><span class="tag neg">排除/负结果</span></div>
+<section class="summary"><h2>本轮要点</h2><ul><li>逐字符保留原始转录、独立盲读与 R18 读本，列出所有补删替换；R18 D 含 4 处改动。</li><li>并列比较原始字母对与方向归一化后的随机删除对照，检查词内位置和有限候选选择的影响。</li><li>虚码删除仍是候选解释；88 码只是带强假设的唯一解距离估计，不能据此证明 87 码不可解。</li><li>新增回归测试、结果校验与来源访问记录；六月已验证中文译文仍为 0 字。</li></ul>
+<div class="meta">六月电报已验证译文仍为 0 字。以下为原始报告全文，结论以更高轮次为准。</div></section>
+<h2>报告全文</h2>
+
+<p>日期：2026-10-15。目标仍为 JACAR B03050090200 的 0509、0511 两封六月密电。<strong>已验证中文译文仍为 0 字，未找到密钥或可证同钥的新材料。</strong> 本轮推进的是输入可信度、统计解释与可复现验收，没有新增译文。</p>
+<h2>1. 无损审计发现：R18 D 不等于冻结盲读</h2>
+<p><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/provenance_audit.py">provenance_audit.py</a> 读取冻结输入和 R18 的 RAW 字面量，不改原始文件。它保存原文、SHA-256、每词与每字符坐标、注记、空白、签名及 12 组读本比较；字符偏移为从零开始的半开区间，词号从一开始。</p>
+<p>R18 D 相对 <code>data/independent_witness.json</code> 有四处词级改动：</p>
+<table>
+<thead>
+<tr>
+<th>位置</th>
+<th>冻结 witness</th>
+<th>R18 D</th>
+<th>改动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0509 第 2 词</td>
+<td><code>vemucicyri</code></td>
+<td><code>vemucekyri</code></td>
+<td><code>ic</code> → <code>ek</code>，选择另一读法</td>
+</tr>
+<tr>
+<td>0511 第 1 词</td>
+<td><code>muposacyobe</code></td>
+<td><code>mupoacyobe</code></td>
+<td>删除 <code>s</code></td>
+</tr>
+<tr>
+<td>0511 第 3 词</td>
+<td><code>catyidohe</code></td>
+<td><code>catyjidohe</code></td>
+<td>插入 <code>j</code></td>
+</tr>
+<tr>
+<td>0511 第 12 词</td>
+<td><code>damowmhosy</code></td>
+<td><code>damoumhosy</code></td>
+<td><code>w</code> → <code>u</code></td>
+</tr>
+</tbody>
+</table>
+<p>R18 报告提及补 <code>j</code>，但将 D 概括为独立盲读，掩盖了其余选择的影响。四处改动并非都错误；本轮没有重新目视核定原图，因此一律保留为显式校改假设。</p>
+<table>
+<thead>
+<tr>
+<th>0511 输入</th>
+<th style="text-align: right;">识别的 CV</th>
+<th style="text-align: right;">候选 null</th>
+<th>未解释字符 / 注记</th>
+<th>可否直接称 67 码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>冻结独立 witness</td>
+<td style="text-align: right;">131</td>
+<td style="text-align: right;">8</td>
+<td>2 个非法字符 + 2 个尾字符</td>
+<td>不可</td>
+</tr>
+<tr>
+<td>R18 B</td>
+<td style="text-align: right;">134</td>
+<td style="text-align: right;">7</td>
+<td>无</td>
+<td>仅在校改和删除规则成立时</td>
+</tr>
+<tr>
+<td>R18 D</td>
+<td style="text-align: right;">134</td>
+<td style="text-align: right;">7</td>
+<td>无</td>
+<td>仅在校改和删除规则成立时</td>
+</tr>
+</tbody>
+</table>
+<p>旧 <code>parse_null</code> 对不匹配字符执行单字符跳过；新解析器记录这些字符并标出重新对齐发生的位置。为比较历史统计，JSON 仍提供“仅连接 CV”的诊断投影，但只要存在未解释字符、注记或残组，就不输出可接受的完整电码数。候选 null 保留原位，未被当成已证历史规则。</p>
+<p>完整结果及原图复核队列见 <a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/results/provenance_audit.json">provenance_audit.json</a>。优先回看上述四词及 <code>kohokycuee/kohokycuce</code>、<code>hutadyny(y)go</code>，不得按整除性或得分修改原文。</p>
+<h2>2. 同一观测、不同参考序列的对照</h2>
+<p><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/selection_controls.py">selection_controls.py</a> 固定 R18 B/D，种子 19019；每种删除对照 16,000 次，词位和有限候选置换各 4,000 次。所有尾概率采用 <code>(超过或等于观测次数 + 1)/(试验次数 + 1)</code>，保留计数与 Monte Carlo Wilson 区间。</p>
+<p>R18 的随机删除先把 7 个 VC 对转向，再从每页删同样数量的字母对。它可解释为有效的<strong>条件对照</strong>；它不等于从未转向的原始字母对序列抽样。本轮并列比较，删除数均为 0509/0511a/0511b = 0/6/1，观测删除位置相同：</p>
+<table>
+<thead>
+<tr>
+<th>参考序列</th>
+<th style="text-align: right;">B 首字母 G 的 p</th>
+<th style="text-align: right;">D 首字母 G 的 p</th>
+<th style="text-align: right;">B 重复对 p</th>
+<th style="text-align: right;">D 重复对 p</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原始 fixed-pair 字母对</td>
+<td style="text-align: right;">0.03281</td>
+<td style="text-align: right;">0.03356</td>
+<td style="text-align: right;">0.000250</td>
+<td style="text-align: right;">0.000687</td>
+</tr>
+<tr>
+<td>方向归一化字母对</td>
+<td style="text-align: right;">0.007125</td>
+<td style="text-align: right;">0.006562</td>
+<td style="text-align: right;">0.000250</td>
+<td style="text-align: right;">0.000812</td>
+</tr>
+</tbody>
+</table>
+<p>原始序列的随机样本可以保留元音开头的对，因此这里称“首字母 G”，不把它们全称为辅音。概率对零模型敏感，但重复结构仍值得进一步验证；这些结果不能单独证明虚码规则。</p>
+<p>删除后，B/D 各有 8 个保留音节的词内槽位编号改变。R18 的“同词位”实际用压缩后的编号；本轮另保留原始槽位，两个分层结果都公开。</p>
+<p>另对 <strong>B/D × 三种解析 = 6 个固定候选</strong>，以同一页内配对置换计算最大统计量，逐终点调整选择。B/C 的 G 与重复对均未在 4,000 次中被超过，报告 p = 1/4001，而不是零。该检验只覆盖这六种候选、分别处理两个终点；不覆盖历次探索、所有疑字选择或终点选择，也不是外部留出验证。详见 <a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/STATISTICAL_AUDIT.md">统计审计</a> 和 <a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/results/selection_controls.json">结果 JSON</a>。</p>
+<h2>3. 修订“排除”与“87 码不可解”的表述</h2>
+<p>在“m 种音节均匀单射到 00–99”的假设下，密钥熵为 <code>log2(100! / (100-m)!)</code>。R18 B 实有 73 种保留音节，得 431.628 比特；D 有 75 种，得 441.083 比特。若再假设每码提供 5 比特冗余，商分别为 <strong>86.326</strong> 与 <strong>88.217</strong>。</p>
+<p>这说明连同一组材料的读法选择也能改变估计。密钥先验、实际表族、噪声、中文电码本和语言冗余均未确认；该商不是保证恢复的样本量，更不是 87 码不可解的证明。更多可靠同钥材料仍有价值，但不能承诺多 100–200 码就必能解出。</p>
+<p>R18 正对照说明部分设定可被求解，同时也记录自由表、独立双线性表等失败。有限退火搜索没有找到真钥，不等于数学排除整个表族。本站当前摘要统一改为“在已运行设定内未找到可验收候选”，历史报告保持原样。</p>
+<h2>4. 候选密钥机械回验</h2>
+<p><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/verify_candidate.py">verify_candidate.py</a> 为未来有依据的候选提供独立于语言评分的检查：限定“单个 CV 音节 → 两位数字、两音节拼成四位电码”的单表单射模型，核查映射覆盖、值域、冲突、输入异常、完整码组与逆向重建。校改读本及 VC 删除须在命令中显式声明；未解释字符和残组不能靠截断通过。</p>
+<p>数字码经逆表回到输入时，null、空白、大小写和词界作为<strong>已保存布局信息</strong>恢复，不能由此声称已找出历史填充规则。测试使用小型人工正负对照；本轮没有为六月生成假密钥或中文。机械一致性仅是验收的一部分，仍缺真实码本与未用于拟合的独立材料。接口和边界见 <a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/CANDIDATE_VERIFICATION.md">候选回验说明</a>。</p>
+<h2>5. 史料复核与新增入口</h2>
+<p>本轮核对的两位作者原文件仍把六月标为未解；公开新增 26 封属于 1916 年。作者对 B03050090200 的盘点包含延至 1917 年九月的材料，但相邻 0508、0513 被列为明文假名，不能直接扩充为同钥密文。这是作者记录，本轮未逐幅重看官方原件。来源及访问时间见 <a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/SOURCE_AUDIT.md">来源审计</a>。</p>
+<p>新增一项引文级入口：Kuzuoglu 2018 作者上传全文列出胡汉民与孔庚通信码本 <code>yiban050/5.7</code>，未定年，“tong mi”的汉字也未核实。本轮未取得馆方单件目录或扫描，没有证据说明它用于六月。部分已提及码本的具体版本为 1922–1923 年，亦不能直接作为 1917 年密钥。</p>
+<p>JACAR 官方端点及政大单件检索仍有访问限制；检索日志区分读取成功、作者引述、搜索线索和失败。没有向外部联系人发送消息，未取得戴季陶六月调查报告正文、新同钥密文或历史密表。</p>
+<h2>6. 分工、验证和边界</h2>
+<p>本轮共五个子任务：无损解析、统计对照、史料来源、候选回验、独立审查；主任务整合报告、交接文档、站点和复现入口。原始 <code>data/</code> 与 R11–18 保持不变。</p>
+<p>检查包括回归测试、冻结 JSON 重算、SHA-256 清单以及站点生成。完整命令见 <a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/README.md">README</a>。<code>reproduce.py</code> 将新输出写到临时目录再比较，不回写研究证据。</p>
+<p>没有开展无边界的密钥盲搜，没有下载或冒充缺失的语言模型，也没有把全部历史选择计入本轮有限统计校正。当前最有价值的下一步是按位置核定疑字、查清早期码本目录和寻找独立同钥材料，再进行受约束求解与留出验证。</p>
+<h2>本轮材料（原样归档）</h2><ul class=files><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/CANDIDATE_VERIFICATION.md">CANDIDATE_VERIFICATION.md</a></li><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/MANIFEST.sha256">MANIFEST.sha256</a></li><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/README.md">README.md</a></li><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/SOURCE_AUDIT.md">SOURCE_AUDIT.md</a></li><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/STATISTICAL_AUDIT.md">STATISTICAL_AUDIT.md</a></li><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/WENMI_ROUND19.md">WENMI_ROUND19.md</a></li><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/provenance_audit.py">provenance_audit.py</a></li><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/reproduce.py">reproduce.py</a></li><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/results/provenance_audit.json">results/provenance_audit.json</a></li><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/results/selection_controls.json">results/selection_controls.json</a></li><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/selection_controls.py">selection_controls.py</a></li><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/sources/source_audit.json">sources/source_audit.json</a></li><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/tests/test_provenance_audit.py">tests/test_provenance_audit.py</a></li><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/tests/test_selection_controls.py">tests/test_selection_controls.py</a></li><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/tests/test_verify_candidate.py">tests/test_verify_candidate.py</a></li><li><a href="https://github.com/limin112/sun-dai-1917-cipher/blob/main/rounds/round19/verify_candidate.py">verify_candidate.py</a></li></ul>
+<div class="pager"><a href="round-18.html">← Round 18</a><a href="../rounds.html">全部轮次</a><span></span></div>
+</div>
+</main>
+<footer>孙中山—戴季陶 1917 年六月密电 · 开放研究档案 · 维护者 <a href="https://x.com/MinliBuilds">X @MinliBuilds</a> · <a href="mailto:uslimin@gmail.com">uslimin@gmail.com</a> · <a href="https://github.com/limin112/sun-dai-1917-cipher">GitHub</a><br>文字、数据与代码 CC BY 4.0 · 电报扫描图出自 JACAR（日本外务省外交史料馆藏），不在 CC BY 范围内</footer>
+</body>
+</html>

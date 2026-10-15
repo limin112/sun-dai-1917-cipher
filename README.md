@@ -5,7 +5,7 @@
 
 An open research archive on two unsolved 1917 cipher telegrams between Sun Yat-sen and Dai Jitao
 held by the Japan Center for Asian Historical Records (JACAR B03050090200, frames 0509 and 0511).
-All reports, code, frozen inputs, positive/negative controls and failure logs from research rounds 11–18 are here.
+All reports, code, frozen inputs, positive/negative controls and failure logs from research rounds 11–19 are here.
 **Status: unsolved.**
 
 📖 **站点 / Site**：<https://limin112.github.io/sun-dai-1917-cipher/>
@@ -21,11 +21,12 @@ All reports, code, frozen inputs, positive/negative controls and failure logs fr
 
 两封都**没有**“文密”或“Cg”前缀；1916 年已破的 G0/Y0 与 1917 年 3 月密钥都译不出。
 
-## 目前进展（截至 Round 18，2026-10-14）
+## 目前进展（截至 Round 19，2026-10-15）
 
-- **结构**：把元音开头的字母对（`ac/as/op/um/ax`）视为虚码删除后，0509 = 20 个四字母电码，0511 = 67 个（40 + 27），长度完全自洽；辅音奇偶 z ≈ 6.3，重复码对 11（`cafe`×3、`mupo`×3 等），统计形态与 1916 年真实已解电报一致。
-- **排除**：线性 6 宽表（任意偏移）、5 宽 + y 同码异形、Y0 同构 97,920 把、加数密钥、G0 式坐标表、第 64 号历史表等全部阴性；求解器在 1916 真实 Y0 密文上能无先验找回原钥（正对照）。
-- **瓶颈**：若为自由乱序表，唯一解距离约 88 码，而六月总共只有 87 码。**缺的是新材料，不是更多搜索。**
+- **转录可追溯**：新增逐字符无损解析与差异清单。Round 18 的 D 读本相对冻结独立盲读有 4 处改动，不能当作未改动的独立验证；所有原始输入和旧轮次保持不变。
+- **统计更明确**：并列检验原始字母对与方向归一化序列的随机删除对照，保留种子、输入 SHA-256 和选择范围。删除元音开头字母对后得到 20 + 67 码，是 R18 校改读本下的候选解释，尚未证明这些字符就是虚码。
+- **结论纠偏**：已有搜索未找到可验收密钥，但有限退火搜索不能排除整个表族；“约 88 码”是依赖假设的估算，不能证明 87 码不可解。
+- **复现改进**：新增回归测试、结构结果与来源审计，详见 [Round 19 报告](rounds/round19/WENMI_ROUND19.md)。下一步仍优先寻找独立同钥材料、可靠中文留底和具名密表。
 
 ## 🆘 卡点 / Help wanted
 
@@ -39,7 +40,7 @@ All reports, code, frozen inputs, positive/negative controls and failure logs fr
 
 ```
 docs/          静态 HTML 站点（每轮进展页、卡点、密文与扫描图、来源、致谢）——由 scripts/build_site.py 生成
-rounds/        Round 11–18 原始报告、脚本、输入、结果、MANIFEST.sha256（原样归档）
+rounds/        Round 11–19 报告、脚本、输入、结果、MANIFEST.sha256（原样归档）
 data/          最新冻结输入：原始转录 / 独立盲读 / 摩斯与页面观察 / 三月正对照 / R18 结构结果
 handoff/       给下一位研究者或 Agent 的交接文档与任务卡
 scripts/       站点生成脚本
@@ -49,11 +50,14 @@ Round 13 的材料未包含在交接包中；Round 1–10 未纳入本次整理�
 
 ## 复现
 
+Round 19 的审计与测试仅使用 Python 标准库。完整命令及各项输入假设见 [复现说明](rounds/round19/README.md)。
+
 ```sh
-cd rounds/round18 && python3 round18_structure.py 4000     # 标准库，约 10 秒
-cd rounds/round17 && python3 round17_analysis.py
-pip install markdown && python3 scripts/build_site.py      # 重新生成站点
+python3 -B rounds/round19/reproduce.py   # 测试、临时重算比对、SHA-256 清单
+python3 scripts/build_site.py           # 重新生成站点；需要 markdown
 ```
+
+历史轮次的复现指令见各轮报告。它们默认会重写结果文件，请先复制对应轮次目录到临时位置再运行，避免覆盖归档。
 
 Round 18 的密钥搜索需要 clang++ 和 Dudout 公开的 `lm3` 语言模型，见 [`rounds/round18/WENMI_ROUND18.md`](rounds/round18/WENMI_ROUND18.md) §6。
 

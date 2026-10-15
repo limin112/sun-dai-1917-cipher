@@ -1,0 +1,558 @@
+{
+  "schema_version": 1,
+  "status": "exploratory sensitivity; no new plaintext",
+  "parameters": {
+    "trials": 4000,
+    "deletion_trials": 16000,
+    "seed": 19019
+  },
+  "input_sha256": {
+    "rounds/round18/round18_structure.py": "745a1825f9adf4fa9c94494631048b7787c06a9401663b6a952ae3cc7da6ec21",
+    "rounds/round18/results/round18_structure.json": "987f5a51948431db4d6d4397b9ff4c47b7fd8379ab1e7df181472801e9626a30",
+    "rounds/round18/results/controls/controls_and_searches.md": "41018c4f040dd9e5443fe44cf74d156a9d11cb709091d0e38c1691e689cf0108",
+    "data/ciphertexts.json": "620e469ec26d6534df2dbad0553d79844f1d9df8e68e47a95194a1c0563a8136",
+    "data/independent_witness.json": "1a7362cd229a0a407eb171dec7ba32572763cfb03c0d09a98caedd7370db8ac1"
+  },
+  "raw_literal_sha256": "3f30d7b392fa18e5974ce8887d4ae18eda04af382d6d5c7ed0522726b3b64db3",
+  "readings": {
+    "B": {
+      "page_pair_counts": [
+        40,
+        86,
+        55
+      ],
+      "vc_masks_zero_based": [
+        [],
+        [
+          2,
+          7,
+          22,
+          23,
+          56,
+          67
+        ],
+        [
+          2
+        ]
+      ],
+      "retained_tokens_with_changed_word_slot": 8,
+      "retained_distinct_symbols": 73,
+      "uniform_injective_key_entropy_bits": 431.62815246087996,
+      "hypothetical_H_over_D_at_5_bits_per_code": 86.32563049217599,
+      "random_deletion_raw_pairs": {
+        "seed": 19019,
+        "removed_by_page": [
+          0,
+          6,
+          1
+        ],
+        "first_letter_G": {
+          "observed": 60.95178175867891,
+          "exceedances": 524,
+          "trials": 16000,
+          "p_plus1": 0.03281044934691582,
+          "mc_wilson95": [
+            0.030102404497716208,
+            0.03562190685135431
+          ]
+        },
+        "repeat_pairs": {
+          "observed": 11,
+          "exceedances": 3,
+          "trials": 16000,
+          "p_plus1": 0.0002499843759765015,
+          "mc_wilson95": [
+            6.376892301321712e-05,
+            0.0005511746107637871
+          ]
+        }
+      },
+      "random_deletion_normalized_pairs": {
+        "seed": 19019,
+        "removed_by_page": [
+          0,
+          6,
+          1
+        ],
+        "first_letter_G": {
+          "observed": 60.95178175867891,
+          "exceedances": 113,
+          "trials": 16000,
+          "p_plus1": 0.0071245547153302915,
+          "mc_wilson95": [
+            0.00587803057208376,
+            0.008483612500430837
+          ]
+        },
+        "repeat_pairs": {
+          "observed": 11,
+          "exceedances": 3,
+          "trials": 16000,
+          "p_plus1": 0.0002499843759765015,
+          "mc_wilson95": [
+            6.376892301321712e-05,
+            0.0005511746107637871
+          ]
+        }
+      },
+      "word_position_original": {
+        "seed": 19020,
+        "stratum": "original_fixed_pair_slot",
+        "first_letter_G": {
+          "observed": 60.95178175867891,
+          "exceedances": 1,
+          "trials": 4000,
+          "p_plus1": 0.0004998750312421895,
+          "mc_wilson95": [
+            4.4132501957676274e-05,
+            0.0014148310660989595
+          ]
+        }
+      },
+      "word_position_compressed": {
+        "seed": 19020,
+        "stratum": "retained_slot",
+        "first_letter_G": {
+          "observed": 60.95178175867891,
+          "exceedances": 0,
+          "trials": 4000,
+          "p_plus1": 0.00024993751562109475,
+          "mc_wilson95": [
+            5.421010862427522e-20,
+            0.0009594432897014865
+          ]
+        }
+      }
+    },
+    "D": {
+      "page_pair_counts": [
+        40,
+        86,
+        55
+      ],
+      "vc_masks_zero_based": [
+        [],
+        [
+          2,
+          7,
+          22,
+          23,
+          56,
+          67
+        ],
+        [
+          2
+        ]
+      ],
+      "retained_tokens_with_changed_word_slot": 8,
+      "retained_distinct_symbols": 75,
+      "uniform_injective_key_entropy_bits": 441.0834796811845,
+      "hypothetical_H_over_D_at_5_bits_per_code": 88.2166959362369,
+      "random_deletion_raw_pairs": {
+        "seed": 19019,
+        "removed_by_page": [
+          0,
+          6,
+          1
+        ],
+        "first_letter_G": {
+          "observed": 57.3209991535107,
+          "exceedances": 536,
+          "trials": 16000,
+          "p_plus1": 0.03356040247484532,
+          "mc_wilson95": [
+            0.03082194254892492,
+            0.036402008749826055
+          ]
+        },
+        "repeat_pairs": {
+          "observed": 11,
+          "exceedances": 10,
+          "trials": 16000,
+          "p_plus1": 0.0006874570339353791,
+          "mc_wilson95": [
+            0.00033953325784609033,
+            0.0011502002465778518
+          ]
+        }
+      },
+      "random_deletion_normalized_pairs": {
+        "seed": 19019,
+        "removed_by_page": [
+          0,
+          6,
+          1
+        ],
+        "first_letter_G": {
+          "observed": 57.3209991535107,
+          "exceedances": 104,
+          "trials": 16000,
+          "p_plus1": 0.006562089869383164,
+          "mc_wilson95": [
+            0.00536781328487026,
+            0.007869099825383986
+          ]
+        },
+        "repeat_pairs": {
+          "observed": 11,
+          "exceedances": 12,
+          "trials": 16000,
+          "p_plus1": 0.0008124492219236298,
+          "mc_wilson95": [
+            0.0004290976108030985,
+            0.0013105758852342544
+          ]
+        }
+      },
+      "word_position_original": {
+        "seed": 19020,
+        "stratum": "original_fixed_pair_slot",
+        "first_letter_G": {
+          "observed": 57.3209991535107,
+          "exceedances": 1,
+          "trials": 4000,
+          "p_plus1": 0.0004998750312421895,
+          "mc_wilson95": [
+            4.4132501957676274e-05,
+            0.0014148310660989595
+          ]
+        }
+      },
+      "word_position_compressed": {
+        "seed": 19020,
+        "stratum": "retained_slot",
+        "first_letter_G": {
+          "observed": 57.3209991535107,
+          "exceedances": 2,
+          "trials": 4000,
+          "p_plus1": 0.0007498125468632841,
+          "mc_wilson95": [
+            0.00013712874495346754,
+            0.0018213551014583176
+          ]
+        }
+      }
+    }
+  },
+  "finite_family_selection": {
+    "seed": 19021,
+    "candidate_count": 6,
+    "candidate_names": [
+      "B/A_swap_noshift",
+      "B/B_swap_shift_b",
+      "B/C_VC_null",
+      "D/A_swap_noshift",
+      "D/B_swap_shift_b",
+      "D/C_VC_null"
+    ],
+    "null": "paired normalized-token permutation within each page; masks and parses fixed",
+    "family_max": {
+      "first_letter_G": {
+        "observed": 60.95178175867891,
+        "exceedances": 0,
+        "trials": 4000,
+        "p_plus1": 0.00024993751562109475,
+        "mc_wilson95": [
+          5.421010862427522e-20,
+          0.0009594432897014865
+        ]
+      },
+      "repeat_pairs": {
+        "observed": 11,
+        "exceedances": 0,
+        "trials": 4000,
+        "p_plus1": 0.00024993751562109475,
+        "mc_wilson95": [
+          5.421010862427522e-20,
+          0.0009594432897014865
+        ]
+      }
+    },
+    "candidates": {
+      "B/A_swap_noshift": {
+        "first_letter_G": {
+          "unadjusted": {
+            "observed": 13.51735540052646,
+            "exceedances": 3372,
+            "trials": 4000,
+            "p_plus1": 0.8430392401899525,
+            "mc_wilson95": [
+              0.8313974208781442,
+              0.8539444010251206
+            ]
+          },
+          "max_adjusted": {
+            "observed": 13.51735540052646,
+            "exceedances": 3995,
+            "trials": 4000,
+            "p_plus1": 0.9987503124218945,
+            "mc_wilson95": [
+              0.9970769950881988,
+              0.9994659602303242
+            ]
+          }
+        },
+        "repeat_pairs": {
+          "unadjusted": {
+            "observed": 2,
+            "exceedances": 968,
+            "trials": 4000,
+            "p_plus1": 0.2421894526368408,
+            "mc_wilson95": [
+              0.22897886222459685,
+              0.25551621051288914
+            ]
+          },
+          "max_adjusted": {
+            "observed": 2,
+            "exceedances": 1757,
+            "trials": 4000,
+            "p_plus1": 0.4393901524618845,
+            "mc_wilson95": [
+              0.4239354746517559,
+              0.4546810977079429
+            ]
+          }
+        }
+      },
+      "B/B_swap_shift_b": {
+        "first_letter_G": {
+          "unadjusted": {
+            "observed": 48.09037366032803,
+            "exceedances": 4,
+            "trials": 4000,
+            "p_plus1": 0.0012496875781054736,
+            "mc_wilson95": [
+              0.00038894703739082324,
+              0.0025685773657312607
+            ]
+          },
+          "max_adjusted": {
+            "observed": 48.09037366032803,
+            "exceedances": 12,
+            "trials": 4000,
+            "p_plus1": 0.0032491877030742314,
+            "mc_wilson95": [
+              0.0017169926319577002,
+              0.005236693998005578
+            ]
+          }
+        },
+        "repeat_pairs": {
+          "unadjusted": {
+            "observed": 9,
+            "exceedances": 0,
+            "trials": 4000,
+            "p_plus1": 0.00024993751562109475,
+            "mc_wilson95": [
+              5.421010862427522e-20,
+              0.0009594432897014865
+            ]
+          },
+          "max_adjusted": {
+            "observed": 9,
+            "exceedances": 0,
+            "trials": 4000,
+            "p_plus1": 0.00024993751562109475,
+            "mc_wilson95": [
+              5.421010862427522e-20,
+              0.0009594432897014865
+            ]
+          }
+        }
+      },
+      "B/C_VC_null": {
+        "first_letter_G": {
+          "unadjusted": {
+            "observed": 60.95178175867891,
+            "exceedances": 0,
+            "trials": 4000,
+            "p_plus1": 0.00024993751562109475,
+            "mc_wilson95": [
+              5.421010862427522e-20,
+              0.0009594432897014865
+            ]
+          },
+          "max_adjusted": {
+            "observed": 60.95178175867891,
+            "exceedances": 0,
+            "trials": 4000,
+            "p_plus1": 0.00024993751562109475,
+            "mc_wilson95": [
+              5.421010862427522e-20,
+              0.0009594432897014865
+            ]
+          }
+        },
+        "repeat_pairs": {
+          "unadjusted": {
+            "observed": 11,
+            "exceedances": 0,
+            "trials": 4000,
+            "p_plus1": 0.00024993751562109475,
+            "mc_wilson95": [
+              5.421010862427522e-20,
+              0.0009594432897014865
+            ]
+          },
+          "max_adjusted": {
+            "observed": 11,
+            "exceedances": 0,
+            "trials": 4000,
+            "p_plus1": 0.00024993751562109475,
+            "mc_wilson95": [
+              5.421010862427522e-20,
+              0.0009594432897014865
+            ]
+          }
+        }
+      },
+      "D/A_swap_noshift": {
+        "first_letter_G": {
+          "unadjusted": {
+            "observed": 12.1655615003925,
+            "exceedances": 3794,
+            "trials": 4000,
+            "p_plus1": 0.9485128717820545,
+            "mc_wilson95": [
+              0.9412102572793271,
+              0.9549291220898108
+            ]
+          },
+          "max_adjusted": {
+            "observed": 12.1655615003925,
+            "exceedances": 3999,
+            "trials": 4000,
+            "p_plus1": 0.9997500624843789,
+            "mc_wilson95": [
+              0.9985851689339011,
+              0.9999558674980424
+            ]
+          }
+        },
+        "repeat_pairs": {
+          "unadjusted": {
+            "observed": 3,
+            "exceedances": 213,
+            "trials": 4000,
+            "p_plus1": 0.053486628342914275,
+            "mc_wilson95": [
+              0.04671059580282868,
+              0.06064666677651961
+            ]
+          },
+          "max_adjusted": {
+            "observed": 3,
+            "exceedances": 641,
+            "trials": 4000,
+            "p_plus1": 0.1604598850287428,
+            "mc_wilson95": [
+              0.1492085401660036,
+              0.17194340154934856
+            ]
+          }
+        }
+      },
+      "D/B_swap_shift_b": {
+        "first_letter_G": {
+          "unadjusted": {
+            "observed": 42.29737043241049,
+            "exceedances": 21,
+            "trials": 4000,
+            "p_plus1": 0.005498625343664084,
+            "mc_wilson95": [
+              0.0034364629756095666,
+              0.008012906159550056
+            ]
+          },
+          "max_adjusted": {
+            "observed": 42.29737043241049,
+            "exceedances": 86,
+            "trials": 4000,
+            "p_plus1": 0.02174456385903524,
+            "mc_wilson95": [
+              0.017442978578558383,
+              0.026475208649685934
+            ]
+          }
+        },
+        "repeat_pairs": {
+          "unadjusted": {
+            "observed": 9,
+            "exceedances": 0,
+            "trials": 4000,
+            "p_plus1": 0.00024993751562109475,
+            "mc_wilson95": [
+              5.421010862427522e-20,
+              0.0009594432897014865
+            ]
+          },
+          "max_adjusted": {
+            "observed": 9,
+            "exceedances": 0,
+            "trials": 4000,
+            "p_plus1": 0.00024993751562109475,
+            "mc_wilson95": [
+              5.421010862427522e-20,
+              0.0009594432897014865
+            ]
+          }
+        }
+      },
+      "D/C_VC_null": {
+        "first_letter_G": {
+          "unadjusted": {
+            "observed": 57.3209991535107,
+            "exceedances": 0,
+            "trials": 4000,
+            "p_plus1": 0.00024993751562109475,
+            "mc_wilson95": [
+              5.421010862427522e-20,
+              0.0009594432897014865
+            ]
+          },
+          "max_adjusted": {
+            "observed": 57.3209991535107,
+            "exceedances": 1,
+            "trials": 4000,
+            "p_plus1": 0.0004998750312421895,
+            "mc_wilson95": [
+              4.4132501957676274e-05,
+              0.0014148310660989595
+            ]
+          }
+        },
+        "repeat_pairs": {
+          "unadjusted": {
+            "observed": 11,
+            "exceedances": 0,
+            "trials": 4000,
+            "p_plus1": 0.00024993751562109475,
+            "mc_wilson95": [
+              5.421010862427522e-20,
+              0.0009594432897014865
+            ]
+          },
+          "max_adjusted": {
+            "observed": 11,
+            "exceedances": 0,
+            "trials": 4000,
+            "p_plus1": 0.00024993751562109475,
+            "mc_wilson95": [
+              5.421010862427522e-20,
+              0.0009594432897014865
+            ]
+          }
+        }
+      }
+    },
+    "scope": "Six frozen candidates only; endpoints separate; not full R1-R18 selection correction"
+  },
+  "limitations": [
+    "RAW B/D are edited R18 hypotheses, not literal independent witness readings",
+    "Exchangeability models are sensitivity assumptions, not a historical generative model",
+    "Raw-pair deletion G includes vowel first letters; normalization changes reference distribution",
+    "No correction for unrecorded prior searches, transcription choices, or metric selection",
+    "Uniform injection and 5 bits/code are hypothetical, not measured entropy/redundancy"
+  ]
+}
